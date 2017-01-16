@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "clean": "rimraf build",
+    "build": "npm run clean && webpack",
+    "serve": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
@@ -12,12 +14,15 @@
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.16.0",
     "eslint": "^3.13.1",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
-    "webpack": "^2.2.0-rc.5"
+    "rimraf": "^2.5.4",
+    "webpack": "^2.2.0-rc.5",
+    "webpack-dev-server": "^2.2.0-rc.0"
   },
   "dependencies": {
     "react": "^15.4.2",
