@@ -6,7 +6,6 @@ import ReduxThunk from 'redux-thunk';
 
 import Routes from './router';
 import reducers from './reducers/';
-import './styles.css';
 
 const App = () => {
   /* eslint-disable no-underscore-dangle */
