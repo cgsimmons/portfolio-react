@@ -2,7 +2,7 @@
   "name": "react-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
     "clean": "rimraf build",
     "build": "NODE_ENV=production npm run clean && webpack -p",

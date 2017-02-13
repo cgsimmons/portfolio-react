@@ -10,7 +10,7 @@ const VENDOR_LIBS = [
 
 const config = {
   entry: {
-    bundle: './src/index.js',
+    bundle: './src/App.js',
     vendor: VENDOR_LIBS,
   },
   output: {
