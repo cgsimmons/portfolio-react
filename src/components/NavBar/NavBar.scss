@@ -45,7 +45,7 @@
 @media all and (max-width: 1280px){
   .NavBar {
     width: 2.5rem;
-    &:hover {
+    &.hovering {
       width: 10rem;
       -webkit-transition-delay: 0.1s;
       -moz-transition-delay: 0.1s;

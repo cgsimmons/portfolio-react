@@ -1,6 +1,6 @@
-// export function setNavBarHover(hover) {
-//   return {
-//     type: 'SET_HOVER',
-//     hover,
-//   };
-// }
+export function setNavBarHover(hover) {
+  return {
+    type: 'SET_HOVER',
+    hover,
+  };
+}
