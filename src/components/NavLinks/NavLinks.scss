@@ -10,9 +10,15 @@
   li {
     white-space: nowrap;
     position: relative;
+    &:hover {
+      background-color: #d5d5d5;
+    }
+
     a {
       text-decoration: none;
       color: #216eb0;
+      display: block;
+      padding: 0 0.5rem 0 0.5rem;
 
       svg {
         width: 1.35rem;

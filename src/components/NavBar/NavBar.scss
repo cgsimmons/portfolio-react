@@ -1,5 +1,4 @@
 .NavBar {
-  padding: .5rem;
   background-color: #ededed;
   width: 10rem;
   height: 100%;
@@ -29,7 +28,7 @@
   }
 
   nav a {
-    margin: .5rem;
+    margin: 0.5rem;
     color: #fffdfdcc;
     font-weight: bold;
     text-decoration: none;
@@ -39,7 +38,7 @@
 
 @media all and (max-width: 1280px){
   .NavBar {
-    width: 1.35rem;
+    width: 2.5rem;
     &:hover {
       width: 10rem;
       -webkit-transition-delay: 0.1s;
