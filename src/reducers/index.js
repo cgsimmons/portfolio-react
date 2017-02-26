@@ -1,3 +1,6 @@
 import { combineReducers } from 'redux';
+// import { navBar } from './NavBarReducers';
 
-export default combineReducers({});
+export default combineReducers({
+  // navBar,
+});

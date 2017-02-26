@@ -1,7 +1,7 @@
 .NavBar {
   padding: .5rem;
   background-color: #ededed;
-  width: 1.35rem;
+  width: 10rem;
   height: 100%;
   overflow: hidden;
   display: inline-block;
@@ -35,13 +35,18 @@
     text-decoration: none;
     display: block;
   }
+}
 
-  &:hover {
-    width: 10rem;
-    -webkit-transition-delay: 0.1s;
-    -moz-transition-delay: 0.1s;
-    -ms-transition-delay: 0.1s;
-    -o-transition-delay: 0.1s;
-    transition-delay: 0.1s;
+@media all and (max-width: 1280px){
+  .NavBar {
+    width: 1.35rem;
+    &:hover {
+      width: 10rem;
+      -webkit-transition-delay: 0.1s;
+      -moz-transition-delay: 0.1s;
+      -ms-transition-delay: 0.1s;
+      -o-transition-delay: 0.1s;
+      transition-delay: 0.1s;
+    }
   }
 }

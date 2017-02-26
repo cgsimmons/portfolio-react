@@ -1,21 +1,30 @@
 .NavLinks {
+  font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
+  font-weight: bold;
+
   ul {
     list-style: none;
     padding: 0px;
   }
 
   li {
-
+    white-space: nowrap;
+    position: relative;
     a {
-      span {
-        display: none;
-        visibility: hidden;
-      }
+      text-decoration: none;
+      color: #216eb0;
+
       svg {
         width: 1.35rem;
         height: 1.35rem;
         margin: 1rem 0 1rem 0;
-        color: #216eb0;
+      }
+
+      span {
+        margin-left: 0.5rem;
+        position: absolute;
+        top: 1.35rem;
+        left: 2rem;
       }
     }
   }

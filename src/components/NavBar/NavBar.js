@@ -1,5 +1,4 @@
 import React from 'react';
-import NavHeader from '../NavHeader/NavHeader';
 import NavLinks from '../NavLinks/NavLinks';
 import './NavBar.scss';
 
