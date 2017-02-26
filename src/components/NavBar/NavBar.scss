@@ -1,6 +1,6 @@
 .NavBar {
   background-color: #ededed;
-  width: 10rem;
+  width: 13rem;
   height: 100%;
   overflow: hidden;
   display: inline-block;
@@ -33,6 +33,12 @@
     font-weight: bold;
     text-decoration: none;
     display: block;
+  }
+}
+
+@media all and (max-width: 1700px){
+  .NavBar {
+    width: 10rem;
   }
 }
 
