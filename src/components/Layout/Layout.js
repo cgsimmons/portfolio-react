@@ -1,15 +1,14 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
-import s from './style.css';
+import './style.css';
 
 export default (props) => {
   return (
 
     <div className="app-container">
-      <header>
-        <NavBar />
-      </header>
+      <header />
       <div className="app-body">
+        <NavBar />
         <div className="app-content">
           {props.children}
         </div>

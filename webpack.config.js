@@ -20,15 +20,18 @@ const config = {
   module: {
     rules: [
       {
-        use: 'babel-loader',
         test: /\.js$/,
+        use: 'babel-loader',
         exclude: '/node_modules/',
       },
       {
+        test: /\.(css|scss)$/,
         loader: ExtractTextPlugin.extract({
-          loader: 'css-loader',
+          loader: [
+            'css-loader',
+            'sass-loader',
+          ],
         }),
-        test: /\.css$/,
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/,

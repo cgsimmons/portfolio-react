@@ -3,7 +3,7 @@ import Education from '../Education/Education';
 import Skills from '../Skills/Skills';
 import Portfolio from '../Portfolio/Portfolio';
 import Work from '../Work/Work';
-import s from './IndexPage.css';
+import './IndexPage.css';
 
 export default () => {
   return (
@@ -11,10 +11,10 @@ export default () => {
       <div className="banner">
         <h1>Chris Simmons Site!</h1>
       </div>
-      <Education />
       <Skills />
-      <Work />
       <Portfolio />
+      <Education />
+      <Work />
     </div>
   );
 };
