@@ -1,3 +1,5 @@
+@import '../Layout/animations';
+
 .NavBar {
   background-color: #ededed;
   width: 13rem;
@@ -7,22 +9,7 @@
   position: fixed;
   top: 0;
   left: 0;
-
-  -webkit-transition-property: -webkit-transform,width;
-  -moz-transition-property: -moz-transform,width;
-  -ms-transition-property: -ms-transform,width;
-  -o-transition-property: -o-transform,width;
-  transition-property: transform,width;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-in-out;
-  -moz-transition-timing-function: ease-in-out;
-  -ms-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  @include navAnimation();
 
   nav {
   }
@@ -47,11 +34,6 @@
     width: 2.5rem;
     &.hovering {
       width: 10rem;
-      -webkit-transition-delay: 0.1s;
-      -moz-transition-delay: 0.1s;
-      -ms-transition-delay: 0.1s;
-      -o-transition-delay: 0.1s;
-      transition-delay: 0.1s;
     }
   }
 }
