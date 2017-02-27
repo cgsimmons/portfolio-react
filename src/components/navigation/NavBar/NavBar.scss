@@ -1,4 +1,4 @@
-@import '../Layout/animations';
+@import '../../Layout/animations';
 
 .NavBar {
   background-color: #ededed;
@@ -35,5 +35,12 @@
     &.hovering {
       width: 10rem;
     }
+  }
+}
+
+@media all and (max-width: 770px){
+  .NavBar {
+    width: 0;
+    margin-top: 2.5rem;
   }
 }

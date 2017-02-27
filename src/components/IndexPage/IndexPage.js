@@ -1,9 +1,9 @@
 import React from 'react';
-import Education from '../Education/Education';
-import Skills from '../Skills/Skills';
-import Portfolio from '../Portfolio/Portfolio';
-import Work from '../Work/Work';
-import About from '../About/About';
+import Education from '../sections/Education/Education';
+import Skills from '../sections/Skills/Skills';
+import Portfolio from '../sections/Portfolio/Portfolio';
+import Work from '../sections/Work/Work';
+import About from '../sections/About/About';
 import './IndexPage.css';
 
 export default () => {

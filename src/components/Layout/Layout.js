@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import NavBar from '../NavBar/NavBar';
+import NavBar from '../navigation/NavBar/NavBar';
+import NavHam from '../navigation/NavHam/NavHam';
 import './style.scss';
 
 class Layout extends React.Component {
@@ -8,7 +9,9 @@ class Layout extends React.Component {
     return (
 
       <div className="app-container">
-        <header />
+        <header>
+          <NavHam />
+        </header>
         <div className="app-body">
           <NavBar />
           <div className={`app-content${this.props.isNavBarHovering ? ' shift-content' : ''}`}>
@@ -24,7 +27,7 @@ class Layout extends React.Component {
 const mapStateToProps = (state) => {
   return {
     isNavBarHovering: state.navBar.hovering,
-  }
-}
+  };
+};
 
 export default connect(mapStateToProps, null)(Layout);

@@ -13,37 +13,37 @@ export default () => {
     <div className="NavLinks">
       <ul>
         <li>
-          <Scrollchor to="#root">
+          <Scrollchor to="#root" animate={{ offset: -45 }}>
             <MdHome />
             <span>Top of Page</span>
           </Scrollchor>
         </li>
         <li>
-          <Scrollchor to="#About">
+          <Scrollchor to="#About" animate={{ offset: -45 }}>
             <FaInfoCircle />
             <span>About Me</span>
           </Scrollchor>
         </li>
         <li>
-          <Scrollchor to="#Skills">
+          <Scrollchor to="#Skills" animate={{ offset: -45 }}>
             <FaCode />
             <span>Skills</span>
           </Scrollchor>
         </li>
         <li>
-          <Scrollchor to="#Portfolio">
+          <Scrollchor to="#Portfolio" animate={{ offset: -45 }}>
             <MdWork />
             <span>Portfolio</span>
           </Scrollchor>
         </li>
         <li>
-          <Scrollchor to="#Education">
+          <Scrollchor to="#Education" animate={{ offset: -45 }}>
             <FaGraduationCap />
             <span>Education</span>
           </Scrollchor>
         </li>
         <li>
-          <Scrollchor to="#Work">
+          <Scrollchor to="#Work" animate={{ offset: -45 }}>
             <FaBlackTie />
             <span>Work History</span>
           </Scrollchor>

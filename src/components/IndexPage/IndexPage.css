@@ -5,4 +5,11 @@
 .banner {
   background-color: #00bcd4;
   padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+@media all and (max-width: 770px) {
+  .banner {
+    margin-bottom: 0;
+  }
 }
