@@ -4,6 +4,8 @@ import Skills from '../sections/Skills/Skills';
 import Portfolio from '../sections/Portfolio/Portfolio';
 import Work from '../sections/Work/Work';
 import About from '../sections/About/About';
+import Volunteer from '../sections/Volunteer/Volunteer';
+import Interests from '../sections/Interests/Interests';
 import './IndexPage.css';
 
 export default () => {
@@ -17,6 +19,9 @@ export default () => {
       <Portfolio />
       <Education />
       <Work />
+      <Volunteer />
+      <Interests />
+
     </div>
   );
 };

@@ -4,11 +4,12 @@
   background-color: #ededed;
   width: 13rem;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   display: inline-block;
   position: fixed;
   top: 0;
   left: 0;
+  overflow-y: auto;
   @include navAnimation();
 
   nav {
