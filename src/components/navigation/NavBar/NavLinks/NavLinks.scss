@@ -1,0 +1,51 @@
+.NavLinks {
+  font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
+  font-weight: bold;
+
+  ul {
+    list-style: none;
+    padding: 0px;
+  }
+
+  li {
+    white-space: nowrap;
+    position: relative;
+    &:hover {
+      background-color: #d5d5d5;
+    }
+
+    a {
+      text-decoration: none;
+      color: #216eb0;
+      display: block;
+      padding: 0 0.5rem 0 0.5rem;
+
+      svg {
+        width: 1.35rem;
+        height: 1.35rem;
+        margin: 1rem 0.25rem 1rem 0.25rem;
+      }
+
+      span {
+        margin-left: 0.5rem;
+        position: absolute;
+        left: 2.5rem;
+        top: 1.25rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1700px){
+  .NavLinks ul li a {
+    span {
+      left: 2rem;
+      top: 1.35rem;
+      font-size: 0.8rem;
+    }
+    svg {
+      margin: 1rem 0 1rem 0;
+    }
+  }
+}

@@ -1,17 +1,21 @@
-# Basic React Project Starter
+## Portfolio React Project
 
-The name says it all.
-Webpack based React starter. Files and folder structure.
+A simple react site to use for displaying your portfolio. Some of the technologies used include:
 * redux & redux-thunk
 * react-router
 * babel
-* eslint(airbnb + some extras)
+* eslint (airbnb + extras)
 * redux devTools
+* sass
+* react-scrollchor for window scrolling
+* react-icons (Awesome Font and Material icons support)
+* webpack
 
-Some webpack config for separating vendor files, cache-busting, separating css files, img loading
-
-```
-git clone git@github.com:mathemagics/react-starter.git
+## Installation
+```bash
+git clone git@github.com:cgsimmons/portfolio-react.git
 npm install
 npm run serve
 ```
+
+This will run the webpack development server locally. Simply visit http://localhost:8080 to check it out.

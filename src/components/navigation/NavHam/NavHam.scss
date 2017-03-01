@@ -1,0 +1,32 @@
+.NavHam {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  height: 45px;
+  width: 100%;
+  background-color: #ededed;
+  button {
+    background-color: #ededed;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    &:focus, &:active {
+      outline: 0;
+    }
+    svg {
+      width: 24.3px;
+      height: 24.3px;
+    }
+  }
+}
+
+@media all and (max-width: 770px) {
+  .NavHam {
+    visibility: visible;
+  }
+  .app-body .app-content {
+    margin-top: 45px;
+  }
+}

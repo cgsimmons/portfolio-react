@@ -6,7 +6,7 @@ import IndexPage from './components/IndexPage/IndexPage';
 
 export default () => {
   return (
-    <Router history={hashHistory}>
+    <Router history={hashHistory} >
       <Route path="/" component={Layout}>
         <IndexRoute component={IndexPage} />
       </Route>

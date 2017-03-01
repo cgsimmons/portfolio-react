@@ -1,20 +1,33 @@
 import React from 'react';
-import NavBar from '../NavBar/NavBar';
-import s from './style.css';
+import { connect } from 'react-redux';
+import NavBar from '../navigation/NavBar/NavBar';
+import NavHam from '../navigation/NavHam/NavHam';
+import './style.scss';
 
-export default (props) => {
-  return (
+class Layout extends React.Component {
+  render() {
+    return (
 
-    <div className="app-container">
-      <header>
-        <NavBar />
-      </header>
-      <div className="app-body">
-        <div className="app-content">
-          {props.children}
+      <div className="app-container">
+        <header>
+          <NavHam />
+        </header>
+        <div className="app-body">
+          <NavBar />
+          <div className={`app-content${this.props.isNavBarHovering ? ' shift-content' : ''}`}>
+            {this.props.children}
+          </div>
         </div>
+        <footer />
       </div>
-      <footer />
-    </div>
-  );
+    );
+  }
+}
+
+const mapStateToProps = (state) => {
+  return {
+    isNavBarHovering: state.navBar.hovering,
+  };
 };
+
+export default connect(mapStateToProps, null)(Layout);

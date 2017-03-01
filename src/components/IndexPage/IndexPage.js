@@ -1,9 +1,12 @@
 import React from 'react';
-import Education from '../Education/Education';
-import Skills from '../Skills/Skills';
-import Portfolio from '../Portfolio/Portfolio';
-import Work from '../Work/Work';
-import s from './IndexPage.css';
+import Education from '../sections/Education/Education';
+import Skills from '../sections/Skills/Skills';
+import Portfolio from '../sections/Portfolio/Portfolio';
+import Work from '../sections/Work/Work';
+import About from '../sections/About/About';
+import Volunteer from '../sections/Volunteer/Volunteer';
+import Interests from '../sections/Interests/Interests';
+import './IndexPage.css';
 
 export default () => {
   return (
@@ -11,10 +14,14 @@ export default () => {
       <div className="banner">
         <h1>Chris Simmons Site!</h1>
       </div>
-      <Education />
+      <About />
       <Skills />
-      <Work />
       <Portfolio />
+      <Education />
+      <Work />
+      <Volunteer />
+      <Interests />
+
     </div>
   );
 };
