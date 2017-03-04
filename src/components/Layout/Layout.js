@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import NavBar from '../navigation/NavBar/NavBar';
 import NavHam from '../navigation/NavHam/NavHam';
+import Footer from '../Footer/Footer';
 import { setNavBarHover } from '../../actions/NavBarActions';
 import './style.scss';
 
@@ -23,9 +24,11 @@ class Layout extends React.Component {
             onClick={this.handleClick}
           >
             {this.props.children}
+            <footer>
+              <Footer />
+            </footer>
           </div>
         </div>
-        <footer />
       </div>
     );
   }
