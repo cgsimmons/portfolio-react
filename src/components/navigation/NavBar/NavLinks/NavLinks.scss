@@ -11,6 +11,9 @@
     white-space: nowrap;
     position: relative;
     &:hover {
+      & svg{
+        background-color: #eaeaea;
+      }
       background-color: #d5d5d5;
     }
 
@@ -24,6 +27,8 @@
         width: 1.35rem;
         height: 1.35rem;
         margin: 1rem 0.25rem 1rem 0.25rem;
+        padding: 0.2rem;
+        border-radius: 1rem;
       }
 
       span {

@@ -2,6 +2,6 @@ import React from 'react';
 
 export default () => {
   return (
-    <div id="Work" className="section">Work History</div>
+    <div id="Interests" className="section">Interests</div>
   );
 };
