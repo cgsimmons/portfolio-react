@@ -29,7 +29,8 @@ const mapStateToProps = (state) => {
 };
 const mapDispatchToProps = (dispatch) => {
   return {
-    setHover: (hover) => { dispatch(setNavBarHover(hover)); },
+    setHover: (hover) => {
+      dispatch(setNavBarHover(hover)); },
   };
 };
 
