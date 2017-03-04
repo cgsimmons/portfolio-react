@@ -1,4 +1,5 @@
 import React from 'react';
+import Banner from '../Banner/Banner';
 import Education from '../sections/Education/Education';
 import Skills from '../sections/Skills/Skills';
 import Portfolio from '../sections/Portfolio/Portfolio';
@@ -11,9 +12,7 @@ import './IndexPage.css';
 export default () => {
   return (
     <div className="IndexPage">
-      <div className="banner">
-        <h1>Chris Simmons Site!</h1>
-      </div>
+      <Banner />
       <About />
       <Skills />
       <Portfolio />

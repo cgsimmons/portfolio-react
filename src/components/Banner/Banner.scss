@@ -1,0 +1,14 @@
+.Banner {
+  background-color: #00bcd4;
+  background-image: url("../../assets/images/rain.jpg");
+  background-size: cover;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  height: 100vh;
+}
+
+@media all and (max-width: 770px) {
+  .Banner {
+    margin-bottom: 0;
+  }
+}
