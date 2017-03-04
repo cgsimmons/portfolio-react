@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FaBars from 'react-icons/lib/fa/bars';
 import { setNavBarHover } from '../../../actions/NavBarActions';
 import './NavHam.scss';
 
@@ -13,12 +12,12 @@ class NavHam extends React.Component {
   render() {
     return (
       <div className="NavHam">
-        <button
-          className="NavHam-button"
+        <a
+          className={this.props.isHovering ? 'hovering' : ''}
           onClick={this.handleClick}
         >
-          <FaBars />
-        </button>
+          <span />
+        </a>
       </div>
     );
   }

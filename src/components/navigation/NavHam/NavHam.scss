@@ -5,19 +5,37 @@
   height: 45px;
   width: 100%;
   background-color: #ededed;
-  button {
-    background-color: #ededed;
-    width: 45px;
-    height: 45px;
-    padding: 0;
-    border: none;
+  a {
+    position: absolute;
+    margin: 0.55rem;
     cursor: pointer;
-    &:focus, &:active {
-      outline: 0;
+    padding: 10px 35px 16px 0px;
+    span, span:before, span:after {
+      cursor: pointer;
+      border-radius: 1px;
+      height: 5px;
+      width: 35px;
+      background: #b1b1b1;
+      position: absolute;
+      display: block;
+      content: '';
+      transition: all 300ms ease-in-out;
     }
-    svg {
-      width: 24.3px;
-      height: 24.3px;
+    span:before{
+      top: -10px;
+    }
+    span:after {
+      bottom: -10px;
+    }
+    &.hovering span:before {
+      transform: rotate(-27deg);
+      width: 20px;
+      top: -5px;
+    }
+    &.hovering span:after {
+      transform: rotate(27deg);
+      width: 20px;
+      bottom: -5px;
     }
   }
 }
