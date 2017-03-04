@@ -28,6 +28,8 @@ body {
   .shift-content {
     margin-left: 10rem;
     margin-right: -10rem;
+    background-color: rgba(0,0,0,0.45);
+    opacity: 0.3;
   }
 }
 
@@ -38,6 +40,8 @@ body {
   .shift-content {
     margin-left: 10rem;
     margin-right: -10rem;
+    background-color: rgba(0,0,0,0.1);
+    opacity: 0.3;
   }
   .section {
     padding-top: 1rem;
