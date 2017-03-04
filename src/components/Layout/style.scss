@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+.app-body{
+  overflow-x: hidden;
+}
+
 .app-content{
   @include contentAnimation();
   margin: 0 0 0 12.95rem;
