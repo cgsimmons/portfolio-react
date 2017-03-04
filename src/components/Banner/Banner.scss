@@ -27,9 +27,10 @@
        -1px 1px 35px #000,
         1px 1px 35px #000;
     span {
-      font: 2.55rem 'Rubik-Regular';
+      display: inline-block;
+      font: 4rem 'Rubik-Regular';
       &.lastName {
-        font: 2rem 'Rubik-Bold';
+        font: 3rem 'Rubik-Bold';
         -webkit-text-stroke: 1px black;
         color: #f0f0f0;
       }
@@ -45,5 +46,14 @@
 @media all and (max-width: 770px) {
   .Banner {
     margin-bottom: 0;
+    h1 {
+      span {
+        font: 2.55rem 'Rubik-Regular';
+        &.lastName {
+          font: 2rem 'Rubik-Bold';
+          margin: -0.5rem 0 0 6rem;
+        }
+      }
+    }
   }
 }
