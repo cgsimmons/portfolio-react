@@ -45,11 +45,11 @@
 }
 
 @mixin navAnimation() {
-  @include baseAnimation();
+  @include baseDuration();
   @include transformWidth();
 }
 
 @mixin contentAnimation() {
-  @include baseAnimation();
+  @include baseDuration();
   @include transformMargin();
 }
