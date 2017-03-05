@@ -1,16 +1,20 @@
-@mixin baseAnimation() {
+@mixin baseDelay() {
   -webkit-transition-delay: 0.1s;
   -moz-transition-delay: 0.1s;
   -ms-transition-delay: 0.1s;
   -o-transition-delay: 0.1s;
   transition-delay: 0.1s;
+}
 
+@mixin baseDuration() {
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -ms-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
+}
 
+@mixin baseEase() {
   -webkit-transition-timing-function: ease-in-out;
   -moz-transition-timing-function: ease-in-out;
   -ms-transition-timing-function: ease-in-out;
@@ -18,8 +22,13 @@
   transition-timing-function: ease-in-out;
 }
 
-@mixin navAnimation() {
-  @include baseAnimation();
+@mixin baseAnimation() {
+  @include baseDelay();
+  @include baseDuration();
+  @include baseEase();
+}
+
+@mixin transformWidth() {
   -webkit-transition-property: -webkit-transform,width;
   -moz-transition-property: -moz-transform,width;
   -ms-transition-property: -ms-transform,width;
@@ -27,11 +36,20 @@
   transition-property: transform,width;
 }
 
-@mixin contentAnimation() {
-  @include baseAnimation();
+@mixin transformMargin() {
   -webkit-transition-property: -webkit-transform,margin;
   -moz-transition-property: -moz-transform,margin;
   -ms-transition-property: -ms-transform,margin;
   -o-transition-property: -o-transform,margin;
   transition-property: transform,margin;
+}
+
+@mixin navAnimation() {
+  @include baseAnimation();
+  @include transformWidth();
+}
+
+@mixin contentAnimation() {
+  @include baseAnimation();
+  @include transformMargin();
 }

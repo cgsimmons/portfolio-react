@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Rubik-Bold';
+  src: url("../../assets/fonts/Rubik-Bold.ttf"); font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik-Regular';
+  src: url("../../assets/fonts/Rubik-Regular.ttf"); font-weight: normal;
+  font-style: normal;
+}
+
+.Banner {
+  background-color: #00bcd4;
+  background-image: url("../../assets/images/rain.jpg");
+  background-size: cover;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  height: 100vh;
+  h1 {
+    text-align: center;
+    margin-top: 5rem;
+    color: black;
+    text-shadow:
+      3px 3px 35px #A7A7A7,
+      -1px -1px 35px #000,
+       1px -1px 35px #000,
+       -1px 1px 35px #000,
+        1px 1px 35px #000;
+    span {
+      display: inline-block;
+      font: 4rem 'Rubik-Regular';
+      &.lastName {
+        font: 3rem 'Rubik-Bold';
+        -webkit-text-stroke: 1px black;
+        color: #f0f0f0;
+      }
+      &.overlay {
+        position: absolute;
+        text-shadow: none;
+        color: #f0f0f0;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 770px) {
+  .Banner {
+    margin-bottom: 0;
+    h1 {
+      span {
+        font: 2.55rem 'Rubik-Regular';
+        &.lastName {
+          font: 2rem 'Rubik-Bold';
+          margin: -0.5rem 0 0 6rem;
+        }
+      }
+    }
+  }
+}

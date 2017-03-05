@@ -11,12 +11,12 @@
     white-space: nowrap;
     position: relative;
     &:hover {
-      background-color: #d5d5d5;
+      background-color: #3f3f3f;
     }
 
     a {
       text-decoration: none;
-      color: #216eb0;
+      color: #44b1e4;
       display: block;
       padding: 0 0.5rem 0 0.5rem;
 
@@ -32,6 +32,7 @@
         left: 2.5rem;
         top: 1.25rem;
         font-size: 0.9rem;
+        color: #d7e3ed;
       }
     }
   }

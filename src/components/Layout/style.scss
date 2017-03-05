@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+.app-body{
+  overflow-x: hidden;
+}
+
 .app-content{
   @include contentAnimation();
   margin: 0 0 0 12.95rem;
@@ -28,6 +32,8 @@ body {
   .shift-content {
     margin-left: 10rem;
     margin-right: -10rem;
+    background-color: rgba(0,0,0,0.45);
+    opacity: 0.8;
   }
 }
 
@@ -38,6 +44,7 @@ body {
   .shift-content {
     margin-left: 10rem;
     margin-right: -10rem;
+    background-color: rgba(0,0,0,0.45);
   }
   .section {
     padding-top: 1rem;
