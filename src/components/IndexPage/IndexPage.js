@@ -32,7 +32,6 @@ class IndexPage extends React.Component {
   render() {
     return (
       <div className="IndexPage">
-        <h1>Hey there {this.props.position}</h1>
         <Banner />
         <About />
         <Skills />
