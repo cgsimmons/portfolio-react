@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import { navBar } from './NavBarReducers';
+import { navBar } from './NavBarReducer';
+import { scrollPosition } from './ScrollReducer';
 
 export default combineReducers({
   navBar,
+  scrollPosition,
 });

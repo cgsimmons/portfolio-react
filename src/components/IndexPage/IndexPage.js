@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Banner from '../Banner/Banner';
 import Education from '../sections/Education/Education';
 import Skills from '../sections/Skills/Skills';
@@ -7,20 +8,57 @@ import Work from '../sections/Work/Work';
 import About from '../sections/About/About';
 import Volunteer from '../sections/Volunteer/Volunteer';
 import Interests from '../sections/Interests/Interests';
+import { setScrollOffset } from '../../actions/ScrollActions';
 import './IndexPage.css';
 
-export default () => {
-  return (
-    <div className="IndexPage">
-      <Banner />
-      <About />
-      <Skills />
-      <Portfolio />
-      <Education />
-      <Work />
-      <Volunteer />
-      <Interests />
+class IndexPage extends React.Component {
 
-    </div>
-  );
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleClick = () => {
+    this.props.setHover(false);
+  }
+
+  handleScroll = () => {
+    this.props.setOffset(window.scrollY);
+  }
+
+  render() {
+    return (
+      <div className="IndexPage">
+        <h1>Hey there {this.props.position}</h1>
+        <Banner />
+        <About />
+        <Skills />
+        <Portfolio />
+        <Education />
+        <Work />
+        <Volunteer />
+        <Interests />
+
+      </div>
+    );
+  }
+}
+
+const mapStateToProps = (state) => {
+  return {
+    position: state.scrollPosition.offset,
+  };
 };
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setOffset: (offset) => {
+      dispatch(setScrollOffset(offset));
+    },
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(IndexPage);
