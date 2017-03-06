@@ -6,7 +6,7 @@ class About extends React.Component {
 
   componentDidMount() {
     const rect = this.node.getBoundingClientRect();
-    this.props.setSectionOffset('About', rect.top);
+    this.props.setSectionOffset('About', rect.top + window.scrollY);
   }
 
   render() {

@@ -4,3 +4,10 @@ export function setNavBarHover(hover) {
     hover,
   };
 }
+
+export function setActive(active) {
+  return {
+    type: 'SET_ACTIVE',
+    active,
+  };
+}

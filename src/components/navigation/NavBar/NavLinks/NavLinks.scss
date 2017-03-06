@@ -1,3 +1,6 @@
+@import '../../../Layout/animations';
+
+
 .NavLinks {
   font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
   font-weight: bold;
@@ -10,7 +13,8 @@
   li {
     white-space: nowrap;
     position: relative;
-    &:hover {
+
+    &:hover, &.active {
       background-color: #3f3f3f;
     }
 

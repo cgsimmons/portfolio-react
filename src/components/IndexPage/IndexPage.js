@@ -8,21 +8,39 @@ import Work from '../sections/Work/Work';
 import About from '../sections/About/About';
 import Volunteer from '../sections/Volunteer/Volunteer';
 import Interests from '../sections/Interests/Interests';
-import { setScrollOffset } from '../../actions/ScrollActions';
+import { setActive } from '../../actions/NavBarActions';
 import './IndexPage.css';
 
 class IndexPage extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    setActive();
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
+  setActive = () => {
+    const active = this.findActive(window.scrollY, this.props.sections);
+    if (active && active !== this.props.active) {
+      this.props.setActive(active);
+    }
+  }
+
+  findActive = (offset, sections) => {
+    let active = '';
+    Object.keys(sections).forEach((key) => {
+      if (sections[key] >= offset - 50 && sections[key] <= offset + 50) {
+        active = key;
+      }
+    });
+    return active;
+  }
+
   handleScroll = () => {
-    this.props.setOffset(window.scrollY);
+    this.setActive();
   }
 
   render() {
@@ -43,14 +61,15 @@ class IndexPage extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    position: state.scrollPosition.offset,
+    active: state.navBar.active,
+    sections: state.sectionOffsets,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    setOffset: (offset) => {
-      dispatch(setScrollOffset(offset));
+    setActive: (name) => {
+      dispatch(setActive(name));
     },
   };
 };

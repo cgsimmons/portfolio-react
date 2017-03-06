@@ -5,11 +5,3 @@ export function setOffset(section, offset) {
     offset,
   };
 }
-
-export function setActive(section, active) {
-  return {
-    type: 'SET_ACTIVE',
-    section,
-    active,
-  };
-}
