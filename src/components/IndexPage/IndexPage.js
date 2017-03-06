@@ -21,10 +21,6 @@ class IndexPage extends React.Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
-  handleClick = () => {
-    this.props.setHover(false);
-  }
-
   handleScroll = () => {
     this.props.setOffset(window.scrollY);
   }
@@ -40,7 +36,6 @@ class IndexPage extends React.Component {
         <Work />
         <Volunteer />
         <Interests />
-
       </div>
     );
   }

@@ -8,6 +8,10 @@ import './style.scss';
 
 class Layout extends React.Component {
 
+  handleClick = () => {
+    this.props.setHover(false);
+  }
+
   render() {
     return (
 

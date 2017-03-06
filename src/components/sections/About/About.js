@@ -1,7 +1,30 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { setOffset } from '../../../actions/SectionActions';
 
-export default () => {
-  return (
-    <div id="About" className="section">About</div>
-  );
+class About extends React.Component {
+
+  componentDidMount() {
+    const rect = this.node.getBoundingClientRect();
+    this.props.setSectionOffset('About', rect.top);
+  }
+
+  render() {
+    return (
+      <div
+        id="About"
+        className="section"
+        ref={(node) => { return (this.node = node); }}
+      >About
+      </div>
+    );
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setSectionOffset: (name, offset) => { dispatch(setOffset(name, offset)); },
+  };
 };
+
+export default connect(null, mapDispatchToProps)(About);
