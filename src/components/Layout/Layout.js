@@ -7,9 +7,11 @@ import { setNavBarHover } from '../../actions/NavBarActions';
 import './style.scss';
 
 class Layout extends React.Component {
+
   handleClick = () => {
     this.props.setHover(false);
   }
+
   render() {
     return (
 

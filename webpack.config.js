@@ -26,8 +26,8 @@ const config = {
       },
       {
         test: /\.(css|scss)$/,
-        loader: ExtractTextPlugin.extract({
-          loader: [
+        use: ExtractTextPlugin.extract({
+          use: [
             'css-loader',
             'sass-loader',
           ],
