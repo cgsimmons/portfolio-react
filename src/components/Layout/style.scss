@@ -1,11 +1,15 @@
 @import 'animations';
+@import 'fonts';
+@include Rubik-Bold();
+@include Rubik-Regular();
 
 html {
 
 }
 
 body {
-  font: 14px "Roboto", Helvetica, Arial, sans-serif;
+  font: 14px "Rubik-Regular", Helvetica, Arial, sans-serif;
+  color: #595858;
   background-color: rgb(245,248,250);
   margin: 0;
 }
@@ -42,8 +46,5 @@ and (max-width: 770px) {
   }
   .shift-content {
     background-color: rgba(0,0,0,0.45);
-  }
-  .section {
-    padding-top: 1rem;
   }
 }

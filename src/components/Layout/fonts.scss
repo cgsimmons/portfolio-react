@@ -1,0 +1,15 @@
+@mixin Rubik-Bold() {
+  @font-face {
+    font-family: 'Rubik-Bold';
+    src: url("../../assets/fonts/Rubik-Bold.ttf"); font-weight: bold;
+    font-style: normal;
+  }
+}
+
+@mixin Rubik-Regular() {
+  @font-face {
+    font-family: 'Rubik-Regular';
+    src: url("../../assets/fonts/Rubik-Regular.ttf"); font-weight: normal;
+    font-style: normal;
+  }
+}
