@@ -7,50 +7,30 @@
 }
 
 @mixin baseDuration() {
-  -webkit-transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  -ms-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
-@mixin baseEase() {
-  -webkit-transition-timing-function: cubic-bezier(.21,1.24,.55,1.08);
-  -moz-transition-timing-function: cubic-bezier(.21,1.24,.55,1.08);
-  -ms-transition-timing-function: cubic-bezier(.21,1.24,.55,1.08);
-  -o-transition-timing-function: cubic-bezier(.21,1.24,.55,1.08);
-  transition-timing-function: cubic-bezier(.21,1.24,.55,1.08);
-}
+// @mixin baseEase() {
+//   -webkit-transition-timing-function: cubiz-bezier(.05,1.11,.98,.98);
+//   -moz-transition-timing-function: cubiz-bezier(.05,1.11,.98,.98);
+//   -ms-transition-timing-function: cubiz-bezier(.05,1.11,.98,.98);
+//   -o-transition-timing-function: cubiz-bezier(.05,1.11,.98,.98);
+//   transition-timing-function: cubiz-bezier(.05,1.11,.98,.98);
+// }
 
 @mixin baseAnimation() {
   @include baseDelay();
   @include baseDuration();
-  @include baseEase();
-}
-
-@mixin transformWidth() {
-  -webkit-transition-property: -webkit-transform,width;
-  -moz-transition-property: -moz-transform,width;
-  -ms-transition-property: -ms-transform,width;
-  -o-transition-property: -o-transform,width;
-  transition-property: transform,width;
-}
-
-@mixin transformMargin() {
-  -webkit-transition-property: -webkit-transform,margin;
-  -moz-transition-property: -moz-transform,margin;
-  -ms-transition-property: -ms-transform,margin;
-  -o-transition-property: -o-transform,margin;
-  transition-property: transform,margin;
 }
 
 @mixin navAnimation() {
-  @include baseEase();
-  @include baseDuration();
-  // @include transformWidth();
+  @include baseAnimation();
 }
 
 @mixin contentAnimation() {
-  @include baseEase();
-  @include baseDuration();
+  @include baseAnimation();
 }

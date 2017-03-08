@@ -24,18 +24,24 @@
     text-align: center;
     margin-top: 5rem;
     color: black;
-    text-shadow:
-      3px 3px 35px #A7A7A7,
-      -1px -1px 35px #6F6F6F,
-       1px -1px 35px #CCC,
-       -1px 1px 35px #000,
-        1px 1px 35px #000;
     span {
       display: inline-block;
       font: 4rem 'Rubik-Regular';
+      &.firstName {
+        text-shadow:
+        2px 2px 2px #000,
+        -1px -1px 35px #FFF,
+        1px -1px 35px #FFF,
+        -1px 1px 35px #FFEDED,
+        1px 1px 35px #000;
+      }
       &.lastName {
         font: 3rem 'Rubik-Bold';
         color: #000;
+        text-shadow:
+           3px 3px 35px #A7A7A7,
+           -1px -1px 35px #6F6F6F,
+           1px -1px 35px #CCC;
       }
       &.overlay {
         position: absolute;
