@@ -7,7 +7,7 @@
   background-color: #00bcd4;
   background-image: url("../../assets/images/rain_sm.jpg");
   background-size: cover;
-  padding: 1rem;
+  padding: 0;
   height: 100vh;
   .banner-fade {
     background: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
@@ -19,36 +19,29 @@
     top: 0;
     left: 0;
   }
-  h1 {
-    -webkit-transform: translateZ(0px);
-    text-align: center;
-    margin-top: 5rem;
-    color: black;
-    span {
-      display: inline-block;
-      font: 4rem 'Rubik-Regular';
-      &.firstName {
-        text-shadow:
-        2px 2px 2px #000,
-        -1px -1px 35px #FFF,
-        1px -1px 35px #FFF,
-        -1px 1px 35px #FFEDED,
-        1px 1px 35px #000;
-      }
-      &.lastName {
-        font: 3rem 'Rubik-Bold';
-        color: #000;
-        text-shadow:
-           3px 3px 35px #A7A7A7,
-           -1px -1px 35px #6F6F6F,
-           1px -1px 35px #CCC;
-      }
-      &.overlay {
-        position: absolute;
-        text-shadow: none;
-        color: #f0f0f0;
-      }
+  .name {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    h1 {
+      // -webkit-transform: translateZ(0px);
+      // text-align: center;
+      margin: 0 0 0 0;
+
+      font: 8rem 'Rubik-Regular';
+      color: rgba(206,206,206,0.4);
+      word-wrap: break-word;
+      line-height: 0.8;
+      text-align: right;
+      width: 100%;
     }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .Banner .name h1 {
+    font-size: 6rem;
   }
 }
 
@@ -56,14 +49,8 @@
 and (max-width: 770px) {
   .Banner {
     margin-bottom: 0;
-    h1 {
-      span {
-        font: 2.55rem 'Rubik-Regular';
-        &.lastName {
-          font: 2rem 'Rubik-Bold';
-          margin: -0.5rem 0 0 6rem;
-        }
-      }
+    .name h1 {
+      font-size: 3rem;
     }
   }
 }
