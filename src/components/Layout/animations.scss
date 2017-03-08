@@ -29,8 +29,10 @@
 
 @mixin navAnimation() {
   @include baseAnimation();
+  -webkit-transform: translateZ(0);
 }
 
 @mixin contentAnimation() {
-  @include baseAnimation();
+  @include baseDuration();
+  // -webkit-transform: translateZ(0);
 }
