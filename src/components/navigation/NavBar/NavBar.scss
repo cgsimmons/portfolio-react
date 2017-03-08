@@ -1,9 +1,9 @@
 @import '../../Layout/animations';
 
 .NavBar {
-  background-color: #0E0E0C;
   width: 13rem;
   height: 100%;
+  background-color: #0E0E0C;
   overflow-x: hidden;
   display: inline-block;
   position: fixed;
@@ -44,6 +44,6 @@
 and (max-width: 770px) {
   .NavBar {
     width: 0;
-    margin-top: 2.5rem;
+    margin-top: 45px;
   }
 }

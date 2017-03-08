@@ -8,11 +8,13 @@
   ul {
     list-style: none;
     padding: 0px;
+    margin-top: 0;
   }
 
   li {
     white-space: nowrap;
     position: relative;
+    background-color: #0E0E0C;
 
     &:hover, &.active {
       background-color: #3f3f3f;
