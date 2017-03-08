@@ -7,19 +7,19 @@
 }
 
 @mixin baseDuration() {
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 @mixin baseEase() {
-  -webkit-transition-timing-function: ease-in-out;
-  -moz-transition-timing-function: ease-in-out;
-  -ms-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: cubic-bezier(.21,1.24,.55,1.08);
+  -moz-transition-timing-function: cubic-bezier(.21,1.24,.55,1.08);
+  -ms-transition-timing-function: cubic-bezier(.21,1.24,.55,1.08);
+  -o-transition-timing-function: cubic-bezier(.21,1.24,.55,1.08);
+  transition-timing-function: cubic-bezier(.21,1.24,.55,1.08);
 }
 
 @mixin baseAnimation() {
@@ -45,10 +45,12 @@
 }
 
 @mixin navAnimation() {
+  @include baseEase();
   @include baseDuration();
   // @include transformWidth();
 }
 
 @mixin contentAnimation() {
+  @include baseEase();
   @include baseDuration();
 }
