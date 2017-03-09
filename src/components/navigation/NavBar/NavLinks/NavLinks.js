@@ -41,7 +41,7 @@ class NavLinks extends React.Component {
           >
             <Scrollchor
               to="#About"
-              animate={{ offset: 0, duration: 800 }}
+              animate={{ offset: 5, duration: 800 }}
               afterAnimate={this.handleClick}
             >
               <FaInfoCircle />
@@ -54,7 +54,7 @@ class NavLinks extends React.Component {
           >
             <Scrollchor
               to="#Skills"
-              animate={{ offset: 0, duration: 800 }}
+              animate={{ offset: 5, duration: 800 }}
               afterAnimate={this.handleClick}
             >
               <FaCode />
@@ -67,7 +67,7 @@ class NavLinks extends React.Component {
           >
             <Scrollchor
               to="#Portfolio"
-              animate={{ offset: 0, duration: 800 }}
+              animate={{ offset: 5, duration: 800 }}
               afterAnimate={this.handleClick}
             >
               <MdWork />
@@ -80,7 +80,7 @@ class NavLinks extends React.Component {
           >
             <Scrollchor
               to="#Education"
-              animate={{ offset: 0, duration: 800 }}
+              animate={{ offset: 5, duration: 800 }}
               afterAnimate={this.handleClick}
             >
               <FaGraduationCap />
@@ -93,7 +93,7 @@ class NavLinks extends React.Component {
           >
             <Scrollchor
               to="#Work"
-              animate={{ offset: 0, duration: 800 }}
+              animate={{ offset: 5, duration: 800 }}
               afterAnimate={this.handleClick}
             >
               <FaBlackTie />
@@ -106,7 +106,7 @@ class NavLinks extends React.Component {
           >
             <Scrollchor
               to="#Volunteer"
-              animate={{ offset: 0, duration: 800 }}
+              animate={{ offset: 5, duration: 800 }}
               afterAnimate={this.handleClick}
             >
               <FaHeart />
@@ -119,7 +119,7 @@ class NavLinks extends React.Component {
           >
             <Scrollchor
               to="#Interests"
-              animate={{ offset: 0, duration: 800 }}
+              animate={{ offset: 5, duration: 800 }}
               afterAnimate={this.handleClick}
             >
               <FaThumbsOUp />
