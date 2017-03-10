@@ -18,6 +18,7 @@ class About extends React.Component {
         className="section"
         ref={(node) => { return (this.node = node); }}
       >
+        <h2 className="section-title">About</h2>
         <div className="img-container">
           <img
             alt={'Profile'}

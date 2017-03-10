@@ -1,9 +1,14 @@
 .section {
   margin: 0;
-  padding: 8rem;
+  padding: 7rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  h2 {
+    font-size: 3rem;
+    margin: 0;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1700px) {
@@ -19,7 +24,7 @@
 
 @media only screen and (max-width: 770px) {
   .section {
-    padding: 0;
+    padding: 3rem 0.5rem 2rem 0.5rem;
     justify-content: space-around;
   }
 }

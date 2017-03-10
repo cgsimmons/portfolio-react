@@ -1,6 +1,45 @@
 #Skills {
   background-color: #89c6d4;
+
+  div {
+    display: flex;
+    flex-wrap:wrap;
+    flex-grow: 1;
+    max-width: 40%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #ececec;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem #888888;
+
+    h3 {
+      text-align: center;
+      background-color: #9c95ce;
+      color: #ececec;
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
+      margin: -1rem -1rem 1rem -1rem;
+      padding: 1rem;
+      width: 100%;
+      font-size: 2rem;
+      //
+      // background: rgb(68, 177, 228);
+      // color: white;
+      // margin: -1rem -1rem 1rem -1rem;
+      // padding: 1rem;
+      // border-top-left-radius: 1rem;
+      // border-top-right-radius: 1rem;
+    }
+
+    .icon {
+      flex-grow: 1;
+      height: 4rem;
+      margin: 0.3rem;
+    }
+  }
 }
+
+
 
 @media only screen and (max-width: 1700px) {
 
@@ -12,5 +51,9 @@
 
 @media only screen
 and (max-width: 770px) {
-
+  #Skills {
+    div {
+      max-width: 80%;
+    }
+  }
 }
