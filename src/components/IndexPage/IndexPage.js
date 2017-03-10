@@ -9,7 +9,7 @@ import About from '../sections/About/About';
 import Volunteer from '../sections/Volunteer/Volunteer';
 import Interests from '../sections/Interests/Interests';
 import { setActive } from '../../actions/NavBarActions';
-import './IndexPage.css';
+import './IndexPage.scss';
 
 class IndexPage extends React.Component {
 
