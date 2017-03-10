@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { setOffset } from '../../../actions/SectionActions';
 import './Skills.scss';
-import '../../../assets/icons/mfizz/font-mfizz.css';
 import firebase from '../../../assets/icons/firebase-1.svg';
 import ruby from '../../../assets/icons/ruby.svg';
 import python from '../../../assets/icons/python-5.svg';
