@@ -45,7 +45,7 @@ class Skills extends React.Component {
       >
         <h2 className="section-title">Skills</h2>
 
-        <div className="skill-section">
+        <div className="inner-container">
           <h3>Languages</h3>
           <div className="icon-container">
             <img className="icon" alt="Ruby" src={ruby} />
@@ -76,12 +76,11 @@ class Skills extends React.Component {
             <h3 className="skill-name">CSS 3</h3>
           </div>
         </div>
-        <div className="skill-section">
+        <div className="inner-container">
           <h3>Frameworks</h3>
           <div className="icon-container">
             <img className="icon" alt="Ruby on Rails" src={rails} />
-            <h3 className="skill-name">Ruby on Rails</h3><
-            /div>
+            <h3 className="skill-name">Ruby on Rails</h3></div>
           <div className="icon-container">
             <img className="icon" alt="NodeJS" src={nodejs} />
             <h3 className="skill-name">NodeJS</h3>
@@ -100,7 +99,7 @@ class Skills extends React.Component {
           </div>
           <div className="icon-container">
             <img className="icon" alt="Unity" src={unity} />
-            <h3 className="skill-name">Unity</h3>
+            <h3 className="skill-name">Unity 3D</h3>
           </div>
           <div className="icon-container">
             <img className="icon" alt="jQuery" src={jquery} />
@@ -111,7 +110,7 @@ class Skills extends React.Component {
             <h3 className="skill-name">Sass</h3>
           </div>
         </div>
-        <div className="skill-section">
+        <div className="inner-container">
           <h3>Databases</h3>
           <div className="icon-container">
             <img className="icon" alt="MySQL" src={mysql} />
@@ -123,14 +122,14 @@ class Skills extends React.Component {
           </div>
           <div className="icon-container">
             <img className="icon" alt="mongoDB" src={mongoDB} />
-            <h3 className="skill-name">mongoDB</h3>
+            <h3 className="skill-name">MongoDB</h3>
           </div>
           <div className="icon-container">
             <img className="icon" alt="firebase" src={firebase} />
             <h3 className="skill-name">Firebase</h3>
           </div>
         </div>
-        <div className="skill-section">
+        <div className="inner-container">
           <h3>Development Tools</h3>
           <div className="icon-container">
             <img className="icon" alt="Webpack" src={webpack} />

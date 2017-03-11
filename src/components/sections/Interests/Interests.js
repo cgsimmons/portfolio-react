@@ -15,7 +15,8 @@ class Interests extends React.Component {
         id="Interests"
         className="section"
         ref={(node) => { return (this.node = node); }}
-      >Interests
+      >
+        <h2 className="section-title">Interests</h2>
       </div>
     );
   }

@@ -15,7 +15,8 @@ class Volunteer extends React.Component {
         id="Volunteer"
         className="section"
         ref={(node) => { return (this.node = node); }}
-      >Volunteer
+      >
+        <h2 className="section-title">Volunteer</h2>
       </div>
     );
   }
