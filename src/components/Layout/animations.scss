@@ -22,6 +22,28 @@
   transition: opacity 0.2s linear;
 }
 
+@mixin expandBox() {
+  -webkit-transition:height 200ms ease-in;
+  -moz-transition:height 200ms ease-in;
+  -o-transition:height 200ms ease-in;
+  transition:height 200ms ease-in;
+}
+
+@mixin rotateChevronTiming() {
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  -moz-transition:    -moz-transform 0.2s ease-in;
+  -o-transition:      -o-transform 0.2s ease-in;
+  -ms-transition:     -ms-transform 0.2s ease-in;
+  transition:         transform 0.2s ease-in;
+}
+
+@mixin rotateChevron() {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 // @mixin baseEase() {
 //   -webkit-transition-timing-function: cubiz-bezier(.05,1.11,.98,.98);
 //   -moz-transition-timing-function: cubiz-bezier(.05,1.11,.98,.98);

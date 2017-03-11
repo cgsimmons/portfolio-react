@@ -5,6 +5,7 @@ import { setEducationActive } from '../../../actions/EducationActions';
 import WSU from '../../../assets/images/wsu.png';
 import codecore from '../../../assets/images/codecore_square_logo_trimmed.png';
 import bbcc from '../../../assets/images/bbcc_trimmed.png';
+import chevron from '../../../assets/icons/chevron-down.svg';
 import './Education.scss';
 
 class Education extends React.Component {
@@ -35,6 +36,12 @@ class Education extends React.Component {
             className={`bootcamp${this.props.bootcampIsActive ? ' expanded' : ''}`}
             onClick={this.handleClick}
           >12-Week Developer Bootcamp
+          <img
+            className={`bootcamp chevron${this.props.bootcampIsActive ? ' expanded' : ''}`}
+            alt="expand"
+            src={chevron}
+            onClick={this.handleClick}
+          />
           </h3>
           <div
             className={`content${this.props.bootcampIsActive ? ' expanded' : ''}`}
@@ -71,6 +78,12 @@ class Education extends React.Component {
             className={`ba${this.props.baIsActive ? ' expanded' : ''}`}
             onClick={this.handleClick}
           >B.A. in Computer Science
+          <img
+            className={`ba chevron${this.props.baIsActive ? ' expanded' : ''}`}
+            alt="expand"
+            src={chevron}
+            onClick={this.handleClick}
+          />
           </h3>
           <div
             className={`content${this.props.baIsActive ? ' expanded' : ''}`}
@@ -108,7 +121,14 @@ class Education extends React.Component {
           <h3
             className={`aas${this.props.aasIsActive ? ' expanded' : ''}`}
             onClick={this.handleClick}
-          >Associate in Arts and Science</h3>
+          >Associate in Arts and Science
+          <img
+            className={`aas chevron${this.props.aasIsActive ? ' expanded' : ''}`}
+            alt="expand"
+            src={chevron}
+            onClick={this.handleClick}
+          />
+          </h3>
           <div
             className={`content${this.props.aasIsActive ? ' expanded' : ''}`}
           >
