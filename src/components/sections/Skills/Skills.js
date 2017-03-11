@@ -26,6 +26,7 @@ import aws from '../../../assets/icons/aws.svg';
 import heroku from '../../../assets/icons/heroku.svg';
 import git from '../../../assets/icons/git.svg';
 import babel from '../../../assets/icons/babel.svg';
+import redux from '../../../assets/icons/redux.svg';
 
 
 class Skills extends React.Component {
@@ -44,41 +45,117 @@ class Skills extends React.Component {
       >
         <h2 className="section-title">Skills</h2>
 
-        <div className="languages">
+        <div className="skill-section">
           <h3>Languages</h3>
-          <img className="icon" alt="Ruby" src={ruby} />
-          <img className="icon" alt="Python" src={python} />
-          <img className="icon" alt="Javascript" src={javascript} />
-          <img className="icon" alt="Java" src={java} />
-          <img className="icon" alt="C++" src={cplusplus} />
-          <img className="icon" alt="HTML 5" src={html} />
-          <img className="icon" alt="CSS 3" src={css3} />
+          <div className="icon-container">
+            <img className="icon" alt="Ruby" src={ruby} />
+            <h3 className="skill-name">Ruby</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="Python" src={python} />
+            <h3 className="skill-name">Python</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="Javascript" src={javascript} />
+            <h3 className="skill-name">Javascript</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="Java" src={java} />
+            <h3 className="skill-name">Java</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="C++" src={cplusplus} />
+            <h3 className="skill-name">C++</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="HTML 5" src={html} />
+            <h3 className="skill-name">HTML 5</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="CSS 3" src={css3} />
+            <h3 className="skill-name">CSS 3</h3>
+          </div>
         </div>
-        <div className="frameworks">
+        <div className="skill-section">
           <h3>Frameworks</h3>
-          <img className="icon" alt="Ruby on Rails" src={rails} />
-          <img className="icon" alt="NodeJS" src={nodejs} />
-          <img className="icon" alt="React" src={react} />
-          <img className="icon" alt="Android" src={android} />
-          <img className="icon" alt="Unity" src={unity} />
-          <img className="icon" alt="jQuery" src={jquery} />
-          <img className="icon" alt="Sass" src={sass} />
+          <div className="icon-container">
+            <img className="icon" alt="Ruby on Rails" src={rails} />
+            <h3 className="skill-name">Ruby on Rails</h3><
+            /div>
+          <div className="icon-container">
+            <img className="icon" alt="NodeJS" src={nodejs} />
+            <h3 className="skill-name">NodeJS</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="React" src={react} />
+            <h3 className="skill-name">React / Native</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="Redux" src={redux} />
+            <h3 className="skill-name">Redux</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="Android" src={android} />
+            <h3 className="skill-name">Android</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="Unity" src={unity} />
+            <h3 className="skill-name">Unity</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="jQuery" src={jquery} />
+            <h3 className="skill-name">jQuery</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="Sass" src={sass} />
+            <h3 className="skill-name">Sass</h3>
+          </div>
         </div>
-        <div className="databases">
+        <div className="skill-section">
           <h3>Databases</h3>
-          <img className="icon" alt="MySQL" src={mysql} />
-          <img className="icon" alt="PostgreSQL" src={postgresql} />
-          <img className="icon" alt="mongoDB" src={mongoDB} />
-          <img className="icon" alt="firebase" src={firebase} />
+          <div className="icon-container">
+            <img className="icon" alt="MySQL" src={mysql} />
+            <h3 className="skill-name">MySQL</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="PostgreSQL" src={postgresql} />
+            <h3 className="skill-name">PostgreSQL</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="mongoDB" src={mongoDB} />
+            <h3 className="skill-name">mongoDB</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="firebase" src={firebase} />
+            <h3 className="skill-name">Firebase</h3>
+          </div>
         </div>
-        <div className="tools">
+        <div className="skill-section">
           <h3>Development Tools</h3>
-          <img className="icon" alt="Webpack" src={webpack} />
-          <img className="icon" alt="Docker" src={docker} />
-          <img className="icon" alt="AWS" src={aws} />
-          <img className="icon" alt="Heroku" src={heroku} />
-          <img className="icon" alt="git" src={git} />
-          <img className="icon" alt="babel" src={babel} />
+          <div className="icon-container">
+            <img className="icon" alt="Webpack" src={webpack} />
+            <h3 className="skill-name">Webpack</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="Docker" src={docker} />
+            <h3 className="skill-name">Docker</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="AWS" src={aws} />
+            <h3 className="skill-name">AWS</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="Heroku" src={heroku} />
+            <h3 className="skill-name">Heroku</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="git" src={git} />
+            <h3 className="skill-name">Git</h3>
+          </div>
+          <div className="icon-container">
+            <img className="icon" alt="babel" src={babel} />
+            <h3 className="skill-name">Babel</h3>
+          </div>
         </div>
       </div>
     );
