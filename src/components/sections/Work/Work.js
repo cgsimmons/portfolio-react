@@ -15,7 +15,8 @@ class Work extends React.Component {
         id="Work"
         className="section"
         ref={(node) => { return (this.node = node); }}
-      >Work
+      >
+        <h2 className="section-title">Work</h2>
       </div>
     );
   }

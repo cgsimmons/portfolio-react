@@ -15,7 +15,8 @@ class Portfolio extends React.Component {
         id="Portfolio"
         className="section"
         ref={(node) => { return (this.node = node); }}
-      >Portfolio
+      >
+        <h2 className="section-title">Portfolio</h2>
       </div>
     );
   }
