@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { setOffset } from '../../../actions/SectionActions';
+import { setEducationActive } from '../../../actions/EducationActions';
 import WSU from '../../../assets/images/wsu.png';
 import codecore from '../../../assets/images/codecore_square_logo_trimmed.png';
 import bbcc from '../../../assets/images/bbcc_trimmed.png';
@@ -13,6 +14,12 @@ class Education extends React.Component {
     this.props.setSectionOffset('Education', rect.top + window.scrollY);
   }
 
+  handleClick = (event) => {
+    const section = event.target.className.split(' ')[0];
+    const active = this.props.educationIsActive[section];
+    this.props.setEducationActive(section, !active);
+  }
+
   render() {
     return (
       <div
@@ -21,9 +28,17 @@ class Education extends React.Component {
         ref={(node) => { return (this.node = node); }}
       >
         <h2 className="section-title">Education</h2>
-        <div className="inner-container">
-          <h3>12-Week Developer Bootcamp</h3>
-          <div className="content">
+        <div
+          className={`inner-container${this.props.bootcampIsActive ? ' expanded' : ''}`}
+        >
+          <h3
+            className={`bootcamp${this.props.bootcampIsActive ? ' expanded' : ''}`}
+            onClick={this.handleClick}
+          >12-Week Developer Bootcamp
+          </h3>
+          <div
+            className={`content${this.props.bootcampIsActive ? ' expanded' : ''}`}
+          >
             <div className="left-side">
               <img className="school" alt="codecore" src={codecore} />
               <p>Codecore</p>
@@ -45,9 +60,17 @@ class Education extends React.Component {
             </div>
           </div>
         </div>
-        <div className="inner-container">
-          <h3>B.A. in Computer Science</h3>
-          <div className="content">
+        <div
+          className={`inner-container${this.props.baIsActive ? ' expanded' : ''}`}
+        >
+          <h3
+            className={`ba${this.props.baIsActive ? ' expanded' : ''}`}
+            onClick={this.handleClick}
+          >B.A. in Computer Science
+          </h3>
+          <div
+            className={`content${this.props.baIsActive ? ' expanded' : ''}`}
+          >
             <div className="left-side">
               <img className="school" alt="WSU" src={WSU} />
               <p>Washington State University</p>
@@ -71,9 +94,16 @@ class Education extends React.Component {
             </div>
           </div>
         </div>
-        <div className="inner-container">
-          <h3>Associate in Arts and Science</h3>
-          <div className="content">
+        <div
+          className={`inner-container${this.props.aasIsActive ? ' expanded' : ''}`}
+        >
+          <h3
+            className={`aas${this.props.aasIsActive ? ' expanded' : ''}`}
+            onClick={this.handleClick}
+          >Associate in Arts and Science</h3>
+          <div
+            className={`content${this.props.aasIsActive ? ' expanded' : ''}`}
+          >
             <div className="left-side">
               <img className="school" alt="bbcc" src={bbcc} />
               <p>Big Bend Community College</p>
@@ -101,10 +131,24 @@ class Education extends React.Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapStateToProps = (state) => {
   return {
-    setSectionOffset: (name, offset) => { dispatch(setOffset(name, offset)); },
+    educationIsActive: state.educationActive,
+    bootcampIsActive: state.educationActive.bootcamp,
+    baIsActive: state.educationActive.ba,
+    aasIsActive: state.educationActive.aas,
   };
 };
 
-export default connect(null, mapDispatchToProps)(Education);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setSectionOffset: (name, offset) => {
+      dispatch(setOffset(name, offset));
+    },
+    setEducationActive: (section, active) => {
+      dispatch(setEducationActive(section, active));
+    },
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Education);
