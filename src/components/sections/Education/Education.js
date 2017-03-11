@@ -39,13 +39,17 @@ class Education extends React.Component {
           <div
             className={`content${this.props.bootcampIsActive ? ' expanded' : ''}`}
           >
-            <div className="left-side">
+            <div
+              className={`left-side${this.props.bootcampIsActive ? ' expanded' : ''}`}
+            >
               <img className="school" alt="codecore" src={codecore} />
               <p>Codecore</p>
               <p>Vancouver, BC</p>
               <p>2016</p>
             </div>
-            <div className="right-side">
+            <div
+              className={`right-side${this.props.bootcampIsActive ? ' expanded' : ''}`}
+            >
               <p>Relevant Coursework: </p>
               <ul>
                 <li>Ruby on Rails</li>
@@ -71,14 +75,18 @@ class Education extends React.Component {
           <div
             className={`content${this.props.baIsActive ? ' expanded' : ''}`}
           >
-            <div className="left-side">
+            <div
+              className={`left-side${this.props.baIsActive ? ' expanded' : ''}`}
+            >
               <img className="school" alt="WSU" src={WSU} />
               <p>Washington State University</p>
               <p>Richland, WA</p>
               <p>GPA: 3.58 (cum laude)</p>
               <p>2010</p>
             </div>
-            <div className="right-side">
+            <div
+              className={`right-side${this.props.baIsActive ? ' expanded' : ''}`}
+            >
               <p>Relevant Coursework: </p>
               <ul>
                 <li>Introduction to Artificial Intelligence</li>
@@ -104,14 +112,18 @@ class Education extends React.Component {
           <div
             className={`content${this.props.aasIsActive ? ' expanded' : ''}`}
           >
-            <div className="left-side">
+            <div
+              className={`left-side${this.props.aasIsActive ? ' expanded' : ''}`}
+            >
               <img className="school" alt="bbcc" src={bbcc} />
               <p>Big Bend Community College</p>
               <p>Moses Lake, WA</p>
               <p>GPA: 3.33</p>
               <p>2003</p>
             </div>
-            <div className="right-side">
+            <div
+              className={`right-side${this.props.aasIsActive ? ' expanded' : ''}`}
+            >
               <p>Relevant Coursework: </p>
               <ul>
                 <li>Introduction to Commputer Science</li>

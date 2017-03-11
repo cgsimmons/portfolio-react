@@ -1,9 +1,12 @@
+@import '../../Layout/animations';
+
 #Education {
   background-color: #bee3e2;
   .inner-container {
     &.expanded {
       padding: 1rem;
     }
+    background-color: #3233b9;
     padding: 1rem 1rem 0 1rem;
     max-width: 85%;
     min-width: 50%;
@@ -17,13 +20,26 @@
       }
     }
     .content {
+      -webkit-transition:height 200ms ease-in;
+      -moz-transition:height 200ms ease-in;
+      -o-transition:height 200ms ease-in;
+      transition:height 200ms ease-in;
       &.expanded {
-        display: flex;
+        height: 12rem;
+        overflow: hidden;
       }
-      display: none;
+      display: flex;
+      height: 0;
       flex-flow: wrap;
       justify-content: flex-start;
+      background-color: #ececec;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
       .left-side {
+        &.expanded {
+          visibility: visible;
+        }
+        visibility: hidden;
         min-width: 30%;
         margin: 1rem;
         .school {
@@ -34,6 +50,10 @@
         }
       }
       .right-side {
+        &.expanded {
+          visibility: visible;
+        }
+        visibility: hidden;
         p{
           margin-top: 0;
         }
