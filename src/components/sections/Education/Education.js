@@ -103,7 +103,7 @@ class Education extends React.Component {
             >
               <p>Relevant Coursework: </p>
               <ul>
-                <li>Introduction to Artificial Intelligence</li>
+                <li>Intro to Artificial Intelligence</li>
                 <li>Software Engineering</li>
                 <li>Software Design</li>
                 <li>Computer Architecture</li>
@@ -147,8 +147,8 @@ class Education extends React.Component {
             >
               <p>Relevant Coursework: </p>
               <ul>
-                <li>Introduction to Commputer Science</li>
-                <li>Introduction to Web Design with HTML</li>
+                <li>Intro to Commputer Science</li>
+                <li>Intro to Web Design with HTML</li>
                 <li>Networking Essentials</li>
                 <li>Local Area Networks</li>
                 <li>A+ Certification Prep</li>
