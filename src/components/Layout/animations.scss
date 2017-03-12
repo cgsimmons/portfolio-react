@@ -23,10 +23,10 @@
 }
 
 @mixin expandBox() {
-  -webkit-transition:height 200ms ease-in;
-  -moz-transition:height 200ms ease-in;
-  -o-transition:height 200ms ease-in;
-  transition:height 200ms ease-in;
+  -webkit-transition:max-height 200ms ease-in;
+  -moz-transition:max-height 200ms ease-in;
+  -o-transition:max-height 200ms ease-in;
+  transition:max-height 200ms ease-in;
 }
 
 @mixin rotateChevronTiming() {

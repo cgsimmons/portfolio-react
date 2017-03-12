@@ -32,11 +32,11 @@
     .content {
       @include expandBox();
       &.expanded {
-        height: 12rem;
+        max-height: 30rem;
         overflow: hidden;
       }
       display: flex;
-      height: 0;
+      max-height: 0;
       flex-flow: wrap;
       justify-content: flex-start;
       background-color: #ececec;
