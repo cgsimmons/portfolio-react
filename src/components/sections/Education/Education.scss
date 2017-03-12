@@ -45,7 +45,7 @@
       background-color: #ececec;
       border-bottom-right-radius: 1rem;
       border-bottom-left-radius: 1rem;
-      font-size: 1rem;
+      font-size: 1.5rem;
       .left-side {
         @include baseDuration();
         &.expanded {
@@ -55,7 +55,7 @@
         min-width: 30%;
         margin: 1rem;
         .school {
-          max-width: 6rem;
+          max-width: 10rem;
         }
         p{
           margin: 0;
@@ -75,6 +75,52 @@
         flex-grow: 1;
         border-bottom-right-radius: 1rem;
         padding: 1rem;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1700px) {
+  #Education {
+    .inner-container {
+      .content {
+        font-size: 1rem;
+        .left-side {
+          .school {
+            max-width: 6rem;
+          }
+        }
+        .right-side {
+
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+
+}
+
+@media only screen
+and (max-width: 770px) {
+  #Education {
+    .inner-container {
+      .content {
+        &.expanded {
+          max-height: 45rem;
+        }
+        .left-side {
+          .school {
+            max-width: 6rem;
+          }
+        }
+        .right-side {
+          ul {
+            padding-left: 1rem;
+          }
+        }
       }
     }
   }
