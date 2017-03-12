@@ -1,9 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { setOffset } from '../../../actions/SectionActions';
+import { setEducationActive } from '../../../actions/EducationActions';
 import WSU from '../../../assets/images/wsu.png';
 import codecore from '../../../assets/images/codecore_square_logo_trimmed.png';
 import bbcc from '../../../assets/images/bbcc_trimmed.png';
+import chevron from '../../../assets/icons/chevron-down.svg';
 import './Education.scss';
 
 class Education extends React.Component {
@@ -11,6 +13,12 @@ class Education extends React.Component {
   componentDidMount() {
     const rect = this.node.getBoundingClientRect();
     this.props.setSectionOffset('Education', rect.top + window.scrollY);
+  }
+
+  handleClick = (event) => {
+    const section = event.target.className.split(' ')[0];
+    const active = this.props.educationIsActive[section];
+    this.props.setEducationActive(section, !active);
   }
 
   render() {
@@ -22,15 +30,33 @@ class Education extends React.Component {
       >
         <h2 className="section-title">Education</h2>
         <div className="inner-container">
-          <h3>12-Week Developer Bootcamp</h3>
-          <div className="content">
-            <div className="left-side">
+          <div className="title-container">
+            <h3
+              className="bootcamp"
+              onClick={this.handleClick}
+            >12-Week Developer Bootcamp
+            </h3>
+            <img
+              className={`bootcamp chevron${this.props.bootcampIsActive ? ' expanded' : ''}`}
+              alt="expand"
+              src={chevron}
+              onClick={this.handleClick}
+            />
+          </div>
+          <div
+            className={`content${this.props.bootcampIsActive ? ' expanded' : ''}`}
+          >
+            <div
+              className={`left-side${this.props.bootcampIsActive ? ' expanded' : ''}`}
+            >
               <img className="school" alt="codecore" src={codecore} />
-              <p>Codecore</p>
+              <p>Codecore Bootcamp</p>
               <p>Vancouver, BC</p>
               <p>2016</p>
             </div>
-            <div className="right-side">
+            <div
+              className={`right-side${this.props.bootcampIsActive ? ' expanded' : ''}`}
+            >
               <p>Relevant Coursework: </p>
               <ul>
                 <li>Ruby on Rails</li>
@@ -41,24 +67,43 @@ class Education extends React.Component {
                 <li>PostgreSQL</li>
                 <li>Heroku</li>
                 <li>Amazon Web Services</li>
+                <li>AGILE Development Methodology</li>
               </ul>
             </div>
           </div>
         </div>
         <div className="inner-container">
-          <h3>B.A. in Computer Science</h3>
-          <div className="content">
-            <div className="left-side">
+          <div className="title-container">
+            <h3
+              className="ba"
+              onClick={this.handleClick}
+            >B.A. in Computer Science
+            </h3>
+            <img
+              className={`ba chevron${this.props.baIsActive ? ' expanded' : ''}`}
+              alt="expand"
+              src={chevron}
+              onClick={this.handleClick}
+            />
+          </div>
+          <div
+            className={`content${this.props.baIsActive ? ' expanded' : ''}`}
+          >
+            <div
+              className={`left-side${this.props.baIsActive ? ' expanded' : ''}`}
+            >
               <img className="school" alt="WSU" src={WSU} />
               <p>Washington State University</p>
               <p>Richland, WA</p>
               <p>GPA: 3.58 (cum laude)</p>
               <p>2010</p>
             </div>
-            <div className="right-side">
+            <div
+              className={`right-side${this.props.baIsActive ? ' expanded' : ''}`}
+            >
               <p>Relevant Coursework: </p>
               <ul>
-                <li>Introduction to Artificial Intelligence</li>
+                <li>Intro to Artificial Intelligence</li>
                 <li>Software Engineering</li>
                 <li>Software Design</li>
                 <li>Computer Architecture</li>
@@ -72,20 +117,38 @@ class Education extends React.Component {
           </div>
         </div>
         <div className="inner-container">
-          <h3>Associate in Arts and Science</h3>
-          <div className="content">
-            <div className="left-side">
+          <div className="title-container">
+            <h3
+              className="aas"
+              onClick={this.handleClick}
+            >Associate in Arts and Science
+            </h3>
+            <img
+              className={`aas chevron${this.props.aasIsActive ? ' expanded' : ''}`}
+              alt="expand"
+              src={chevron}
+              onClick={this.handleClick}
+            />
+          </div>
+          <div
+            className={`content${this.props.aasIsActive ? ' expanded' : ''}`}
+          >
+            <div
+              className={`left-side${this.props.aasIsActive ? ' expanded' : ''}`}
+            >
               <img className="school" alt="bbcc" src={bbcc} />
               <p>Big Bend Community College</p>
               <p>Moses Lake, WA</p>
               <p>GPA: 3.33</p>
               <p>2003</p>
             </div>
-            <div className="right-side">
+            <div
+              className={`right-side${this.props.aasIsActive ? ' expanded' : ''}`}
+            >
               <p>Relevant Coursework: </p>
               <ul>
-                <li>Introduction to Commputer Science</li>
-                <li>Introduction to Web Design with HTML</li>
+                <li>Intro to Commputer Science</li>
+                <li>Intro to Web Design with HTML</li>
                 <li>Networking Essentials</li>
                 <li>Local Area Networks</li>
                 <li>A+ Certification Prep</li>
@@ -101,10 +164,24 @@ class Education extends React.Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapStateToProps = (state) => {
   return {
-    setSectionOffset: (name, offset) => { dispatch(setOffset(name, offset)); },
+    educationIsActive: state.educationActive,
+    bootcampIsActive: state.educationActive.bootcamp,
+    baIsActive: state.educationActive.ba,
+    aasIsActive: state.educationActive.aas,
   };
 };
 
-export default connect(null, mapDispatchToProps)(Education);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setSectionOffset: (name, offset) => {
+      dispatch(setOffset(name, offset));
+    },
+    setEducationActive: (section, active) => {
+      dispatch(setEducationActive(section, active));
+    },
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Education);
