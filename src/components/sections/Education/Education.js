@@ -50,7 +50,7 @@ class Education extends React.Component {
               className={`left-side${this.props.bootcampIsActive ? ' expanded' : ''}`}
             >
               <img className="school" alt="codecore" src={codecore} />
-              <p>Codecore</p>
+              <p>Codecore Bootcamp</p>
               <p>Vancouver, BC</p>
               <p>2016</p>
             </div>
@@ -67,6 +67,7 @@ class Education extends React.Component {
                 <li>PostgreSQL</li>
                 <li>Heroku</li>
                 <li>Amazon Web Services</li>
+                <li>AGILE Development Methodology</li>
               </ul>
             </div>
           </div>
