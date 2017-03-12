@@ -3,25 +3,26 @@
 #Education {
   background-color: #bee3e2;
   .inner-container {
-    // @include testDuration();
-    &.expanded {
-      // padding: 1rem;
-    }
     padding: 1rem;
     background-color: #3233b9;
-    padding: 1rem 1rem 0 1rem;
     max-width: 85%;
     min-width: 50%;
-    h3 {
-      margin-bottom: 0;
-      background-color: #3233b9;
-      border-radius: 1rem;
-      &.expanded {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+    .title-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      h3 {
+        flex-grow: 1;
+        cursor: pointer;
+        margin: 0;
+        padding: 1rem;
+        width: auto;
+        background-color: #3233b9;
       }
       .chevron {
         @include rotateChevronTiming();
+        cursor: pointer;
         display: inline;
         height: 1.5rem;
         margin: 0 1rem 0 1rem;
@@ -30,15 +31,13 @@
         }
       }
     }
-
     .content {
-      @include expandBox();
+      @include expandBoxIn();
       &.expanded {
+        @include expandBoxOut();
         max-height: 30rem;
-        margin-bottom: 1rem;
         overflow: hidden;
       }
-      margin-bottom: 0;
       display: flex;
       max-height: 0;
       flex-flow: wrap;
@@ -47,7 +46,7 @@
       border-bottom-right-radius: 1rem;
       border-bottom-left-radius: 1rem;
       .left-side {
-        @include expandBoxDuration();
+        @include baseDuration();
         &.expanded {
           visibility: visible;
         }
@@ -62,7 +61,7 @@
         }
       }
       .right-side {
-        @include expandBoxDuration();
+        @include baseDuration();
         &.expanded {
           visibility: visible;
         }

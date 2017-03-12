@@ -30,22 +30,24 @@
   transition: opacity 0.2s linear;
 }
 
-@mixin expandBox() {
-  -webkit-transition:max-height 0.3s linear,
-    margin-bottom 0s linear 0.15s;
-  -moz-transition:max-height 0.3s linear,
-    margin-bottom 0s linear 0.15s;
-  -o-transition:max-height 0.3s linear,
-    margin-bottom 0s linear 0.15s;
-  transition:max-height 0.3s linear,
-    margin-bottom 0s linear 0.15s;
+@mixin expandBoxIn() {
+  -webkit-transition:max-height 0.3s ease-in-out;
+  -moz-transition:max-height 0.3s ease-in-out;
+  -o-transition:max-height 0.3s ease-in-out;
+  transition:max-height 0.3s ease-in-out;
+}
+@mixin expandBoxOut() {
+  -webkit-transition:max-height 0.5s ease-in-out;
+  -moz-transition:max-height 0.5s ease-in-out;
+  -o-transition:max-height 0.5s ease-in-out;
+  transition:max-height 0.5s ease-in-out;
 }
 
 @mixin rotateChevronTiming() {
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -moz-transition:    -moz-transform 0.1s linear;
-  -ms-transition:     -ms-transform 01s linear;
-  transition:         transform 0.1s linear;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  -moz-transition:    -moz-transform 0.3s ease-in-out;
+  -ms-transition:     -ms-transform 0.3s ease-in-out;
+  transition:         transform 0.3s ease-in-out;
 }
 
 @mixin rotateChevron() {
@@ -54,14 +56,6 @@
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-
-// @mixin baseEase() {
-//   -webkit-transition-timing-function: cubiz-bezier(.05,1.11,.98,.98);
-//   -moz-transition-timing-function: cubiz-bezier(.05,1.11,.98,.98);
-//   -ms-transition-timing-function: cubiz-bezier(.05,1.11,.98,.98);
-//   -o-transition-timing-function: cubiz-bezier(.05,1.11,.98,.98);
-//   transition-timing-function: cubiz-bezier(.05,1.11,.98,.98);
-// }
 
 @mixin baseAnimation() {
   @include baseDelay();

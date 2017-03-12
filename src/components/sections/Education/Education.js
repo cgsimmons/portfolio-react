@@ -29,20 +29,20 @@ class Education extends React.Component {
         ref={(node) => { return (this.node = node); }}
       >
         <h2 className="section-title">Education</h2>
-        <div
-          className={`inner-container${this.props.bootcampIsActive ? ' expanded' : ''}`}
-        >
-          <h3
-            className={`bootcamp${this.props.bootcampIsActive ? ' expanded' : ''}`}
-            onClick={this.handleClick}
-          >12-Week Developer Bootcamp
-          <img
-            className={`bootcamp chevron${this.props.bootcampIsActive ? ' expanded' : ''}`}
-            alt="expand"
-            src={chevron}
-            onClick={this.handleClick}
-          />
-          </h3>
+        <div className="inner-container">
+          <div className="title-container">
+            <h3
+              className="bootcamp"
+              onClick={this.handleClick}
+            >12-Week Developer Bootcamp
+            </h3>
+            <img
+              className={`bootcamp chevron${this.props.bootcampIsActive ? ' expanded' : ''}`}
+              alt="expand"
+              src={chevron}
+              onClick={this.handleClick}
+            />
+          </div>
           <div
             className={`content${this.props.bootcampIsActive ? ' expanded' : ''}`}
           >
@@ -71,20 +71,20 @@ class Education extends React.Component {
             </div>
           </div>
         </div>
-        <div
-          className={`inner-container${this.props.baIsActive ? ' expanded' : ''}`}
-        >
-          <h3
-            className={`ba${this.props.baIsActive ? ' expanded' : ''}`}
-            onClick={this.handleClick}
-          >B.A. in Computer Science
-          <img
-            className={`ba chevron${this.props.baIsActive ? ' expanded' : ''}`}
-            alt="expand"
-            src={chevron}
-            onClick={this.handleClick}
-          />
-          </h3>
+        <div className="inner-container">
+          <div className="title-container">
+            <h3
+              className="ba"
+              onClick={this.handleClick}
+            >B.A. in Computer Science
+            </h3>
+            <img
+              className={`ba chevron${this.props.baIsActive ? ' expanded' : ''}`}
+              alt="expand"
+              src={chevron}
+              onClick={this.handleClick}
+            />
+          </div>
           <div
             className={`content${this.props.baIsActive ? ' expanded' : ''}`}
           >
@@ -115,20 +115,20 @@ class Education extends React.Component {
             </div>
           </div>
         </div>
-        <div
-          className={`inner-container${this.props.aasIsActive ? ' expanded' : ''}`}
-        >
-          <h3
-            className={`aas${this.props.aasIsActive ? ' expanded' : ''}`}
-            onClick={this.handleClick}
-          >Associate in Arts and Science
-          <img
-            className={`aas chevron${this.props.aasIsActive ? ' expanded' : ''}`}
-            alt="expand"
-            src={chevron}
-            onClick={this.handleClick}
-          />
-          </h3>
+        <div className="inner-container">
+          <div className="title-container">
+            <h3
+              className="aas"
+              onClick={this.handleClick}
+            >Associate in Arts and Science
+            </h3>
+            <img
+              className={`aas chevron${this.props.aasIsActive ? ' expanded' : ''}`}
+              alt="expand"
+              src={chevron}
+              onClick={this.handleClick}
+            />
+          </div>
           <div
             className={`content${this.props.aasIsActive ? ' expanded' : ''}`}
           >
