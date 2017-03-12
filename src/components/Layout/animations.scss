@@ -14,27 +14,38 @@
   transition-duration: 0.2s;
 }
 
+@mixin expandBoxDuration() {
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
 @mixin fadeOpacity() {
   -webkit-transition: opacity 0.2s linear;
   -moz-transition: opacity 0.2s linear;
-  -ms-transition: opacity 022s linear;
+  -ms-transition: opacity 0.2s linear;
   -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
 
 @mixin expandBox() {
-  -webkit-transition:max-height 200ms ease-in;
-  -moz-transition:max-height 200ms ease-in;
-  -o-transition:max-height 200ms ease-in;
-  transition:max-height 200ms ease-in;
+  -webkit-transition:max-height 0.3s linear,
+    margin-bottom 0s linear 0.15s;
+  -moz-transition:max-height 0.3s linear,
+    margin-bottom 0s linear 0.15s;
+  -o-transition:max-height 0.3s linear,
+    margin-bottom 0s linear 0.15s;
+  transition:max-height 0.3s linear,
+    margin-bottom 0s linear 0.15s;
 }
 
 @mixin rotateChevronTiming() {
-  -webkit-transition: -webkit-transform 0.2s ease-in;
-  -moz-transition:    -moz-transform 0.2s ease-in;
-  -o-transition:      -o-transform 0.2s ease-in;
-  -ms-transition:     -ms-transform 0.2s ease-in;
-  transition:         transform 0.2s ease-in;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -moz-transition:    -moz-transform 0.1s linear;
+  -ms-transition:     -ms-transform 01s linear;
+  transition:         transform 0.1s linear;
 }
 
 @mixin rotateChevron() {
