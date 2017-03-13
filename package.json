@@ -1,14 +1,18 @@
 {
   "name": "portfolio-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "React site to display portfolio information.",
   "main": "App.js",
   "scripts": {
     "clean": "rimraf build",
     "build": "NODE_ENV=production npm run clean && webpack -p",
     "serve": "webpack-dev-server"
   },
-  "author": "",
+  "author": {
+    "name": "Chris Simmons",
+    "email": "chris.simmons.alt@gmail.com",
+    "url": "http://www.simmons-portfolio.surge.sh"
+  },
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.21.0",
