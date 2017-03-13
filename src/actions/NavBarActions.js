@@ -5,7 +5,7 @@ export function setNavBarHover(hover) {
   };
 }
 
-export function setActive(active) {
+export function setNavBarActive(active) {
   return {
     type: 'SET_ACTIVE',
     active,
