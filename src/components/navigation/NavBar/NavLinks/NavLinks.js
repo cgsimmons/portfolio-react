@@ -8,17 +8,30 @@ import MdWork from 'react-icons/md/work';
 import FaInfoCircle from 'react-icons/fa/info-circle';
 import FaHeart from 'react-icons/fa/heart';
 import FaThumbsOUp from 'react-icons/fa/thumbs-o-up';
-import Scrollchor from 'react-scrollchor';
-import { setNavBarHover } from '../../../../actions/NavBarActions';
+import { Link, Events, scrollSpy } from 'react-scroll';
+import { setNavBarHover, setNavBarActive } from '../../../../actions/NavBarActions';
 import './NavLinks.scss';
 
 class NavLinks extends React.Component {
-  handleClick = () => {
-    setTimeout(() => { this.props.setHover(false); }, 1000);
+  componentDidMount() {
+    Events.scrollEvent.register('end', () => {
+      this.props.setHover(false);
+    });
+    scrollSpy.update();
   }
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove('end');
+  }
+
   handleHoverTrue = () => {
     this.props.setHover(true);
   }
+
+  handleSetActive = (to) => {
+    this.props.setActive(to);
+  }
+
   render() {
     return (
       <div className="NavLinks">
@@ -27,104 +40,122 @@ class NavLinks extends React.Component {
             className={this.props.active === 'Home' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
-            <Scrollchor
-              to="#root"
-              animate={{ offset: 0, duration: 800 }} afterAnimate={this.handleClick}
+            <Link
+              to="Home"
+              offset={-50}
+              smooth
+              spy
+              isDynamic
+              onSetActive={this.handleSetActive}
             >
               <MdHome />
               <span>Top of Page</span>
-            </Scrollchor>
+            </Link>
           </li>
           <li
             className={this.props.active === 'About' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
-            <Scrollchor
-              to="#About"
-              animate={{ offset: 5, duration: 800 }}
-              afterAnimate={this.handleClick}
+            <Link
+              to="About"
+              smooth
+              spy
+              isDynamic
+              onSetActive={this.handleSetActive}
             >
               <FaInfoCircle />
               <span>About Me</span>
-            </Scrollchor>
+            </Link>
           </li>
           <li
             className={this.props.active === 'Skills' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
-            <Scrollchor
-              to="#Skills"
-              animate={{ offset: 5, duration: 800 }}
-              afterAnimate={this.handleClick}
+            <Link
+              to="Skills"
+              smooth
+              spy
+              isDynamic
+              onSetActive={this.handleSetActive}
             >
               <FaCode />
               <span>Skills</span>
-            </Scrollchor>
+            </Link>
           </li>
           <li
             className={this.props.active === 'Portfolio' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
-            <Scrollchor
-              to="#Portfolio"
-              animate={{ offset: 5, duration: 800 }}
-              afterAnimate={this.handleClick}
+            <Link
+              to="Portfolio"
+              smooth
+              spy
+              isDynamic
+              onSetActive={this.handleSetActive}
             >
               <MdWork />
               <span>Portfolio</span>
-            </Scrollchor>
+            </Link>
           </li>
           <li
             className={this.props.active === 'Education' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
-            <Scrollchor
-              to="#Education"
-              animate={{ offset: 5, duration: 800 }}
-              afterAnimate={this.handleClick}
+            <Link
+              to="Education"
+              smooth
+              spy
+              isDynamic
+              onSetActive={this.handleSetActive}
             >
               <FaGraduationCap />
               <span>Education</span>
-            </Scrollchor>
+            </Link>
           </li>
           <li
             className={this.props.active === 'Work' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
-            <Scrollchor
-              to="#Work"
-              animate={{ offset: 5, duration: 800 }}
-              afterAnimate={this.handleClick}
+            <Link
+              to="Work"
+              smooth
+              spy
+              isDynamic
+              onSetActive={this.handleSetActive}
             >
               <FaBlackTie />
               <span>Work</span>
-            </Scrollchor>
+            </Link>
           </li>
           <li
             className={this.props.active === 'Volunteer' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
-            <Scrollchor
-              to="#Volunteer"
-              animate={{ offset: 5, duration: 800 }}
-              afterAnimate={this.handleClick}
+            <Link
+              to="Volunteer"
+              smooth
+              spy
+              isDynamic
+              onSetActive={this.handleSetActive}
             >
               <FaHeart />
               <span>Volunteer</span>
-            </Scrollchor>
+            </Link>
           </li>
           <li
             className={this.props.active === 'Interests' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
-            <Scrollchor
-              to="#Interests"
-              animate={{ offset: 5, duration: 800 }}
-              afterAnimate={this.handleClick}
+            <Link
+              to="Interests"
+              smooth
+              spy
+              isDynamic
+              onSetActive={this.handleSetActive}
             >
               <FaThumbsOUp />
               <span>Interests</span>
-            </Scrollchor>
+            </Link>
           </li>
         </ul>
       </div>
@@ -142,6 +173,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     setHover: (hover) => {
       dispatch(setNavBarHover(hover));
+    },
+    setActive: (section) => {
+      dispatch(setNavBarActive(section));
     },
   };
 };

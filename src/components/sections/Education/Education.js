@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { setOffset } from '../../../actions/SectionActions';
 import { setEducationActive } from '../../../actions/EducationActions';
 import WSU from '../../../assets/images/wsu.png';
 import codecore from '../../../assets/images/codecore_square_logo_trimmed.png';
@@ -9,11 +8,6 @@ import chevron from '../../../assets/icons/chevron-down.svg';
 import './Education.scss';
 
 class Education extends React.Component {
-
-  componentDidMount() {
-    const rect = this.node.getBoundingClientRect();
-    this.props.setSectionOffset('Education', rect.top + window.scrollY);
-  }
 
   handleClick = (event) => {
     const section = event.target.className.split(' ')[0];
@@ -26,7 +20,6 @@ class Education extends React.Component {
       <div
         id="Education"
         className="section"
-        ref={(node) => { return (this.node = node); }}
       >
         <h2 className="section-title">Education</h2>
         <div className="inner-container">
@@ -175,9 +168,6 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    setSectionOffset: (name, offset) => {
-      dispatch(setOffset(name, offset));
-    },
     setEducationActive: (section, active) => {
       dispatch(setEducationActive(section, active));
     },
