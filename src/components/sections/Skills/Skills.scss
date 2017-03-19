@@ -53,6 +53,13 @@ and (max-width: 770px) {
   #Skills {
     .inner-container {
       max-width: 85%;
+      h3 {
+        font-size: 1.75rem;
+      }
+      .icon-container .icon {
+        height: 3rem;
+        max-width: 3rem;
+      }
     }
   }
 }

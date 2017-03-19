@@ -3,14 +3,15 @@
     position: relative;
     padding: 0;
     max-width: none;
+    margin-left: 4rem;
     .img-container{
       position: absolute;
-      border:#f5f8fa solid 0.5rem;
-      width: 8rem;
-      height: 8rem;
-      top: -0.5rem;
+      border:#f5f8fa solid 0.3rem;
+      width: 7rem;
+      height: 7rem;
+      top: -0.3rem;
       left: -4rem;
-      border-radius: 8rem;
+      border-radius: 7rem;
       overflow: hidden;
       img {
         height: 100%;
@@ -19,28 +20,33 @@
     .top-container {
       .icons-container {
         text-align: left;
-        padding-left: 4rem;
+        padding-left: 3rem;
         .icon {
           height: 2rem;
           max-width: 2rem;
-          margin:1rem;
+          margin:0.5rem 1rem 0 1rem;
         }
       }
       .title-container {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        border-top-right-radius: 1rem;
         .title {
-          width: auto;
           margin: 0;
-          padding: 0.5rem 0.5rem 0.5rem 5rem;
-          text-align: left;
-          border-top-right-radius: 1rem;
+          padding: 0;
+          // padding: 0.5rem 0.5rem 0.5rem 4rem;
+
         }
       }
     }
     .content {
-      h3 {
+      p {
         margin: 0;
         padding: 0;
         border-radius: 0;
+        text-align: center;
       }
     }
   }

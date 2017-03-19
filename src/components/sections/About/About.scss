@@ -40,11 +40,23 @@
 @media only screen
 and (max-width: 770px) {
   #About {
-    .img-container img {
+    display: inline-block;
+    
+    .img-container {
+      float: left;
+      margin: 1rem 0.5rem 0rem 1rem;
+      img {
+        height: 6rem;
+        border-radius: 1rem;
+      }
     }
     .content {
       margin-top: 0;
       max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: justify;
+      font-size: 0.8rem;
     }
   }
 }

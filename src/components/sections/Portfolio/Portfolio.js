@@ -23,33 +23,39 @@ export default () => {
           </div>
         </div>
         <div className="content">
-          <p>This is a description of the project.</p>
+          <p>details </p>
         </div>
       </div>
       <div className="inner-container">
+        <div className="img-container">
+          <img src={pokemanGo} alt="Pokeman Go logo" />
+        </div>
         <div className="top-container">
-          <div className="icons-conatiner">
-            <h3>icons</h3>
-          </div>
           <div className="title-container">
-            <h3>title</h3>
+            <h3 className="title">Pokeman GO</h3>
+          </div>
+          <div className="icons-container">
+            <img className="icon" alt="Rails" src={rails} />
           </div>
         </div>
         <div className="content">
-          <h3>content</h3>
+          <p>details </p>
         </div>
       </div>
       <div className="inner-container">
+        <div className="img-container">
+          <img src={pokemanGo} alt="Pokeman Go logo" />
+        </div>
         <div className="top-container">
-          <div className="icons-conatiner">
-            <h3>icons</h3>
-          </div>
           <div className="title-container">
-            <h3>title</h3>
+            <h3 className="title">Pokeman GO</h3>
+          </div>
+          <div className="icons-container">
+            <img className="icon" alt="Rails" src={rails} />
           </div>
         </div>
         <div className="content">
-          <h3>content</h3>
+          <p>details </p>
         </div>
       </div>
     </div>

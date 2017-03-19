@@ -53,5 +53,13 @@
   .section {
     padding: 3rem 0.5rem 2rem 0.5rem;
     justify-content: space-around;
+
+    .section-title {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
   }
 }
