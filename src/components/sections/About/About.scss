@@ -1,8 +1,7 @@
 #About {
   background-color: #ececec;
   .img-container{
-    margin: 1rem;
-    align-self: center;
+    margin: 2.2rem 1rem 1rem 1rem;
     img {
       margin-top: 0;
       border-radius: 2rem;
@@ -33,6 +32,7 @@
     .img-container img {
     }
     .content {
+      max-width: 45%;
     }
   }
 }
@@ -41,10 +41,11 @@
 and (max-width: 770px) {
   #About {
     display: inline-block;
-    
+
     .img-container {
       float: left;
       margin: 1rem 0.5rem 0rem 1rem;
+      padding-top: 0.1rem;
       img {
         height: 6rem;
         border-radius: 1rem;
