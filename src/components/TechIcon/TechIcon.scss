@@ -1,0 +1,47 @@
+@import '../Layout/animations';
+
+.techIcon-container {
+  position: relative;
+
+  &:hover .techIcon-title{
+    opacity: 1;
+  }
+  .techIcon {
+    height: 4rem;
+    max-width: 4rem;
+    margin: 0.3rem;
+    object-fit: scale-down;
+  }
+  .techIcon-title {
+    color: #ececec;
+    font: 0.7rem "Rubik-Bold", Helvetica, Arial, sans-serif;
+    opacity: 0;
+    margin: 0 auto;
+    padding: 0.1rem 0.2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #44b1e4;
+    border-radius: 1rem;
+    z-index: 50;
+    @include fadeOpacity();
+
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+}
+
+@media only screen
+and (max-width: 770px) {
+  .techIcon-container .techIcon {
+    height: 3rem;
+    max-width: 3rem;
+  }
+}

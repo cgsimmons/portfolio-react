@@ -21,7 +21,7 @@ export default () => {
         </div>
         <div className="middle-container">
           <div className="title-container">
-            <h3 className="title">Pokeman GO</h3>
+            <h3 className="subsection-title">Pokeman GO</h3>
           </div>
           <div className="icons-container">
             <img className="icon" alt="Rails" src={rails} />
@@ -41,7 +41,7 @@ export default () => {
         </div>
         <div className="middle-container">
           <div className="title-container">
-            <h3 className="title">Twitter Scout</h3>
+            <h3 className="subsection-title">Twitter Scout</h3>
           </div>
           <div className="icons-container">
             <img className="icon" alt="Rails" src={rails} />
@@ -64,7 +64,7 @@ export default () => {
         </div>
         <div className="middle-container">
           <div className="title-container">
-            <h3 className="title">Find My Pet</h3>
+            <h3 className="subsection-title">Find My Pet</h3>
           </div>
           <div className="icons-container">
             <img className="icon" alt="Rails" src={rails} />
@@ -86,7 +86,7 @@ export default () => {
         </div>
         <div className="middle-container">
           <div className="title-container">
-            <h3 className="title">Code Snippets</h3>
+            <h3 className="subsection-title">Code Snippets</h3>
           </div>
           <div className="icons-container">
             <img className="icon" alt="Rails" src={rails} />
@@ -105,7 +105,7 @@ export default () => {
         </div>
         <div className="middle-container">
           <div className="title-container">
-            <h3 className="title">Awesome Answers</h3>
+            <h3 className="subsection-title">Awesome Answers</h3>
           </div>
           <div className="icons-container">
             <img className="icon" alt="Rails" src={rails} />

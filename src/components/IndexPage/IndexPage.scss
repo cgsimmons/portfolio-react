@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  h2 {
+  .section-title {
     font-size: 3rem;
     margin: 0 0 4rem 0;
     width: 100%;
@@ -17,7 +17,7 @@
     background-color: #ececec;
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 0.2rem #888888;
-    h3 {
+    .subsection-title {
       text-align: center;
       background-color: #9c95ce;
       color: #ececec;

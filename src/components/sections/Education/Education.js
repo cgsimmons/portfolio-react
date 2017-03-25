@@ -25,7 +25,7 @@ class Education extends React.Component {
         <div className="inner-container">
           <div className="title-container">
             <h3
-              className="bootcamp"
+              className="bootcamp subsection-title"
               onClick={this.handleClick}
             >12-Week Developer Bootcamp
             </h3>
@@ -68,7 +68,7 @@ class Education extends React.Component {
         <div className="inner-container">
           <div className="title-container">
             <h3
-              className="ba"
+              className="ba subsection-title"
               onClick={this.handleClick}
             >B.A. in Computer Science
             </h3>
@@ -112,7 +112,7 @@ class Education extends React.Component {
         <div className="inner-container">
           <div className="title-container">
             <h3
-              className="aas"
+              className="aas subsection-title"
               onClick={this.handleClick}
             >Associate in Arts and Science
             </h3>
