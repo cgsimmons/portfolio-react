@@ -1,53 +1,100 @@
 #Portfolio {
   .inner-container {
-    position: relative;
+    background-color: #e6cfcf;
     padding: 0;
-    max-width: none;
-    margin-left: 4rem;
+    max-width: 45%;
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     .img-container{
-      position: absolute;
-      border:#f5f8fa solid 0.3rem;
-      width: 7rem;
-      height: 7rem;
-      top: -0.3rem;
-      left: -4rem;
-      border-radius: 7rem;
-      overflow: hidden;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
       img {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        width: 100%;
         height: 100%;
       }
     }
-    .top-container {
-      .icons-container {
-        text-align: left;
-        padding-left: 3rem;
-        .icon {
-          height: 2rem;
-          max-width: 2rem;
-          margin:0.5rem 1rem 0 1rem;
-        }
-      }
+
+    .middle-container {
       .title-container {
-        width: auto;
-        margin: 0;
-        padding: 0;
-        text-align: left;
-        border-top-right-radius: 1rem;
+        background-color: #e69b9b;
+        border-radius: 0;
+        margin: 0 ;
+        padding: 0 0.5rem;
         .title {
+          border-radius: 0;
+          background-color: transparent;
           margin: 0;
           padding: 0;
-          // padding: 0.5rem 0.5rem 0.5rem 4rem;
+          font-size: 2.5rem;
+        }
+      }
 
+      .icons-container {
+        text-align: left;
+        .icon {
+          height: 2.5rem;
+          max-width: 2.5rem;
+          margin: 0.3rem 1rem 0.3rem 1rem;
         }
       }
     }
-    .content {
+
+    .bottom-container {
+      flex-grow: 1;
+      background-color: #ececec;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      padding: 0.5rem 1rem;
       p {
         margin: 0;
-        padding: 0;
-        border-radius: 0;
-        text-align: center;
+        color: #747373;
+        font-size: 1rem;
+        text-align: justify;
       }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 1700px) {
+
+}
+
+@media only screen and (max-width: 1280px) {
+  #Portfolio {
+    .inner-container {
+      .middle-container {
+        .title-container {
+          .title {
+            font-size: 2rem;
+          }
+        }
+        .icons-container {
+          .icon {
+            height: 2rem;
+            max-width: 2rem;
+          }
+        }
+      }
+      .bottom-container {
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen
+and (max-width: 770px) {
+  #Portfolio {
+    .inner-container {
+      max-width: 85%;
     }
   }
 }
