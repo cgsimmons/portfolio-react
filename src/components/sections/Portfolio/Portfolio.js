@@ -1,5 +1,11 @@
 import React from 'react';
+import TechIcon from '../../TechIcon/TechIcon';
 import rails from '../../../assets/icons/rails.svg';
+import nodejs from '../../../assets/icons/nodejs-icon.svg';
+import react from '../../../assets/icons/react.svg';
+import mongoDB from '../../../assets/icons/mongoDB.svg';
+import babel from '../../../assets/icons/babel.svg';
+import redux from '../../../assets/icons/redux.svg';
 import pokemanGo from '../../../assets/gifs/pokeman-go-sm.gif';
 import findPet from '../../../assets/gifs/find-pet-sm.gif';
 import twitterScout from '../../../assets/gifs/twitter-scout-sm.gif';
@@ -24,7 +30,7 @@ export default () => {
             <h3 className="subsection-title">Pokeman GO</h3>
           </div>
           <div className="icons-container">
-            <img className="icon" alt="Rails" src={rails} />
+            <TechIcon title="Ruby on Rails" source={rails} />
           </div>
         </div>
         <div className="bottom-container">
@@ -44,7 +50,11 @@ export default () => {
             <h3 className="subsection-title">Twitter Scout</h3>
           </div>
           <div className="icons-container">
-            <img className="icon" alt="Rails" src={rails} />
+            <TechIcon title="NodeJS" source={nodejs} />
+            <TechIcon title="React" source={react} />
+            <TechIcon title="Redux" source={redux} />
+            <TechIcon title="Babel" source={babel} />
+            <TechIcon title="MongoDB" source={mongoDB} />
           </div>
         </div>
         <div className="bottom-container">
@@ -67,7 +77,7 @@ export default () => {
             <h3 className="subsection-title">Find My Pet</h3>
           </div>
           <div className="icons-container">
-            <img className="icon" alt="Rails" src={rails} />
+            <TechIcon title="Ruby on Rails" source={rails} />
           </div>
         </div>
         <div className="bottom-container">
@@ -89,7 +99,7 @@ export default () => {
             <h3 className="subsection-title">Code Snippets</h3>
           </div>
           <div className="icons-container">
-            <img className="icon" alt="Rails" src={rails} />
+            <TechIcon title="Ruby on Rails" source={rails} />
           </div>
         </div>
         <div className="bottom-container">
@@ -108,7 +118,7 @@ export default () => {
             <h3 className="subsection-title">Awesome Answers</h3>
           </div>
           <div className="icons-container">
-            <img className="icon" alt="Rails" src={rails} />
+            <TechIcon title="Ruby on Rails" source={rails} />
           </div>
         </div>
         <div className="bottom-container">

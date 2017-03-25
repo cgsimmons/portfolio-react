@@ -1,5 +1,5 @@
 import React from 'react';
-import './Skills.scss';
+import TechIcon from '../../TechIcon/TechIcon';
 import firebase from '../../../assets/icons/firebase-1.svg';
 import ruby from '../../../assets/icons/ruby.svg';
 import python from '../../../assets/icons/python-5.svg';
@@ -25,9 +25,7 @@ import heroku from '../../../assets/icons/heroku.svg';
 import git from '../../../assets/icons/git.svg';
 import babel from '../../../assets/icons/babel.svg';
 import redux from '../../../assets/icons/redux.svg';
-
-import TechIcon from '../../TechIcon/TechIcon';
-
+import './Skills.scss';
 
 export default () => {
   return (
