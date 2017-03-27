@@ -2,8 +2,8 @@
   .inner-container {
     background-color: #e6cfcf;
     padding: 0;
-    max-width: 45%;
-    min-width: 40%;
+    max-width: 30%;
+    min-width: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -32,16 +32,49 @@
           font-size: 2.5rem;
         }
       }
-
-      .icons-container {
+      .subtitle-container {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-content: flex-start;
-        justify-content: space-around;
-        .techIcon-container .techIcon {
-          height: 2.5rem;
-          max-width: 2.5rem;
-          margin: 0.3rem;
+        justify-content: space-between;
+        .icons-container {
+          .techIcon-container .techIcon {
+            height: 2.5rem;
+            max-width: 2.5rem;
+            margin: 0.3rem 0.1rem 0 0.1rem;
+          }
+        }
+        .links-container {
+          display: flex;
+          align-content: center;
+          flex-direction: column;
+          text-align: center;
+          border-left: solid #ececec 0.2rem;
+          .link {
+            &:first-child{
+              border-bottom: solid #ececec 0.1rem;
+            }
+            &:last-child{
+              border-top: solid #ececec 0.1rem;
+            }
+            height: 50%;
+            color: #ececec;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.8rem;
+            padding: 0.1rem 0.3rem;
+            &:hover {
+              background-color: #e69b9b;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.inactive {
+              background-color: #bfa9a9;
+              color: #ececec;
+              cursor: default;
+            }
+          }
         }
       }
     }
@@ -57,6 +90,11 @@
         color: #747373;
         font-size: 1rem;
         text-align: justify;
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: #747373;
+        }
       }
     }
   }
@@ -65,7 +103,12 @@
 
 
 @media only screen and (max-width: 1700px) {
-
+  #Portfolio {
+    .inner-container {
+      max-width: 45%;
+      min-width: 40%;
+    }
+  }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -77,7 +120,7 @@
             font-size: 2rem;
           }
         }
-        .icons-container .techIcon-container .techIcon{
+        .subtitle-container .icons-container .techIcon-container .techIcon{
           height: 2rem;
           max-width: 2rem;
         }

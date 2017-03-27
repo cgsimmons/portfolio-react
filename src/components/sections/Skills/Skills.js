@@ -25,6 +25,7 @@ import heroku from '../../../assets/icons/heroku.svg';
 import git from '../../../assets/icons/git.svg';
 import babel from '../../../assets/icons/babel.svg';
 import redux from '../../../assets/icons/redux.svg';
+import tux from '../../../assets/icons/tux.svg';
 import './Skills.scss';
 
 export default () => {
@@ -64,6 +65,7 @@ export default () => {
       </div>
       <div className="inner-container">
         <h3 className="subsection-title">Development Tools</h3>
+        <TechIcon title="Linux" source={tux} />
         <TechIcon title="Webpack" source={webpack} />
         <TechIcon title="Docker" source={docker} />
         <TechIcon title="AWS" source={aws} />
