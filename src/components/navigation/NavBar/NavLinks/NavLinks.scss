@@ -15,6 +15,7 @@
     white-space: nowrap;
     position: relative;
     background-color: #0E0E0C;
+    cursor: pointer;
 
     &:hover, &.active {
       background-color: #3f3f3f;

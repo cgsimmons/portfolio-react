@@ -4,9 +4,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  h2 {
+  .section-title {
     font-size: 3rem;
-    margin: 0 0 2rem 0;
+    margin: 0 0 4rem 0;
     width: 100%;
   }
   .inner-container {
@@ -17,7 +17,7 @@
     background-color: #ececec;
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 0.2rem #888888;
-    h3 {
+    .subsection-title {
       text-align: center;
       background-color: #9c95ce;
       color: #ececec;
@@ -53,5 +53,13 @@
   .section {
     padding: 3rem 0.5rem 2rem 0.5rem;
     justify-content: space-around;
+
+    .section-title {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
   }
 }

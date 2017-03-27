@@ -1,5 +1,5 @@
 import React from 'react';
-import './Skills.scss';
+import TechIcon from '../../TechIcon/TechIcon';
 import firebase from '../../../assets/icons/firebase-1.svg';
 import ruby from '../../../assets/icons/ruby.svg';
 import python from '../../../assets/icons/python-5.svg';
@@ -25,7 +25,8 @@ import heroku from '../../../assets/icons/heroku.svg';
 import git from '../../../assets/icons/git.svg';
 import babel from '../../../assets/icons/babel.svg';
 import redux from '../../../assets/icons/redux.svg';
-
+import tux from '../../../assets/icons/tux.svg';
+import './Skills.scss';
 
 export default () => {
   return (
@@ -34,117 +35,43 @@ export default () => {
       className="section"
     >
       <h2 className="section-title">Skills</h2>
-
       <div className="inner-container">
-        <h3>Languages</h3>
-        <div className="icon-container">
-          <img className="icon" alt="Ruby" src={ruby} />
-          <h3 className="skill-name">Ruby</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="Python" src={python} />
-          <h3 className="skill-name">Python</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="Javascript" src={javascript} />
-          <h3 className="skill-name">Javascript</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="Java" src={java} />
-          <h3 className="skill-name">Java</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="C++" src={cplusplus} />
-          <h3 className="skill-name">C++</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="HTML 5" src={html} />
-          <h3 className="skill-name">HTML 5</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="CSS 3" src={css3} />
-          <h3 className="skill-name">CSS 3</h3>
-        </div>
+        <h3 className="subsection-title">Languages</h3>
+        <TechIcon title="Ruby" source={ruby} />
+        <TechIcon title="Python" source={python} />
+        <TechIcon title="Javascript" source={javascript} />
+        <TechIcon title="Java" source={java} />
+        <TechIcon title="C++" source={cplusplus} />
+        <TechIcon title="HTML 5" source={html} />
+        <TechIcon title="CSS 3" source={css3} />
       </div>
       <div className="inner-container">
-        <h3>Frameworks</h3>
-        <div className="icon-container">
-          <img className="icon" alt="Ruby on Rails" src={rails} />
-          <h3 className="skill-name">Ruby on Rails</h3></div>
-        <div className="icon-container">
-          <img className="icon" alt="NodeJS" src={nodejs} />
-          <h3 className="skill-name">NodeJS</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="React" src={react} />
-          <h3 className="skill-name">React / Native</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="Redux" src={redux} />
-          <h3 className="skill-name">Redux</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="Android" src={android} />
-          <h3 className="skill-name">Android</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="Unity" src={unity} />
-          <h3 className="skill-name">Unity 3D</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="jQuery" src={jquery} />
-          <h3 className="skill-name">jQuery</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="Sass" src={sass} />
-          <h3 className="skill-name">Sass</h3>
-        </div>
+        <h3 className="subsection-title">Frameworks</h3>
+        <TechIcon title="Ruby on Rails" source={rails} />
+        <TechIcon title="NodeJS" source={nodejs} />
+        <TechIcon title="React" source={react} />
+        <TechIcon title="Redux" source={redux} />
+        <TechIcon title="Android" source={android} />
+        <TechIcon title="Unity 3d" source={unity} />
+        <TechIcon title="jQuery" source={jquery} />
+        <TechIcon title="Sass" source={sass} />
       </div>
       <div className="inner-container">
-        <h3>Databases</h3>
-        <div className="icon-container">
-          <img className="icon" alt="MySQL" src={mysql} />
-          <h3 className="skill-name">MySQL</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="PostgreSQL" src={postgresql} />
-          <h3 className="skill-name">PostgreSQL</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="mongoDB" src={mongoDB} />
-          <h3 className="skill-name">MongoDB</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="firebase" src={firebase} />
-          <h3 className="skill-name">Firebase</h3>
-        </div>
+        <h3 className="subsection-title">Databases</h3>
+        <TechIcon title="MySQL" source={mysql} />
+        <TechIcon title="PostgreSQL" source={postgresql} />
+        <TechIcon title="MongoDB" source={mongoDB} />
+        <TechIcon title="Firebase" source={firebase} />
       </div>
       <div className="inner-container">
-        <h3>Development Tools</h3>
-        <div className="icon-container">
-          <img className="icon" alt="Webpack" src={webpack} />
-          <h3 className="skill-name">Webpack</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="Docker" src={docker} />
-          <h3 className="skill-name">Docker</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="AWS" src={aws} />
-          <h3 className="skill-name">AWS</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="Heroku" src={heroku} />
-          <h3 className="skill-name">Heroku</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="git" src={git} />
-          <h3 className="skill-name">Git</h3>
-        </div>
-        <div className="icon-container">
-          <img className="icon" alt="babel" src={babel} />
-          <h3 className="skill-name">Babel</h3>
-        </div>
+        <h3 className="subsection-title">Development Tools</h3>
+        <TechIcon title="Linux" source={tux} />
+        <TechIcon title="Webpack" source={webpack} />
+        <TechIcon title="Docker" source={docker} />
+        <TechIcon title="AWS" source={aws} />
+        <TechIcon title="Heroku" source={heroku} />
+        <TechIcon title="Git" source={git} />
+        <TechIcon title="Babel" source={babel} />
       </div>
     </div>
   );

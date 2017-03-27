@@ -8,7 +8,7 @@ export default () => {
       id="About"
       className="section"
     >
-      <h2 className="section-title">About</h2>
+      <h2 className="section-title">About Me</h2>
       <div className="img-container">
         <img
           alt={'Profile'}
@@ -16,7 +16,7 @@ export default () => {
         />
       </div>
       <div className="content">
-        Experienced in Full-Stack web development as well as Android, iOS and Unity 3D.
+        Experienced in full stack web development as well as Android, iOS and Unity 3D.
         <br /><br />
         My Computer Science degree was focused around C, C++, Java and Python while my
         more recent experience with web and mobile development comes from personal projects

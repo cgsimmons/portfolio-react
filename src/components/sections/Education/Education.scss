@@ -3,6 +3,7 @@
 #Education {
   background-color: #bee3e2;
   .inner-container {
+    margin: 2rem;
     padding: 1rem;
     background-color: #3233b9;
     max-width: 85%;
@@ -110,18 +111,37 @@
 and (max-width: 770px) {
   #Education {
     .inner-container {
+      padding: 0.5rem;
+      .title-container {
+        h3 {
+          font-size: 1.5rem;
+          padding: 1rem;
+        }
+        .chevron {
+          height: 1rem;
+        }
+      }
       .content {
+        p {
+          font-size: 0.8rem;
+          margin-bottom: 0.8rem;
+        }
+        li {
+          font-size: 0.8rem;
+        }
         &.expanded {
           max-height: 45rem;
         }
         .left-side {
           .school {
-            max-width: 6rem;
+            max-width: 4rem;
           }
         }
         .right-side {
           ul {
-            padding-left: 1rem;
+            margin-top: 0;
+            padding-left: 0.8rem;
+            padding-right: 0.8rem;
           }
         }
       }
