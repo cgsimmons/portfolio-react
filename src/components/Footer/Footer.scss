@@ -1,5 +1,16 @@
 .Footer {
-  background-color: blue;
-  color: black;
-  height: 5rem;
+  background-color: #7ec0e0;
+  color: #595858;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .left-side {
+    h1 {
+      margin: 0.5rem;
+    }
+  }
+  .right-side {
+
+  }
 }

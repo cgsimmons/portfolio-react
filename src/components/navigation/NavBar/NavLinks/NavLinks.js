@@ -116,7 +116,7 @@ class NavLinks extends React.Component {
             className={this.props.active === 'Work' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
-            <Link
+            {/* <Link
               to="Work"
               smooth
               spy
@@ -155,7 +155,7 @@ class NavLinks extends React.Component {
             >
               <FaThumbsOUp />
               <span>Interests</span>
-            </Link>
+            </Link> */}
           </li>
         </ul>
       </div>

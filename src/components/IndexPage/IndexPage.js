@@ -20,9 +20,9 @@ class IndexPage extends React.Component {
         <Skills />
         <Portfolio />
         <Education />
-        <Work />
+        {/* <Work />
         <Volunteer />
-        <Interests />
+        <Interests /> */}
       </div>
     );
   }
