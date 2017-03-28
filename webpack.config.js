@@ -15,7 +15,8 @@ const config = {
   },
   output: {
     path: path.join(__dirname, 'build'),
-    filename: '[name].[chunkhash].js',
+    publicPath: '/',
+    filename: 'assets/[name].[chunkhash].js',
   },
   module: {
     rules: [
@@ -27,6 +28,7 @@ const config = {
       {
         test: /\.(css|scss)$/,
         use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
           use: [
             'css-loader',
             'sass-loader',
@@ -38,7 +40,11 @@ const config = {
         use: [
           {
             loader: 'url-loader',
-            options: { limit: 40000 },
+            options:
+            {
+              limit: 40000,
+              name: 'assets/images/[name].[hash].[ext]',
+            },
           },
           'image-webpack-loader',
         ],
@@ -48,6 +54,10 @@ const config = {
         use: [
           {
             loader: 'file-loader',
+            options:
+            {
+              name: 'assets/fonts/[name].[hash].[ext]',
+            },
           },
         ],
       },
@@ -55,7 +65,7 @@ const config = {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: 'style.[chunkhash].css',
+      filename: './assets/stylesheets/[name].[contenthash].css',
     }),
     new webpack.optimize.CommonsChunkPlugin({
       names: ['vendor', 'manifest'],
