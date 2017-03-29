@@ -34,7 +34,7 @@
     }
     .content {
       @include expandBoxIn();
-      overflow-x: hidden;
+      overflow: hidden;
       &.expanded {
         @include expandBoxOut();
         max-height: 40rem;
