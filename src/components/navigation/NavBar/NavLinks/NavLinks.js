@@ -8,6 +8,9 @@ import MdWork from 'react-icons/md/work';
 import FaInfoCircle from 'react-icons/fa/info-circle';
 import FaHeart from 'react-icons/fa/heart';
 import FaThumbsOUp from 'react-icons/fa/thumbs-o-up';
+import FaMail from 'react-icons/fa/envelope';
+import FaLinkedIn from 'react-icons/fa/linkedin-square';
+import FaGithub from 'react-icons/fa/github';
 import { Link, Events, scrollSpy } from 'react-scroll';
 import { setNavBarHover, setNavBarActive } from '../../../../actions/NavBarActions';
 import './NavLinks.scss';
@@ -112,11 +115,11 @@ class NavLinks extends React.Component {
               <span>Education</span>
             </Link>
           </li>
-          <li
+          {/* <li
             className={this.props.active === 'Work' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
-            {/* <Link
+            <Link
               to="Work"
               smooth
               spy
@@ -155,7 +158,43 @@ class NavLinks extends React.Component {
             >
               <FaThumbsOUp />
               <span>Interests</span>
-            </Link> */}
+            </Link>
+          </li> */}
+        </ul>
+        <ul className="side-contacts">
+          <li
+            onMouseEnter={this.handleHoverTrue}
+          >
+            <a
+              href="mailto:chris.simmons.alt@gmail.com?subject=Nice%20Website!"
+            >
+              <FaMail />
+              <span>Email</span>
+            </a>
+          </li>
+          <li
+            onMouseEnter={this.handleHoverTrue}
+          >
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://linkedin.com/in/c-simmons"
+            >
+              <FaLinkedIn />
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li
+            onMouseEnter={this.handleHoverTrue}
+          >
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/cgsimmons"
+            >
+              <FaGithub />
+              <span>Github</span>
+            </a>
           </li>
         </ul>
       </div>
