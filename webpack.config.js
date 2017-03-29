@@ -43,7 +43,7 @@ const config = {
             options:
             {
               limit: 40000,
-              name: 'assets/images/[name].[hash].[ext]',
+              name: 'assets/images/[name].[ext]',
             },
           },
           'image-webpack-loader',
@@ -56,7 +56,7 @@ const config = {
             loader: 'file-loader',
             options:
             {
-              name: 'assets/fonts/[name].[hash].[ext]',
+              name: 'assets/fonts/[name].[ext]',
             },
           },
         ],
