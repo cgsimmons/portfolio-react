@@ -1,13 +1,16 @@
 .NavHam {
   visibility: hidden;
   position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
   height: 45px;
   width: 100%;
   background-color: #0E0E0C;
   z-index: 50;
   a {
-    position: absolute;
     margin: 0.55rem;
     cursor: pointer;
     padding: 10px 35px 16px 0px;
@@ -37,6 +40,30 @@
       transform: rotate(27deg);
       width: 20px;
       bottom: -5px;
+    }
+  }
+  .top-contacts {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: right;
+      &:first-child {
+        margin-right: 0.5rem;
+      }
+      a {
+        text-decoration: none;
+        color: #44b1e4;
+        display: block;
+        padding: 0;
+        margin: 0 0.27rem;
+
+        svg {
+          width: 35px;
+          height: 35px;
+          margin: 0;
+        }
+      }
     }
   }
 }
