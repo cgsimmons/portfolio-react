@@ -16,7 +16,7 @@ export default () => {
         />
       </div>
       <div className="content">
-        Experienced in full stack web development as well as Android, iOS and Unity 3D.
+        Experienced in Full-Stack web development as well as Android and Debian Linux packaging.
         <br /><br />
         My Computer Science degree was focused around C, C++, Java and Python while my
         more recent experience with web and mobile development comes from personal projects
