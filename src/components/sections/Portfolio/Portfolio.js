@@ -197,8 +197,8 @@ export default () => {
               <TechIcon title="PostgreSQL" source={postgresql} />
             </div>
             <div className="links-container">
-              <a className="link" target="_blank" rel="noreferrer noopener" href="https://pokeman-go.herokuapp.com"><span>LIVE</span></a>
-              <a className="link" target="_blank" rel="noreferrer noopener" href="https://github.com/blb451/pokeman-go"><span>SOURCE</span></a>
+              <a className="link" target="_blank" rel="noreferrer noopener" href="https://awesome-answers-rails.herokuapp.com"><span>LIVE</span></a>
+              <a className="link" target="_blank" rel="noreferrer noopener" href="https://github.com/cgsimmons/awesome_answers"><span>SOURCE</span></a>
             </div>
           </div>
         </div>
