@@ -27,7 +27,9 @@
     $devices: (
       (768px, 1024px), // iPad (all versions)
       (320px, 480px),  // iPhone 4
-      (320px, 568px)   // iPhone 5, 5C, 5S
+      (320px, 568px),  // iPhone 5, 5C, 5S
+      (375px, 667px),  // iPhone 6/7
+      (414px, 736px)   // iPhone 6/7 Plus
     );
 
     @each $device in $devices {
