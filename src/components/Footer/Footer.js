@@ -8,7 +8,13 @@ export default () => {
     <div className="Footer">
       <div className="left-side">
         <h1>Did you enjoy the site?</h1>
-        <h1>Check out the source code!</h1>
+        <h1>Check out the
+          <a
+            target="_blank"
+            rel="noreferrer noopener" href="https://github.com/cgsimmons/portfolio-react"
+          > source code!
+          </a>
+        </h1>
       </div>
       <div className="right-side">
         <a
