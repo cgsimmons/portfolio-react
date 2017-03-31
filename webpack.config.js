@@ -16,7 +16,7 @@ const config = {
   output: {
     path: path.join(__dirname, 'build'),
     publicPath: '/',
-    filename: 'assets/[name].[chunkhash].js',
+    filename: 'assets/javascripts/[name].[chunkhash].js',
   },
   module: {
     rules: [
@@ -42,7 +42,7 @@ const config = {
             loader: 'url-loader',
             options:
             {
-              limit: 40000,
+              limit: 1000,
               name: 'assets/images/[name].[ext]',
             },
           },
