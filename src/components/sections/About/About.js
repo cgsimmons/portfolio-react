@@ -25,8 +25,8 @@ export default () => {
         I enjoy working with motivated individuals and solving problems,
         learning new tools, and becoming a better software developer.
         <br /><br />
-        Feel free to contact me about opportunities in the Vancouver,
-        B.C. area.
+        Feel free to contact me about opportunities in the San
+         Francisco, Seattle or Vancouver B.C. areas.
       </div>
     </div>
   );

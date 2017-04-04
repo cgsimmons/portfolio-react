@@ -42,7 +42,7 @@ const config = {
             loader: 'url-loader',
             options:
             {
-              limit: 1000,
+              limit: 5000,
               name: 'assets/images/[name].[ext]',
             },
           },
@@ -65,7 +65,7 @@ const config = {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: './assets/stylesheets/[name].[contenthash].css',
+      filename: 'assets/stylesheets/[name].[contenthash].css',
     }),
     new webpack.optimize.CommonsChunkPlugin({
       names: ['vendor', 'manifest'],
