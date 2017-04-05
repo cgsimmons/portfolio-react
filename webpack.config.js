@@ -46,7 +46,13 @@ const config = {
               name: 'assets/images/[name].[ext]',
             },
           },
-          'image-webpack-loader',
+          {
+            loader: 'image-webpack-loader',
+            options:
+            {
+              name: 'assets/images/[name].[ext]',
+            },
+          },
         ],
       },
       {
