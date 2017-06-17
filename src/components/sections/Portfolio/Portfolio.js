@@ -23,7 +23,7 @@ import snippet from '../../../assets/gifs/snippet.gif';
 import awesome from '../../../assets/gifs/awesome.gif';
 import cview from '../../../assets/gifs/cview.gif';
 import drinkKorea from '../../../assets/gifs/drink-korea.gif';
-import alexa from '../../../assets/images/alexa.jpg';
+import alexa from '../../../assets/images/alexa_decisionmaker.jpg';
 
 import './Portfolio.scss';
 
@@ -245,7 +245,7 @@ export default () => {
         </div>
         <div className="middle-container">
           <div className="title-container">
-            <h3 className="subsection-title">Alexa Make Decision Skill</h3>
+            <h3 className="subsection-title">DecisionMaker</h3>
           </div>
           <div className="subtitle-container">
             <div className="icons-container">
@@ -253,7 +253,7 @@ export default () => {
               <TechIcon title="AWS" source={aws} />
             </div>
             <div className="links-container">
-              <span className="link inactive">LIVE</span>
+              <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.amazon.com/dp/B072JSNT7N"><span>LIVE</span></a>
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://github.com/cgsimmons/alexa-skill-make-decision"><span>SOURCE</span></a>
             </div>
           </div>
@@ -262,7 +262,7 @@ export default () => {
           <p>This is a skill to allow Amazon&apos;s Alexa voice
              recognition service to help users make tough choices.
               Can&apos;t decide whether to have Chinese or Italian
-               food for dinner? Ask Alexa. Built using Amazon&apos;s Lambda service.</p>
+               food for dinner? Ask Alexa. Built using Amazon&apos;s Lambda service and the Alexa Skill SDK. </p>
         </div>
       </div>
     </div>
