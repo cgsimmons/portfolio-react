@@ -254,7 +254,7 @@ export default () => {
             </div>
             <div className="links-container">
               <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.amazon.com/dp/B072JSNT7N"><span>LIVE</span></a>
-              <a className="link" target="_blank" rel="noreferrer noopener" href="https://github.com/cgsimmons/alexa-skill-make-decision"><span>SOURCE</span></a>
+              <a className="link" target="_blank" rel="noreferrer noopener" href="https://github.com/cgsimmons/alexa-skill-decision-maker"><span>SOURCE</span></a>
             </div>
           </div>
         </div>
