@@ -1,88 +1,74 @@
 const path = require('path');
-const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
-const VENDOR_LIBS = [
-  'react', 'lodash', 'redux', 'react-redux', 'react-dom', 'react-router',
-  'redux-thunk',
-];
-
-const config = {
+module.exports = {
   entry: {
-    bundle: './src/App.js',
-    vendor: VENDOR_LIBS,
+    main: './src/App.jsx',
   },
   output: {
-    path: path.join(__dirname, 'build'),
-    publicPath: '/',
-    filename: 'assets/javascripts/[name].[chunkhash].js',
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
-        use: 'babel-loader',
-        exclude: '/node_modules/',
-      },
-      {
-        test: /\.(css|scss)$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            'css-loader',
-            'sass-loader',
-          ],
-        }),
-      },
-      {
-        test: /\.(jpe?g|png|gif|svg)$/,
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        resolve: {
+          extensions: ['.js', '.jsx'],
+        },
         use: [
           {
-            loader: 'url-loader',
-            options:
-            {
-              limit: 5000,
-              name: 'assets/images/[name].[ext]',
-            },
-          },
-          {
-            loader: 'image-webpack-loader',
-            options:
-            {
-              name: 'assets/images/[name].[ext]',
+            loader: 'babel-loader',
+            options: {
+              presets: [
+                '@babel/preset-env',
+                '@babel/preset-react',
+                {
+                  plugins: [
+                    '@babel/plugin-proposal-class-properties',
+                  ],
+                },
+              ],
             },
           },
         ],
       },
       {
-        test: /\.(eot|ttf|woff|woff2)$/,
+        test: /\.s(a|c)ss$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' },
+        ],
+      },
+      {
+        test: /\.html$/,
         use: [
           {
-            loader: 'file-loader',
-            options:
-            {
-              name: 'assets/fonts/[name].[ext]',
-            },
+            loader: 'html-loader',
           },
         ],
+      },
+      {
+        test: /\.(jpg|png|woff|woff2|eot|ttf|svg|gif)$/,
+        loader: 'url-loader?limit=100000',
+        options: {
+          limit: 500000,
+        },
       },
     ],
   },
   plugins: [
-    new ExtractTextPlugin({
-      filename: 'assets/stylesheets/[name].[contenthash].css',
+    new HtmlWebPackPlugin({
+      template: 'index.html',
     }),
-    new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'manifest'],
-    }),
-    new HtmlWebpackPlugin({
-      template: 'src/index.html',
-    }),
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-    }),
+    new CleanWebpackPlugin(),
   ],
+  devServer: {
+    host: 'localhost',
+    port: 3000,
+    open: true,
+  },
 };
-
-module.exports = config;
