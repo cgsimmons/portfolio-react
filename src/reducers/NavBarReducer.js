@@ -3,7 +3,7 @@ const INITIAL_NAVBAR_STATE = {
   active: 'Home',
 };
 
-export function navBar(state = INITIAL_NAVBAR_STATE, action) {
+export default function navBar(state = INITIAL_NAVBAR_STATE, action) {
   switch (action.type) {
     case 'SET_HOVER':
       return { ...state, hovering: action.hover };

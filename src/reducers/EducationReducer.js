@@ -4,14 +4,14 @@ const INITIAL_EDUCATION_STATE = {
   aas: false,
 };
 
-export function educationActive(state = INITIAL_EDUCATION_STATE, action) {
+export default function educationActive(state = INITIAL_EDUCATION_STATE, action) {
   switch (action.type) {
-    case 'SET_BOOTCAMP_ACTIVE':
-      return { ...state, bootcamp: action.active };
-    case 'SET_BA_ACTIVE':
-      return { ...state, ba: action.active };
-    case 'SET_AAS_ACTIVE':
-      return { ...state, aas: action.active };
+    case 'TOGGLE_BOOTCAMP_ACTIVE':
+      return { ...state, bootcamp: !state.bootcamp };
+    case 'TOGGLE_BA_ACTIVE':
+      return { ...state, ba: !state.ba };
+    case 'TOGGLE_AAS_ACTIVE':
+      return { ...state, aas: !state.aas };
     default:
       return state;
   }
