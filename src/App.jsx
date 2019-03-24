@@ -10,9 +10,7 @@ import Routes from './router';
 const App = () => {
   /* eslint-disable no-underscore-dangle */
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-  const store = createStore(reducers, {}, composeEnhancers(
-    applyMiddleware(ReduxThunk),
-  ));
+  const store = createStore(reducers, {}, composeEnhancers(applyMiddleware(ReduxThunk)));
   /* eslint-enable */
   return (
     <Provider store={store}>
@@ -20,6 +18,5 @@ const App = () => {
     </Provider>
   );
 };
-
 
 ReactDOM.render(<App />, document.getElementById('root'));

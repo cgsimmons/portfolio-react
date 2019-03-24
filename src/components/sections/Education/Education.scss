@@ -59,7 +59,7 @@
         .school {
           width: 13rem;
         }
-        p{
+        p {
           margin: 0;
         }
       }
@@ -69,7 +69,7 @@
           visibility: visible;
         }
         visibility: hidden;
-        p{
+        p {
           margin-top: 0;
         }
         margin: 0 -1rem -1rem 0;
@@ -81,7 +81,6 @@
     }
   }
 }
-
 
 @media only screen and (max-width: 1700px) {
   #Education {
@@ -97,7 +96,6 @@
           }
         }
         .right-side {
-
         }
       }
     }
@@ -105,11 +103,9 @@
 }
 
 @media only screen and (max-width: 1280px) {
-
 }
 
-@media only screen
-and (max-width: 770px) {
+@media only screen and (max-width: 770px) {
   #Education {
     .inner-container {
       padding: 0.5rem;

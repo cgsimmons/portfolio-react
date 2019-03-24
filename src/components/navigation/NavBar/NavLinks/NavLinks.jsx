@@ -25,62 +25,32 @@ class NavLinks extends React.Component {
   handleHoverTrue = () => {
     const { setHover } = this.props;
     setHover(true);
-  }
+  };
 
   handleSetActive = (to) => {
     const { setActive } = this.props;
     setActive(to);
-  }
+  };
 
   render() {
-    const {
-      active,
-    } = this.props;
+    const { active } = this.props;
     return (
       <div className="NavLinks">
         <ul>
-          <li
-            className={active === 'Home' ? 'active' : ''}
-            onMouseEnter={this.handleHoverTrue}
-          >
-            <Link
-              to="Home"
-              offset={-50}
-              smooth
-              spy
-              isDynamic
-              onSetActive={this.handleSetActive}
-            >
+          <li className={active === 'Home' ? 'active' : ''} onMouseEnter={this.handleHoverTrue}>
+            <Link to="Home" offset={-50} smooth spy isDynamic onSetActive={this.handleSetActive}>
               <MdHome />
               <span>Top of Page</span>
             </Link>
           </li>
-          <li
-            className={active === 'About' ? 'active' : ''}
-            onMouseEnter={this.handleHoverTrue}
-          >
-            <Link
-              to="About"
-              smooth
-              spy
-              isDynamic
-              onSetActive={this.handleSetActive}
-            >
+          <li className={active === 'About' ? 'active' : ''} onMouseEnter={this.handleHoverTrue}>
+            <Link to="About" smooth spy isDynamic onSetActive={this.handleSetActive}>
               <FaInfoCircle />
               <span>About Me</span>
             </Link>
           </li>
-          <li
-            className={active === 'Skills' ? 'active' : ''}
-            onMouseEnter={this.handleHoverTrue}
-          >
-            <Link
-              to="Skills"
-              smooth
-              spy
-              isDynamic
-              onSetActive={this.handleSetActive}
-            >
+          <li className={active === 'Skills' ? 'active' : ''} onMouseEnter={this.handleHoverTrue}>
+            <Link to="Skills" smooth spy isDynamic onSetActive={this.handleSetActive}>
               <FaCode />
               <span>Skills</span>
             </Link>
@@ -89,13 +59,7 @@ class NavLinks extends React.Component {
             className={active === 'Portfolio' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
-            <Link
-              to="Portfolio"
-              smooth
-              spy
-              isDynamic
-              onSetActive={this.handleSetActive}
-            >
+            <Link to="Portfolio" smooth spy isDynamic onSetActive={this.handleSetActive}>
               <MdWork />
               <span>Portfolio</span>
             </Link>
@@ -104,13 +68,7 @@ class NavLinks extends React.Component {
             className={active === 'Education' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
-            <Link
-              to="Education"
-              smooth
-              spy
-              isDynamic
-              onSetActive={this.handleSetActive}
-            >
+            <Link to="Education" smooth spy isDynamic onSetActive={this.handleSetActive}>
               <FaGraduationCap />
               <span>Education</span>
             </Link>
@@ -162,36 +120,20 @@ class NavLinks extends React.Component {
           </li> */}
         </ul>
         <ul className="side-contacts">
-          <li
-            onMouseEnter={this.handleHoverTrue}
-          >
-            <a
-              href="mailto:chris.simmons.alt@gmail.com?subject=Nice%20Website!"
-            >
+          <li onMouseEnter={this.handleHoverTrue}>
+            <a href="mailto:chris.simmons.alt@gmail.com?subject=Nice%20Website!">
               <MdMail />
               <span>Email</span>
             </a>
           </li>
-          <li
-            onMouseEnter={this.handleHoverTrue}
-          >
-            <a
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://linkedin.com/in/c-simmons"
-            >
+          <li onMouseEnter={this.handleHoverTrue}>
+            <a target="_blank" rel="noreferrer noopener" href="https://linkedin.com/in/c-simmons">
               <FaLinkedin />
               <span>LinkedIn</span>
             </a>
           </li>
-          <li
-            onMouseEnter={this.handleHoverTrue}
-          >
-            <a
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://github.com/cgsimmons"
-            >
+          <li onMouseEnter={this.handleHoverTrue}>
+            <a target="_blank" rel="noreferrer noopener" href="https://github.com/cgsimmons">
               <FaGithub />
               <span>Github</span>
             </a>
@@ -221,4 +163,7 @@ const mapDispatchToProps = dispatch => ({
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(NavLinks);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(NavLinks);

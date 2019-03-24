@@ -6,9 +6,9 @@ export default () => (
     <div className="banner-fade" />
     <div className="name">
       <h1>
-christopher
+        christopher
         <br />
-simmons
+        simmons
       </h1>
     </div>
   </div>

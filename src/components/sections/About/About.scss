@@ -1,6 +1,6 @@
 #About {
   background-color: #ececec;
-  .img-container{
+  .img-container {
     margin: 2.2rem 1rem 1rem 1rem;
     img {
       margin-top: 0;
@@ -37,8 +37,7 @@
   }
 }
 
-@media only screen
-and (max-width: 770px) {
+@media only screen and (max-width: 770px) {
   #About {
     display: inline-block;
 

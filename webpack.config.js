@@ -26,22 +26,22 @@ module.exports = {
                 '@babel/preset-env',
                 '@babel/preset-react',
                 {
-                  plugins: [
-                    '@babel/plugin-proposal-class-properties',
-                  ],
+                  plugins: ['@babel/plugin-proposal-class-properties'],
                 },
               ],
+            },
+          },
+          {
+            loader: 'eslint-loader',
+            options: {
+              configFile: `${__dirname}/.eslintrc.json`,
             },
           },
         ],
       },
       {
         test: /\.s(a|c)ss$/,
-        use: [
-          { loader: 'style-loader' },
-          { loader: 'css-loader' },
-          { loader: 'sass-loader' },
-        ],
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }],
       },
       {
         test: /\.html$/,

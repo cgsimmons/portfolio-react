@@ -1,14 +1,14 @@
 @import '../Layout/animations';
 
 .techIcon-container {
-  position:relative;
-  display:inline-block;
-  &:hover .techIcon-title{
+  position: relative;
+  display: inline-block;
+  &:hover .techIcon-title {
     display: inline-block;
-    position:absolute;
-    bottom:-1.5rem;
-    left:50%;
-    transform:translateX(-50%);
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
   }
   .techIcon {
@@ -19,7 +19,7 @@
   }
   .techIcon-title {
     color: #ececec;
-    font: 0.7rem "Rubik-Bold", Helvetica, Arial, sans-serif;
+    font: 0.7rem 'Rubik-Bold', Helvetica, Arial, sans-serif;
     padding: 0.2rem 0.4rem;
     background: #44b1e4;
     border-radius: 1rem;
@@ -60,15 +60,12 @@
 // }
 
 @media only screen and (max-width: 1700px) {
-
 }
 
 @media only screen and (max-width: 1280px) {
-
 }
 
-@media only screen
-and (max-width: 770px) {
+@media only screen and (max-width: 770px) {
   .techIcon-container .techIcon {
     height: 3rem;
     max-width: 3rem;

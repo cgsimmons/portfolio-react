@@ -12,12 +12,10 @@ class Layout extends React.Component {
   handleClick = () => {
     const { setHover } = this.props;
     setHover(false);
-  }
+  };
 
   render() {
-    const {
-      isNavBarHovering,
-    } = this.props;
+    const { isNavBarHovering } = this.props;
     return (
       <div className="app-container">
         <header>
@@ -56,4 +54,7 @@ const mapDispatchToProps = dispatch => ({
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Layout);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Layout);

@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 import './TechIcon.scss';
 
 const TechIcon = (props) => {
-  const {
-    title,
-    source,
-  } = props;
+  const { title, source } = props;
   return (
     <div className="techIcon-container">
       <img className="techIcon" alt={title} src={source} />

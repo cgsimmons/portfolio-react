@@ -9,19 +9,21 @@ class NavBar extends React.Component {
   handleHoverTrue = () => {
     const { setHover } = this.props;
     setHover(true);
-  }
+  };
 
   handleHoverFalse = () => {
     const { setHover } = this.props;
     setHover(false);
-  }
+  };
 
   render() {
-    const {
-      isHovering,
-    } = this.props;
+    const { isHovering } = this.props;
     return (
-      <nav className={`NavBar${isHovering ? ' hovering' : ''}`} onMouseEnter={this.handleHoverTrue} onMouseLeave={this.handleHoverFalse}>
+      <nav
+        className={`NavBar${isHovering ? ' hovering' : ''}`}
+        onMouseEnter={this.handleHoverTrue}
+        onMouseLeave={this.handleHoverFalse}
+      >
         <NavLinks />
       </nav>
     );
@@ -42,4 +44,7 @@ const mapDispatchToProps = dispatch => ({
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(NavBar);

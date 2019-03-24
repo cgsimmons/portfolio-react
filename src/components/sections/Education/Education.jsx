@@ -13,47 +13,30 @@ class Education extends React.Component {
     const { toggleEducation } = this.props;
     const section = event.target.className.split(' ')[0];
     toggleEducation(section);
-  }
+  };
 
   render() {
-    const {
-      bootcampIsActive,
-      baIsActive,
-      aasIsActive,
-    } = this.props;
+    const { bootcampIsActive, baIsActive, aasIsActive } = this.props;
     return (
-      <div
-        id="Education"
-        className="section"
-      >
+      <div id="Education" className="section">
         <h2 className="section-title">Education</h2>
         <div className="inner-container">
           <div className="title-container" onClick={this.handleClick} role="presentation">
-            <h3
-              className="bootcamp subsection-title"
-            >
-12-Week Developer Bootcamp
-            </h3>
+            <h3 className="bootcamp subsection-title">12-Week Developer Bootcamp</h3>
             <img
               className={`bootcamp chevron${bootcampIsActive ? ' expanded' : ''}`}
               alt="expand"
               src={chevron}
             />
           </div>
-          <div
-            className={`content${bootcampIsActive ? ' expanded' : ''}`}
-          >
-            <div
-              className={`left-side${bootcampIsActive ? ' expanded' : ''}`}
-            >
+          <div className={`content${bootcampIsActive ? ' expanded' : ''}`}>
+            <div className={`left-side${bootcampIsActive ? ' expanded' : ''}`}>
               <img className="school" alt="codecore" src={codecore} />
               <p>Codecore Bootcamp</p>
               <p>Vancouver, BC</p>
               <p>2016</p>
             </div>
-            <div
-              className={`right-side${bootcampIsActive ? ' expanded' : ''}`}
-            >
+            <div className={`right-side${bootcampIsActive ? ' expanded' : ''}`}>
               <p>Relevant Coursework: </p>
               <ul>
                 <li>Ruby on Rails</li>
@@ -71,32 +54,22 @@ class Education extends React.Component {
         </div>
         <div className="inner-container">
           <div className="title-container" onClick={this.handleClick} role="presentation">
-            <h3
-              className="ba subsection-title"
-            >
-B.A. in Computer Science
-            </h3>
+            <h3 className="ba subsection-title">B.A. in Computer Science</h3>
             <img
               className={`ba chevron${baIsActive ? ' expanded' : ''}`}
               alt="expand"
               src={chevron}
             />
           </div>
-          <div
-            className={`content${baIsActive ? ' expanded' : ''}`}
-          >
-            <div
-              className={`left-side${baIsActive ? ' expanded' : ''}`}
-            >
+          <div className={`content${baIsActive ? ' expanded' : ''}`}>
+            <div className={`left-side${baIsActive ? ' expanded' : ''}`}>
               <img className="school" alt="WSU" src={WSU} />
               <p>Washington State University</p>
               <p>Richland, WA</p>
               <p>GPA: 3.58 (cum laude)</p>
               <p>2010</p>
             </div>
-            <div
-              className={`right-side${baIsActive ? ' expanded' : ''}`}
-            >
+            <div className={`right-side${baIsActive ? ' expanded' : ''}`}>
               <p>Relevant Coursework: </p>
               <ul>
                 <li>Intro to Artificial Intelligence</li>
@@ -114,32 +87,22 @@ B.A. in Computer Science
         </div>
         <div className="inner-container">
           <div className="title-container" onClick={this.handleClick} role="presentation">
-            <h3
-              className="aas subsection-title"
-            >
-Associate in Arts and Science
-            </h3>
+            <h3 className="aas subsection-title">Associate in Arts and Science</h3>
             <img
               className={`aas chevron${aasIsActive ? ' expanded' : ''}`}
               alt="expand"
               src={chevron}
             />
           </div>
-          <div
-            className={`content${aasIsActive ? ' expanded' : ''}`}
-          >
-            <div
-              className={`left-side${aasIsActive ? ' expanded' : ''}`}
-            >
+          <div className={`content${aasIsActive ? ' expanded' : ''}`}>
+            <div className={`left-side${aasIsActive ? ' expanded' : ''}`}>
               <img className="school" alt="bbcc" src={bbcc} />
               <p>Big Bend Community College</p>
               <p>Moses Lake, WA</p>
               <p>GPA: 3.33</p>
               <p>2003</p>
             </div>
-            <div
-              className={`right-side${aasIsActive ? ' expanded' : ''}`}
-            >
+            <div className={`right-side${aasIsActive ? ' expanded' : ''}`}>
               <p>Relevant Coursework: </p>
               <ul>
                 <li>Intro to Commputer Science</li>
@@ -178,4 +141,7 @@ const mapDispatchToProps = dispatch => ({
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Education);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Education);

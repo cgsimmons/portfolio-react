@@ -28,10 +28,7 @@ import alexa from '../../../assets/images/alexa_decisionmaker.jpg';
 import './Portfolio.scss';
 
 export default () => (
-  <div
-    id="Portfolio"
-    className="section"
-  >
+  <div id="Portfolio" className="section">
     <h2 className="section-title">Portfolio</h2>
     <div className="inner-container">
       <div className="img-container">
@@ -47,18 +44,24 @@ export default () => (
             <TechIcon title="Android" source={android} />
           </div>
           <div className="links-container">
-            <a className="link" target="_blank" rel="noreferrer noopener" href="http://www.drinkkorea.catstonguesoft.com/"><span>LIVE</span></a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="http://www.drinkkorea.catstonguesoft.com/"
+            >
+              <span>LIVE</span>
+            </a>
             <span className="link inactive">SOURCE</span>
           </div>
         </div>
       </div>
       <div className="bottom-container">
         <p>
-An Android mobile app that teaches users Korean drinking
-             games and songs. The app was developed natively with Android
-              Studio. I was responsible for all of the software
-               development aspects of the app while my partner created
-                the image assets, game details, and design elements.
+          An Android mobile app that teaches users Korean drinking games and songs. The app was
+          developed natively with Android Studio. I was responsible for all of the software
+          development aspects of the app while my partner created the image assets, game details,
+          and design elements.
         </p>
       </div>
     </div>
@@ -77,26 +80,39 @@ An Android mobile app that teaches users Korean drinking
             <TechIcon title="PostgreSQL" source={postgresql} />
           </div>
           <div className="links-container">
-            <a className="link" target="_blank" rel="noreferrer noopener" href="https://pokeman-go.herokuapp.com"><span>LIVE</span></a>
-            <a className="link" target="_blank" rel="noreferrer noopener" href="https://github.com/blb451/pokeman-go"><span>SOURCE</span></a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://pokeman-go.herokuapp.com"
+            >
+              <span>LIVE</span>
+            </a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/blb451/pokeman-go"
+            >
+              <span>SOURCE</span>
+            </a>
           </div>
         </div>
       </div>
       <div className="bottom-container">
         <p>
-The winning project of the weekend-long
+          The winning project of the weekend-long
           <a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/chdyvr">
-Comedy Hack Day
-             Vancouver
+            Comedy Hack Day Vancouver
           </a>
           {' '}
-hack-a-thon. This Pokemon parody web app allows
-              users to take pictures of their friends and use real facial
-               recognition software (
-          <a target="_blank" rel="noreferrer noopener" href="https://www.faceplusplus.com">Face++</a>
+          hack-a-thon. This Pokemon parody web app allows users to take pictures of their friends
+          and use real facial recognition software (
+          <a target="_blank" rel="noreferrer noopener" href="https://www.faceplusplus.com">
+            Face++
+          </a>
           {' '}
-) to determine which type of Pokeman
-                they caught.
+          ) to determine which type of Pokeman they caught.
         </p>
       </div>
     </div>
@@ -118,20 +134,31 @@ hack-a-thon. This Pokemon parody web app allows
             <TechIcon title="Webpack" source={webpack} />
           </div>
           <div className="links-container">
-            <a className="link" target="_blank" rel="noreferrer noopener" href="https://twitter-scout.herokuapp.com"><span>LIVE</span></a>
-            <a className="link" target="_blank" rel="noreferrer noopener" href="https://github.com/cgsimmons/twitter-scout-node"><span>SOURCE</span></a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://twitter-scout.herokuapp.com"
+            >
+              <span>LIVE</span>
+            </a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/cgsimmons/twitter-scout-node"
+            >
+              <span>SOURCE</span>
+            </a>
           </div>
         </div>
       </div>
       <div className="bottom-container">
         <p>
-A Twitter manager using universal routing /
-           Javascript. Pages are generated and rendered
-            dynamically on the server using the same code
-             as the client. The client loads server rendered
-              markup while the bundle is downloading. It
-               also allows search engines to crawl the server
-                rendered pages.
+          A Twitter manager using universal routing / Javascript. Pages are generated and rendered
+          dynamically on the server using the same code as the client. The client loads server
+          rendered markup while the bundle is downloading. It also allows search engines to crawl
+          the server rendered pages.
         </p>
       </div>
     </div>
@@ -151,19 +178,31 @@ A Twitter manager using universal routing /
             <TechIcon title="PostgreSQL" source={postgresql} />
           </div>
           <div className="links-container">
-            <a className="link" target="_blank" rel="noreferrer noopener" href="https://findmypet-team1.herokuapp.com"><span>LIVE</span></a>
-            <a className="link" target="_blank" rel="noreferrer noopener" href="https://github.com/FindMyPetAppGroup1/spca-team1"><span>SOURCE</span></a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://findmypet-team1.herokuapp.com"
+            >
+              <span>LIVE</span>
+            </a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/FindMyPetAppGroup1/spca-team1"
+            >
+              <span>SOURCE</span>
+            </a>
           </div>
         </div>
       </div>
       <div className="bottom-container">
         <p>
-A web app designed to help people report lost and
-             found pets. The app uses an AJAX front end with
-              Ruby on Rails for the back end. The project was
-               created over the course of a weekend with a team
-                of 8 members in conjuction with Envisioning
-                 Lab&apos;s Test Tube program.
+          A web app designed to help people report lost and found pets. The app uses an AJAX front
+          end with Ruby on Rails for the back end. The project was created over the course of a
+          weekend with a team of 8 members in conjuction with Envisioning Lab&apos;s Test Tube
+          program.
         </p>
       </div>
     </div>
@@ -182,20 +221,34 @@ A web app designed to help people report lost and
             <TechIcon title="PostgreSQL" source={postgresql} />
           </div>
           <div className="links-container">
-            <a className="link" target="_blank" rel="noreferrer noopener" href="https://code-snippets-rails.herokuapp.com/"><span>LIVE</span></a>
-            <a className="link" target="_blank" rel="noreferrer noopener" href="https://github.com/cgsimmons/code_snippets"><span>SOURCE</span></a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://code-snippets-rails.herokuapp.com/"
+            >
+              <span>LIVE</span>
+            </a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/cgsimmons/code_snippets"
+            >
+              <span>SOURCE</span>
+            </a>
           </div>
         </div>
       </div>
       <div className="bottom-container">
         <p>
-A Rails app that allows users to save snippets
-             of code from 23 different languages. The app
-            uses an embedded javascript syntax highlighting
-           editor (
-          <a target="_blank" rel="noreferrer noopener" href="https://ace.c9.io">Ace</a>
+          A Rails app that allows users to save snippets of code from 23 different languages. The
+          app uses an embedded javascript syntax highlighting editor (
+          <a target="_blank" rel="noreferrer noopener" href="https://ace.c9.io">
+            Ace
+          </a>
           {' '}
-).
+          ).
           {' '}
         </p>
       </div>
@@ -216,19 +269,30 @@ A Rails app that allows users to save snippets
             <TechIcon title="PostgreSQL" source={postgresql} />
           </div>
           <div className="links-container">
-            <a className="link" target="_blank" rel="noreferrer noopener" href="https://awesome-answers-rails.herokuapp.com"><span>LIVE</span></a>
-            <a className="link" target="_blank" rel="noreferrer noopener" href="https://github.com/cgsimmons/awesome_answers"><span>SOURCE</span></a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://awesome-answers-rails.herokuapp.com"
+            >
+              <span>LIVE</span>
+            </a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/cgsimmons/awesome_answers"
+            >
+              <span>SOURCE</span>
+            </a>
           </div>
         </div>
       </div>
       <div className="bottom-container">
         <p>
-This is a simple Question & Answer web app built on
-             Rails. An API is implemented as well. Some of the
-              more interesting gems used include:
-               omniauth-twitter, fog, carrierwave,
-                active_model_serializers, cancancan and
-                 simple_form.
+          This is a simple Question & Answer web app built on Rails. An API is implemented as well.
+          Some of the more interesting gems used include: omniauth-twitter, fog, carrierwave,
+          active_model_serializers, cancancan and simple_form.
         </p>
       </div>
     </div>
@@ -247,18 +311,23 @@ This is a simple Question & Answer web app built on
           </div>
           <div className="links-container">
             <span className="link inactive">LIVE</span>
-            <a className="link" target="_blank" rel="noreferrer noopener" href="https://github.com/EMSL-MSC/cview/blob/master/scripts/nstat.py"><span>SOURCE</span></a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/EMSL-MSC/cview/blob/master/scripts/nstat.py"
+            >
+              <span>SOURCE</span>
+            </a>
           </div>
         </div>
       </div>
       <div className="bottom-container">
         <p>
-Cview is a 3D graphics engine developed by Pacific Northwest
-             National Laboratories for displaying graphically represented
-              cluster performance data. It also includes a data management
-               library for representing groups of related data. My roles
-                involved creating data-mining Python scripts to generate
-                 cluster analytical data.
+          Cview is a 3D graphics engine developed by Pacific Northwest National Laboratories for
+          displaying graphically represented cluster performance data. It also includes a data
+          management library for representing groups of related data. My roles involved creating
+          data-mining Python scripts to generate cluster analytical data.
         </p>
       </div>
     </div>
@@ -276,18 +345,30 @@ Cview is a 3D graphics engine developed by Pacific Northwest
             <TechIcon title="AWS" source={aws} />
           </div>
           <div className="links-container">
-            <a className="link" target="_blank" rel="noreferrer noopener" href="https://www.amazon.com/dp/B072JSNT7N"><span>LIVE</span></a>
-            <a className="link" target="_blank" rel="noreferrer noopener" href="https://github.com/cgsimmons/alexa-skill-decision-maker"><span>SOURCE</span></a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://www.amazon.com/dp/B072JSNT7N"
+            >
+              <span>LIVE</span>
+            </a>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/cgsimmons/alexa-skill-decision-maker"
+            >
+              <span>SOURCE</span>
+            </a>
           </div>
         </div>
       </div>
       <div className="bottom-container">
         <p>
-This is a skill to allow Amazon&apos;s Alexa voice
-             recognition service to help users make tough choices.
-              Can&apos;t decide whether to have Chinese or Italian
-               food for dinner? Ask Alexa. Built using Amazon&apos;s
-               Lambda service and the Alexa Skill SDK.
+          This is a skill to allow Amazon&apos;s Alexa voice recognition service to help users make
+          tough choices. Can&apos;t decide whether to have Chinese or Italian food for dinner? Ask
+          Alexa. Built using Amazon&apos;s Lambda service and the Alexa Skill SDK.
           {' '}
         </p>
       </div>

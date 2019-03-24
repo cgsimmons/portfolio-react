@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    .img-container{
+    .img-container {
       border-top-left-radius: 1rem;
       border-top-right-radius: 1rem;
       img {
@@ -22,7 +22,7 @@
       .title-container {
         background-color: #e69b9b;
         border-radius: 0;
-        margin: 0 ;
+        margin: 0;
         padding: 0 0.5rem;
         .subsection-title {
           border-radius: 0;
@@ -51,10 +51,10 @@
           text-align: center;
           border-left: solid #ececec 0.2rem;
           .link {
-            &:first-child{
+            &:first-child {
               border-bottom: solid #ececec 0.1rem;
             }
-            &:last-child{
+            &:last-child {
               border-top: solid #ececec 0.1rem;
             }
             height: 50%;
@@ -100,12 +100,9 @@
   }
 }
 
-
-
 @media only screen and (max-width: 1700px) {
   #Portfolio {
     .inner-container {
-
     }
   }
 }
@@ -121,7 +118,7 @@
             font-size: 2rem;
           }
         }
-        .subtitle-container .icons-container .techIcon-container .techIcon{
+        .subtitle-container .icons-container .techIcon-container .techIcon {
           height: 2rem;
           max-width: 2rem;
         }
@@ -135,8 +132,7 @@
   }
 }
 
-@media only screen
-and (max-width: 770px) {
+@media only screen and (max-width: 770px) {
   #Portfolio {
     .inner-container {
       max-width: 85%;

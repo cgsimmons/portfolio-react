@@ -29,10 +29,7 @@ import tux from '../../../assets/icons/tux.svg';
 import './Skills.scss';
 
 export default () => (
-  <div
-    id="Skills"
-    className="section"
-  >
+  <div id="Skills" className="section">
     <h2 className="section-title">Skills</h2>
     <div className="inner-container">
       <h3 className="subsection-title">Languages</h3>

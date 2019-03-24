@@ -1,12 +1,11 @@
 @import '../../../Layout/animations';
 
-
 .NavLinks {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
   font-weight: bold;
 
   ul {
@@ -18,10 +17,11 @@
   li {
     white-space: nowrap;
     position: relative;
-    background-color: #0E0E0C;
+    background-color: #0e0e0c;
     cursor: pointer;
 
-    &:hover, &.active {
+    &:hover,
+    &.active {
       background-color: #3f3f3f;
     }
 
@@ -49,7 +49,7 @@
   }
 }
 
-@media only screen and (max-width: 1700px){
+@media only screen and (max-width: 1700px) {
   .NavLinks ul li a {
     span {
       left: 2rem;
