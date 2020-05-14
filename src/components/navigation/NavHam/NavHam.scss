@@ -1,80 +1,80 @@
 .NavHam {
-  visibility: hidden;
-  position: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  top: 0;
-  height: 45px;
-  width: 100%;
-  background-color: #0e0e0c;
-  z-index: 50;
-  a {
-    margin: 0.55rem;
-    cursor: pointer;
-    padding: 10px 35px 16px 0px;
-    span,
-    span:before,
-    span:after {
-      cursor: pointer;
-      border-radius: 1px;
-      height: 4px;
-      width: 27px;
-      background: #b1b1b1;
-      position: absolute;
-      display: block;
-      content: '';
-      transition: all 300ms ease-in-out;
-    }
-    span:before {
-      top: -10px;
-    }
-    span:after {
-      bottom: -10px;
-    }
-    &.hovering span:before {
-      transform: rotate(-27deg);
-      width: 20px;
-      top: -5px;
-    }
-    &.hovering span:after {
-      transform: rotate(27deg);
-      width: 20px;
-      bottom: -5px;
-    }
-  }
-  .top-contacts {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    li {
-      float: right;
-      &:first-child {
-        margin-right: 0.5rem;
-      }
-      a {
-        text-decoration: none;
-        color: #44b1e4;
-        display: block;
-        padding: 0;
-        margin: 0 0.27rem;
-
-        svg {
-          width: 35px;
-          height: 35px;
-          margin: 0;
+    visibility: hidden;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    height: 45px;
+    width: 100%;
+    background-color: #0e0e0c;
+    z-index: 50;
+    a {
+        margin: 0.55rem;
+        cursor: pointer;
+        padding: 10px 35px 16px 0px;
+        span,
+        span:before,
+        span:after {
+            cursor: pointer;
+            border-radius: 1px;
+            height: 4px;
+            width: 27px;
+            background: #b1b1b1;
+            position: absolute;
+            display: block;
+            content: "";
+            transition: all 300ms ease-in-out;
         }
-      }
+        span:before {
+            top: -10px;
+        }
+        span:after {
+            bottom: -10px;
+        }
+        &.hovering span:before {
+            transform: rotate(-27deg);
+            width: 20px;
+            top: -5px;
+        }
+        &.hovering span:after {
+            transform: rotate(27deg);
+            width: 20px;
+            bottom: -5px;
+        }
     }
-  }
+    .top-contacts {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            float: right;
+            &:first-child {
+                margin-right: 0.5rem;
+            }
+            a {
+                text-decoration: none;
+                color: #44b1e4;
+                display: block;
+                padding: 0;
+                margin: 0 0.27rem;
+
+                svg {
+                    width: 35px;
+                    height: 35px;
+                    margin: 0;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 770px) {
-  .NavHam {
-    visibility: visible;
-  }
-  .app-body .app-content {
-    margin-top: 45px;
-  }
+    .NavHam {
+        visibility: visible;
+    }
+    .app-body .app-content {
+        margin-top: 45px;
+    }
 }

@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { MdMail } from 'react-icons/md';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { setNavBarHover } from '../../../actions/NavBarActions';
-import './NavHam.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { MdMail } from "react-icons/md";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { setNavBarHover } from "../../../actions/NavBarActions";
+import "./NavHam.scss";
 
 class NavHam extends React.Component {
   handleClick = () => {
@@ -17,7 +17,7 @@ class NavHam extends React.Component {
     return (
       <div className="NavHam">
         <button
-          className={isHovering ? 'hovering' : ''}
+          className={isHovering ? "hovering" : ""}
           onClick={this.handleClick}
           onKeyPress={this.handleClick}
           type="button"
@@ -26,12 +26,20 @@ class NavHam extends React.Component {
         </button>
         <ul className="top-contacts">
           <li>
-            <a target="_blank" rel="noreferrer noopener" href="https://github.com/cgsimmons">
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/cgsimmons"
+            >
               <FaGithub />
             </a>
           </li>
           <li>
-            <a target="_blank" rel="noreferrer noopener" href="https://linkedin.com/in/c-simmons">
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://linkedin.com/in/c-simmons"
+            >
               <FaLinkedin />
             </a>
           </li>
@@ -51,16 +59,13 @@ NavHam.propTypes = {
   isHovering: PropTypes.bool.isRequired,
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   isHovering: state.navBar.hovering,
 });
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   setHover: (hover) => {
     dispatch(setNavBarHover(hover));
   },
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(NavHam);
+export default connect(mapStateToProps, mapDispatchToProps)(NavHam);

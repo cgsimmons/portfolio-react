@@ -1,62 +1,62 @@
 #About {
-  background-color: #ececec;
-  .img-container {
-    margin: 2.2rem 1rem 1rem 1rem;
-    img {
-      margin-top: 0;
-      border-radius: 2rem;
-      height: 25rem;
+    background-color: #ececec;
+    .img-container {
+        margin: 2.2rem 1rem 1rem 1rem;
+        img {
+            margin-top: 0;
+            border-radius: 2rem;
+            height: 25rem;
+        }
     }
-  }
-  .content {
-    max-width: 50%;
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1.5rem;
-  }
+    .content {
+        max-width: 50%;
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 1700px) {
-  #About {
-    .img-container img {
-      height: 15rem;
+    #About {
+        .img-container img {
+            height: 15rem;
+        }
+        .content {
+            font-size: 1rem;
+        }
     }
-    .content {
-      font-size: 1rem;
-    }
-  }
 }
 
 @media only screen and (max-width: 1280px) {
-  #About {
-    .img-container img {
+    #About {
+        .img-container img {
+        }
+        .content {
+            max-width: 45%;
+        }
     }
-    .content {
-      max-width: 45%;
-    }
-  }
 }
 
 @media only screen and (max-width: 770px) {
-  #About {
-    display: inline-block;
+    #About {
+        display: inline-block;
 
-    .img-container {
-      float: left;
-      margin: 1rem 0.5rem 0rem 1rem;
-      padding-top: 0.1rem;
-      img {
-        height: 6rem;
-        border-radius: 1rem;
-      }
+        .img-container {
+            float: left;
+            margin: 1rem 0.5rem 0rem 1rem;
+            padding-top: 0.1rem;
+            img {
+                height: 6rem;
+                border-radius: 1rem;
+            }
+        }
+        .content {
+            margin-top: 0;
+            max-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: justify;
+            font-size: 0.8rem;
+        }
     }
-    .content {
-      margin-top: 0;
-      max-width: 100%;
-      padding-left: 0;
-      padding-right: 0;
-      text-align: justify;
-      font-size: 0.8rem;
-    }
-  }
 }

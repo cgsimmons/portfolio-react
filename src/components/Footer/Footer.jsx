@@ -1,7 +1,7 @@
-import React from 'react';
-import github from '../../assets/icons/github.svg';
-import TechIcon from '../TechIcon/TechIcon';
-import './Footer.scss';
+import React from "react";
+import github from "../../assets/icons/github.svg";
+import TechIcon from "../TechIcon/TechIcon";
+import "./Footer.scss";
 
 export default () => (
   <div className="Footer">
@@ -14,7 +14,7 @@ export default () => (
           rel="noreferrer noopener"
           href="https://github.com/cgsimmons/portfolio-react"
         >
-          {' '}
+          {" "}
           source code!
         </a>
       </h1>

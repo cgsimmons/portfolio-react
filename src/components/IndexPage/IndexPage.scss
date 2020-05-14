@@ -1,66 +1,66 @@
 .section {
-  margin: 0;
-  padding: 7rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  .section-title {
-    font-size: 3rem;
-    margin: 0 0 4rem 0;
-    text-align: center;
-    width: 100%;
-  }
-  .inner-container {
-    flex-grow: 1;
-    max-width: 40%;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #ececec;
-    border-radius: 1rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem #888888;
-    .subsection-title {
-      text-align: center;
-      background-color: #9c95ce;
-      color: #ececec;
-      border-top-right-radius: 1rem;
-      border-top-left-radius: 1rem;
-      margin: -1rem -1rem 1rem -1rem;
-      padding: 1rem;
-      width: 100%;
-      font-size: 2rem;
-      //
-      // background: rgb(68, 177, 228);
-      // color: white;
-      // margin: -1rem -1rem 1rem -1rem;
-      // padding: 1rem;
-      // border-top-left-radius: 1rem;
-      // border-top-right-radius: 1rem;
+    margin: 0;
+    padding: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .section-title {
+        font-size: 3rem;
+        margin: 0 0 4rem 0;
+        text-align: center;
+        width: 100%;
     }
-  }
+    .inner-container {
+        flex-grow: 1;
+        max-width: 40%;
+        margin: 1rem;
+        padding: 1rem;
+        background-color: #ececec;
+        border-radius: 1rem;
+        box-shadow: 0.2rem 0.2rem 0.2rem #888888;
+        .subsection-title {
+            text-align: center;
+            background-color: #9c95ce;
+            color: #ececec;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+            margin: -1rem -1rem 1rem -1rem;
+            padding: 1rem;
+            width: 100%;
+            font-size: 2rem;
+            //
+            // background: rgb(68, 177, 228);
+            // color: white;
+            // margin: -1rem -1rem 1rem -1rem;
+            // padding: 1rem;
+            // border-top-left-radius: 1rem;
+            // border-top-right-radius: 1rem;
+        }
+    }
 }
 
 @media only screen and (max-width: 1700px) {
-  .section {
-    padding: 4rem;
-  }
+    .section {
+        padding: 4rem;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
-  .section {
-  }
+    .section {
+    }
 }
 
 @media only screen and (max-width: 770px) {
-  .section {
-    padding: 3rem 0.5rem 2rem 0.5rem;
-    justify-content: space-around;
+    .section {
+        padding: 3rem 0.5rem 2rem 0.5rem;
+        justify-content: space-around;
 
-    .section-title {
-      margin-bottom: 0;
-    }
+        .section-title {
+            margin-bottom: 0;
+        }
 
-    h2 {
-      font-size: 2rem;
+        h2 {
+            font-size: 2rem;
+        }
     }
-  }
 }

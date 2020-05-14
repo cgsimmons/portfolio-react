@@ -1,32 +1,32 @@
-@import '../Layout/animations';
+@import "../Layout/animations";
 
 .techIcon-container {
-  position: relative;
-  display: inline-block;
-  &:hover .techIcon-title {
+    position: relative;
     display: inline-block;
-    position: absolute;
-    bottom: -1.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-  .techIcon {
-    height: 4rem;
-    width: 4rem;
-    margin: 0.3rem;
-    object-fit: scale-down;
-  }
-  .techIcon-title {
-    color: #ececec;
-    font: 0.7rem 'Rubik-Bold', Helvetica, Arial, sans-serif;
-    padding: 0.2rem 0.4rem;
-    background: #44b1e4;
-    border-radius: 1rem;
-    white-space: nowrap;
-    z-index: 50;
-    display: none;
-  }
+    &:hover .techIcon-title {
+        display: inline-block;
+        position: absolute;
+        bottom: -1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .techIcon {
+        height: 4rem;
+        width: 4rem;
+        margin: 0.3rem;
+        object-fit: scale-down;
+    }
+    .techIcon-title {
+        color: #ececec;
+        font: 0.7rem "Rubik-Bold", Helvetica, Arial, sans-serif;
+        padding: 0.2rem 0.4rem;
+        background: #44b1e4;
+        border-radius: 1rem;
+        white-space: nowrap;
+        z-index: 50;
+        display: none;
+    }
 }
 
 //Old style with fading opacity... has weird side effect
@@ -66,8 +66,8 @@
 }
 
 @media only screen and (max-width: 770px) {
-  .techIcon-container .techIcon {
-    height: 3rem;
-    max-width: 3rem;
-  }
+    .techIcon-container .techIcon {
+        height: 3rem;
+        max-width: 3rem;
+    }
 }

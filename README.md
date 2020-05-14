@@ -2,15 +2,15 @@
 
 A simple react site to use for displaying your portfolio. Some of the technologies used include:
 
-- redux & redux-thunk
-- react-router
-- babel
-- eslint (airbnb + extras)
-- redux devTools
-- sass
-- react-scroll for window scrolling
-- react-icons (Awesome Font and Material icons support)
-- webpack
+-   redux & redux-thunk
+-   react-router
+-   babel
+-   eslint (airbnb + extras)
+-   redux devTools
+-   sass
+-   react-scroll for window scrolling
+-   react-icons (Awesome Font and Material icons support)
+-   webpack
 
 ## Installation
 

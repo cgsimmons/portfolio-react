@@ -1,5 +1,5 @@
-@import 'animations';
-@import 'fonts';
+@import "animations";
+@import "fonts";
 @include Rubik-Bold();
 @include Rubik-Regular();
 
@@ -7,42 +7,42 @@ html {
 }
 
 body {
-  font: 14px 'Rubik-Regular', Helvetica, Arial, sans-serif;
-  color: #595858;
-  background-color: rgb(245, 248, 250);
-  margin: 0;
+    font: 14px "Rubik-Regular", Helvetica, Arial, sans-serif;
+    color: #595858;
+    background-color: rgb(245, 248, 250);
+    margin: 0;
 }
 
 .app-body {
-  // overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 .app-content {
-  @include contentAnimation();
-  margin: 0 0 0 12.95rem;
+    @include contentAnimation();
+    margin: 0 0 0 12.95rem;
 }
 
 @media only screen and (max-width: 1700px) {
-  .app-content {
-    margin: 0 0 0 10rem;
-  }
+    .app-content {
+        margin: 0 0 0 10rem;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
-  .app-content {
-    margin: 0 0 0 2.5rem;
-  }
-  .shift-content {
-    background-color: rgba(0, 0, 0, 0.45);
-    opacity: 0.8;
-  }
+    .app-content {
+        margin: 0 0 0 2.5rem;
+    }
+    .shift-content {
+        background-color: rgba(0, 0, 0, 0.45);
+        opacity: 0.8;
+    }
 }
 
 @media only screen and (max-width: 770px) {
-  .app-content {
-    margin: 0;
-  }
-  .shift-content {
-    background-color: rgba(0, 0, 0, 0.45);
-  }
+    .app-content {
+        margin: 0;
+    }
+    .shift-content {
+        background-color: rgba(0, 0, 0, 0.45);
+    }
 }

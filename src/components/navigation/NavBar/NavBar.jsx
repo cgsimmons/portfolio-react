@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import NavLinks from './NavLinks/NavLinks';
-import { setNavBarHover } from '../../../actions/NavBarActions';
-import './NavBar.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import NavLinks from "./NavLinks/NavLinks";
+import { setNavBarHover } from "../../../actions/NavBarActions";
+import "./NavBar.scss";
 
 class NavBar extends React.Component {
   handleHoverTrue = () => {
@@ -20,7 +20,7 @@ class NavBar extends React.Component {
     const { isHovering } = this.props;
     return (
       <nav
-        className={`NavBar${isHovering ? ' hovering' : ''}`}
+        className={`NavBar${isHovering ? " hovering" : ""}`}
         onMouseEnter={this.handleHoverTrue}
         onMouseLeave={this.handleHoverFalse}
       >
@@ -35,16 +35,13 @@ NavBar.propTypes = {
   isHovering: PropTypes.bool.isRequired,
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   isHovering: state.navBar.hovering,
 });
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   setHover: (hover) => {
     dispatch(setNavBarHover(hover));
   },
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(NavBar);
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

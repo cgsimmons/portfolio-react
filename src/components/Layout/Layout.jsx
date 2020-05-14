@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import NavBar from '../navigation/NavBar/NavBar';
-import NavHam from '../navigation/NavHam/NavHam';
-import Footer from '../Footer/Footer';
-import IndexPage from '../IndexPage/IndexPage';
-import { setNavBarHover } from '../../actions/NavBarActions';
-import './style.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import NavBar from "../navigation/NavBar/NavBar";
+import NavHam from "../navigation/NavHam/NavHam";
+import Footer from "../Footer/Footer";
+import IndexPage from "../IndexPage/IndexPage";
+import { setNavBarHover } from "../../actions/NavBarActions";
+import "./style.scss";
 
 class Layout extends React.Component {
   handleClick = () => {
@@ -24,7 +24,7 @@ class Layout extends React.Component {
         <div className="app-body">
           <NavBar />
           <div
-            className={`app-content${isNavBarHovering ? ' shift-content' : ''}`}
+            className={`app-content${isNavBarHovering ? " shift-content" : ""}`}
             onClick={this.handleClick}
             role="presentation"
           >
@@ -44,17 +44,14 @@ Layout.propTypes = {
   isNavBarHovering: PropTypes.bool.isRequired,
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   isNavBarHovering: state.navBar.hovering,
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   setHover: (hover) => {
     dispatch(setNavBarHover(hover));
   },
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(Layout);
+export default connect(mapStateToProps, mapDispatchToProps)(Layout);

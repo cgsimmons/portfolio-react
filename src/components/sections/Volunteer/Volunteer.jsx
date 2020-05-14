@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 export default () => (
-  <div id="Volunteer" className="section">
-    <h2 className="section-title">Volunteer</h2>
-  </div>
+    <div id="Volunteer" className="section">
+        <h2 className="section-title">Volunteer</h2>
+    </div>
 );

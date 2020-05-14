@@ -1,4 +1,4 @@
-import toggleEducationActive from './EducationActions';
+import toggleEducationActive from "./EducationActions";
 
-export * from './NavBarActions';
+export * from "./NavBarActions";
 export { toggleEducationActive };

@@ -1,61 +1,73 @@
-@import '../Layout/fonts';
-@import '../Layout/viewport-units-ios';
+@import "../Layout/fonts";
+@import "../Layout/viewport-units-ios";
 @include Rubik-Bold();
 @include Rubik-Regular();
 
 .Banner {
-  background-color: #00bcd4;
-  background: url('https://s3-ap-northeast-1.amazonaws.com/csimmons/rain_sm.jpg') no-repeat center
-    center fixed;
-  // background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 0;
-  @include viewport-unit(height, 100vh);
+    background-color: #00bcd4;
+    background: url("https://s3-ap-northeast-1.amazonaws.com/csimmons/rain_sm.jpg")
+        no-repeat center center fixed;
+    // background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+    @include viewport-unit(height, 100vh);
 
-  .banner-fade {
-    background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0) 50%, rgba(14, 14, 12, 1) 100%);
-    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 50%, rgba(14, 14, 12, 1) 100%);
-    background: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgba(14, 14, 12, 1) 100%);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .name {
-    display: flex;
-    align-items: flex-start;
-    height: 100%;
-    // background-color: rgba(0,0,0,0.3);
-    h1 {
-      // -webkit-transform: translateZ(0px);
-      // text-align: center;
-      margin: 1rem;
-      z-index: 40;
-      font: 8rem 'Rubik-Regular';
-      color: rgba(222, 222, 222, 0.7);
-      word-wrap: break-word;
-      line-height: 0.8;
-      text-align: right;
-      width: 100%;
+    .banner-fade {
+        background: -moz-linear-gradient(
+            bottom,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(14, 14, 12, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+            bottom,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(14, 14, 12, 1) 100%
+        );
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(14, 14, 12, 1) 100%
+        );
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
-  }
+    .name {
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+        // background-color: rgba(0,0,0,0.3);
+        h1 {
+            // -webkit-transform: translateZ(0px);
+            // text-align: center;
+            margin: 1rem;
+            z-index: 40;
+            font: 8rem "Rubik-Regular";
+            color: rgba(222, 222, 222, 0.7);
+            word-wrap: break-word;
+            line-height: 0.8;
+            text-align: right;
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width: 1280px) {
-  .Banner .name h1 {
-    font-size: 6rem;
-  }
+    .Banner .name h1 {
+        font-size: 6rem;
+    }
 }
 
 @media only screen and (max-width: 770px) {
-  .Banner {
-    margin-bottom: 0;
-    .name h1 {
-      font-size: 3rem;
+    .Banner {
+        margin-bottom: 0;
+        .name h1 {
+            font-size: 3rem;
+        }
     }
-  }
 }

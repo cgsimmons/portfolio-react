@@ -1,21 +1,21 @@
 .Footer {
-  background-color: #7ec0e0;
-  color: #595858;
-  padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  .left-side {
-    h1 {
-      margin: 0.5rem;
-      a {
-        text-decoration: none;
-        color: #383535;
-        &:hover {
-          color: #3233b9;
+    background-color: #7ec0e0;
+    color: #595858;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .left-side {
+        h1 {
+            margin: 0.5rem;
+            a {
+                text-decoration: none;
+                color: #383535;
+                &:hover {
+                    color: #3233b9;
+                }
+            }
         }
-      }
     }
-  }
 }

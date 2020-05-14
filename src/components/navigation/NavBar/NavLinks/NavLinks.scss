@@ -1,71 +1,71 @@
-@import '../../../Layout/animations';
+@import "../../../Layout/animations";
 
 .NavLinks {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
-  font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    font-weight: bold;
 
-  ul {
-    list-style: none;
-    padding: 0px;
-    margin-top: 0;
-  }
-
-  li {
-    white-space: nowrap;
-    position: relative;
-    background-color: #0e0e0c;
-    cursor: pointer;
-
-    &:hover,
-    &.active {
-      background-color: #3f3f3f;
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin-top: 0;
     }
 
-    a {
-      text-decoration: none;
-      color: #44b1e4;
-      display: block;
-      padding: 0 0.5rem 0 0.5rem;
+    li {
+        white-space: nowrap;
+        position: relative;
+        background-color: #0e0e0c;
+        cursor: pointer;
 
-      svg {
-        width: 1.35rem;
-        height: 1.35rem;
-        margin: 1rem 0.25rem 1rem 0.25rem;
-      }
+        &:hover,
+        &.active {
+            background-color: #3f3f3f;
+        }
 
-      span {
-        margin-left: 0.5rem;
-        position: absolute;
-        left: 2.5rem;
-        top: 1.25rem;
-        font-size: 0.9rem;
-        color: #d7e3ed;
-      }
+        a {
+            text-decoration: none;
+            color: #44b1e4;
+            display: block;
+            padding: 0 0.5rem 0 0.5rem;
+
+            svg {
+                width: 1.35rem;
+                height: 1.35rem;
+                margin: 1rem 0.25rem 1rem 0.25rem;
+            }
+
+            span {
+                margin-left: 0.5rem;
+                position: absolute;
+                left: 2.5rem;
+                top: 1.25rem;
+                font-size: 0.9rem;
+                color: #d7e3ed;
+            }
+        }
     }
-  }
 }
 
 @media only screen and (max-width: 1700px) {
-  .NavLinks ul li a {
-    span {
-      left: 2rem;
-      top: 1.35rem;
-      font-size: 0.8rem;
+    .NavLinks ul li a {
+        span {
+            left: 2rem;
+            top: 1.35rem;
+            font-size: 0.8rem;
+        }
+        svg {
+            margin: 1rem 0 1rem 0;
+        }
     }
-    svg {
-      margin: 1rem 0 1rem 0;
-    }
-  }
 }
 
 @media only screen and (max-width: 770px) {
-  .NavLinks {
-    .side-contacts {
-      display: none;
+    .NavLinks {
+        .side-contacts {
+            display: none;
+        }
     }
-  }
 }

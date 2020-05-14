@@ -1,147 +1,147 @@
-@import '../../Layout/animations';
+@import "../../Layout/animations";
 
 #Education {
-  background-color: #bee3e2;
-  .inner-container {
-    margin: 2rem;
-    padding: 1rem;
-    background-color: #3233b9;
-    max-width: 85%;
-    min-width: 50%;
-    .title-container {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-around;
-      h3 {
-        flex-grow: 1;
-        cursor: pointer;
-        margin: 0;
+    background-color: #bee3e2;
+    .inner-container {
+        margin: 2rem;
         padding: 1rem;
-        width: auto;
         background-color: #3233b9;
-      }
-      .chevron {
-        @include rotateChevronTiming();
-        cursor: pointer;
-        display: inline;
-        height: 1.5rem;
-        margin: 0 1rem 0 1rem;
-        &.expanded {
-          @include rotateChevron();
+        max-width: 85%;
+        min-width: 50%;
+        .title-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            h3 {
+                flex-grow: 1;
+                cursor: pointer;
+                margin: 0;
+                padding: 1rem;
+                width: auto;
+                background-color: #3233b9;
+            }
+            .chevron {
+                @include rotateChevronTiming();
+                cursor: pointer;
+                display: inline;
+                height: 1.5rem;
+                margin: 0 1rem 0 1rem;
+                &.expanded {
+                    @include rotateChevron();
+                }
+            }
         }
-      }
+        .content {
+            @include expandBoxIn();
+            overflow: hidden;
+            &.expanded {
+                @include expandBoxOut();
+                max-height: 40rem;
+                overflow: hidden;
+            }
+            display: flex;
+            max-height: 0;
+            flex-flow: wrap;
+            justify-content: flex-start;
+            background-color: #d1e6ff;
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            font-size: 1.5rem;
+            .left-side {
+                @include baseDuration();
+                &.expanded {
+                    visibility: visible;
+                }
+                visibility: hidden;
+                min-width: 30%;
+                margin: 1rem;
+                .school {
+                    width: 13rem;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+            .right-side {
+                @include baseDuration();
+                &.expanded {
+                    visibility: visible;
+                }
+                visibility: hidden;
+                p {
+                    margin-top: 0;
+                }
+                margin: 0 -1rem -1rem 0;
+                background-color: rgba(0, 0, 0, 0.06);
+                flex-grow: 1;
+                border-bottom-right-radius: 1rem;
+                padding: 1rem;
+            }
+        }
     }
-    .content {
-      @include expandBoxIn();
-      overflow: hidden;
-      &.expanded {
-        @include expandBoxOut();
-        max-height: 40rem;
-        overflow: hidden;
-      }
-      display: flex;
-      max-height: 0;
-      flex-flow: wrap;
-      justify-content: flex-start;
-      background-color: #d1e6ff;
-      border-bottom-right-radius: 1rem;
-      border-bottom-left-radius: 1rem;
-      font-size: 1.5rem;
-      .left-side {
-        @include baseDuration();
-        &.expanded {
-          visibility: visible;
-        }
-        visibility: hidden;
-        min-width: 30%;
-        margin: 1rem;
-        .school {
-          width: 13rem;
-        }
-        p {
-          margin: 0;
-        }
-      }
-      .right-side {
-        @include baseDuration();
-        &.expanded {
-          visibility: visible;
-        }
-        visibility: hidden;
-        p {
-          margin-top: 0;
-        }
-        margin: 0 -1rem -1rem 0;
-        background-color: rgba(0, 0, 0, 0.06);
-        flex-grow: 1;
-        border-bottom-right-radius: 1rem;
-        padding: 1rem;
-      }
-    }
-  }
 }
 
 @media only screen and (max-width: 1700px) {
-  #Education {
-    .inner-container {
-      .content {
-        &.expanded {
-          max-height: 30rem;
+    #Education {
+        .inner-container {
+            .content {
+                &.expanded {
+                    max-height: 30rem;
+                }
+                font-size: 1rem;
+                .left-side {
+                    .school {
+                        max-width: 6rem;
+                    }
+                }
+                .right-side {
+                }
+            }
         }
-        font-size: 1rem;
-        .left-side {
-          .school {
-            max-width: 6rem;
-          }
-        }
-        .right-side {
-        }
-      }
     }
-  }
 }
 
 @media only screen and (max-width: 1280px) {
 }
 
 @media only screen and (max-width: 770px) {
-  #Education {
-    .inner-container {
-      padding: 0.5rem;
-      .title-container {
-        h3 {
-          font-size: 1.5rem;
-          padding: 1rem;
+    #Education {
+        .inner-container {
+            padding: 0.5rem;
+            .title-container {
+                h3 {
+                    font-size: 1.5rem;
+                    padding: 1rem;
+                }
+                .chevron {
+                    height: 1rem;
+                }
+            }
+            .content {
+                p {
+                    font-size: 0.8rem;
+                    margin-bottom: 0.8rem;
+                }
+                li {
+                    font-size: 0.8rem;
+                }
+                &.expanded {
+                    max-height: 45rem;
+                }
+                .left-side {
+                    .school {
+                        max-width: 4rem;
+                    }
+                }
+                .right-side {
+                    ul {
+                        margin-top: 0;
+                        padding-left: 0.8rem;
+                        padding-right: 0.8rem;
+                    }
+                }
+            }
         }
-        .chevron {
-          height: 1rem;
-        }
-      }
-      .content {
-        p {
-          font-size: 0.8rem;
-          margin-bottom: 0.8rem;
-        }
-        li {
-          font-size: 0.8rem;
-        }
-        &.expanded {
-          max-height: 45rem;
-        }
-        .left-side {
-          .school {
-            max-width: 4rem;
-          }
-        }
-        .right-side {
-          ul {
-            margin-top: 0;
-            padding-left: 0.8rem;
-            padding-right: 0.8rem;
-          }
-        }
-      }
     }
-  }
 }

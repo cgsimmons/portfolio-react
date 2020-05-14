@@ -1,48 +1,48 @@
-@import '../../Layout/animations';
+@import "../../Layout/animations";
 
 .NavBar {
-  width: 13rem;
-  height: 100%;
-  background-color: #0e0e0c;
-  overflow-x: hidden;
-  display: inline-block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-  z-index: 100;
-  @include navAnimation();
+    width: 13rem;
+    height: 100%;
+    background-color: #0e0e0c;
+    overflow-x: hidden;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 100;
+    @include navAnimation();
 
-  nav {
-  }
+    nav {
+    }
 
-  nav a {
-    margin: 0.5rem;
-    color: #fffdfdcc;
-    font-weight: bold;
-    text-decoration: none;
-    display: block;
-  }
+    nav a {
+        margin: 0.5rem;
+        color: #fffdfdcc;
+        font-weight: bold;
+        text-decoration: none;
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 1700px) {
-  .NavBar {
-    width: 10rem;
-  }
+    .NavBar {
+        width: 10rem;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
-  .NavBar {
-    width: 2.5rem;
-    &.hovering {
-      width: 10rem;
+    .NavBar {
+        width: 2.5rem;
+        &.hovering {
+            width: 10rem;
+        }
     }
-  }
 }
 
 @media only screen and (max-width: 770px) {
-  .NavBar {
-    width: 0;
-    margin-top: 45px;
-  }
+    .NavBar {
+        width: 0;
+        margin-top: 45px;
+    }
 }
