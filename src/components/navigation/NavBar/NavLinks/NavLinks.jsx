@@ -1,24 +1,24 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { MdHome, MdWork, MdMail } from "react-icons/md";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { MdHome, MdWork, MdMail } from 'react-icons/md';
 import {
   FaCode,
   FaGraduationCap,
   FaInfoCircle,
   FaLinkedin,
   FaGithub,
-} from "react-icons/fa";
-import { Link, Events, scrollSpy } from "react-scroll";
+} from 'react-icons/fa';
+import { Link, Events, scrollSpy } from 'react-scroll';
 import {
   setNavBarHover,
   setNavBarActive,
-} from "../../../../actions/NavBarActions";
-import "./NavLinks.scss";
+} from '../../../../actions/NavBarActions';
+import './NavLinks.scss';
 
 class NavLinks extends React.Component {
   componentDidMount() {
-    Events.scrollEvent.register("end", () => {
+    Events.scrollEvent.register('end', () => {
       const { setHover } = this.props;
       setHover(false);
     });
@@ -26,7 +26,7 @@ class NavLinks extends React.Component {
   }
 
   componentWillUnmount() {
-    Events.scrollEvent.remove("end");
+    Events.scrollEvent.remove('end');
   }
 
   handleHoverTrue = () => {
@@ -45,7 +45,7 @@ class NavLinks extends React.Component {
       <div className="NavLinks">
         <ul>
           <li
-            className={active === "Home" ? "active" : ""}
+            className={active === 'Home' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
             <Link
@@ -61,7 +61,7 @@ class NavLinks extends React.Component {
             </Link>
           </li>
           <li
-            className={active === "About" ? "active" : ""}
+            className={active === 'About' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
             <Link
@@ -76,7 +76,7 @@ class NavLinks extends React.Component {
             </Link>
           </li>
           <li
-            className={active === "Skills" ? "active" : ""}
+            className={active === 'Skills' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
             <Link
@@ -91,7 +91,7 @@ class NavLinks extends React.Component {
             </Link>
           </li>
           <li
-            className={active === "Portfolio" ? "active" : ""}
+            className={active === 'Portfolio' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
             <Link
@@ -106,7 +106,7 @@ class NavLinks extends React.Component {
             </Link>
           </li>
           <li
-            className={active === "Education" ? "active" : ""}
+            className={active === 'Education' ? 'active' : ''}
             onMouseEnter={this.handleHoverTrue}
           >
             <Link

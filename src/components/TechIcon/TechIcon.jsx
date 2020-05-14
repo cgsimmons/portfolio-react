@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "./TechIcon.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './TechIcon.scss';
 
 const TechIcon = (props) => {
   const { title, source } = props;

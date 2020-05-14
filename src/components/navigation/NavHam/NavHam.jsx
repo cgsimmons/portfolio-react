@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { MdMail } from "react-icons/md";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { setNavBarHover } from "../../../actions/NavBarActions";
-import "./NavHam.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { MdMail } from 'react-icons/md';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { setNavBarHover } from '../../../actions/NavBarActions';
+import './NavHam.scss';
 
 class NavHam extends React.Component {
   handleClick = () => {
@@ -17,7 +17,7 @@ class NavHam extends React.Component {
     return (
       <div className="NavHam">
         <a
-          className={isHovering ? "hovering" : ""}
+          className={isHovering ? 'hovering' : ''}
           onClick={this.handleClick}
           onKeyPress={this.handleClick}
           type="button"

@@ -1,32 +1,32 @@
-import React from "react";
-import TechIcon from "../../TechIcon/TechIcon";
-import rails from "../../../assets/icons/rails.svg";
-import python from "../../../assets/icons/python-5.svg";
-import javascript from "../../../assets/icons/javascript.svg";
-import nodejs from "../../../assets/icons/nodejs-icon.svg";
-import react from "../../../assets/icons/react.svg";
-import mongoDB from "../../../assets/icons/mongoDB.svg";
-import postgresql from "../../../assets/icons/postgresql.svg";
-import babel from "../../../assets/icons/babel.svg";
-import redux from "../../../assets/icons/redux.svg";
-import webpack from "../../../assets/icons/webpack.svg";
-import aws from "../../../assets/icons/aws.svg";
-import jquery from "../../../assets/icons/jquery.svg";
-import sass from "../../../assets/icons/sass.svg";
-import tux from "../../../assets/icons/tux.svg";
-import java from "../../../assets/icons/java-14.svg";
-import android from "../../../assets/icons/android.svg";
-import pokemanGo from "../../../assets/gifs/pokeman-go.gif";
-import findPet from "../../../assets/gifs/find-pet.gif";
-import twitterScout from "../../../assets/gifs/twitter-scout.gif";
-import snippet from "../../../assets/gifs/snippet.gif";
-import awesome from "../../../assets/gifs/awesome.gif";
-import cview from "../../../assets/gifs/cview.gif";
-import drinkKorea from "../../../assets/gifs/drink-korea.gif";
-import decisionMaker from "../../../assets/images/alexa_decisionmaker.jpg";
-import serenadeMe from "../../../assets/images/alexa_serenademe.jpg";
+import React from 'react';
+import TechIcon from '../../TechIcon/TechIcon';
+import rails from '../../../assets/icons/rails.svg';
+import python from '../../../assets/icons/python-5.svg';
+import javascript from '../../../assets/icons/javascript.svg';
+import nodejs from '../../../assets/icons/nodejs-icon.svg';
+import react from '../../../assets/icons/react.svg';
+import mongoDB from '../../../assets/icons/mongoDB.svg';
+import postgresql from '../../../assets/icons/postgresql.svg';
+import babel from '../../../assets/icons/babel.svg';
+import redux from '../../../assets/icons/redux.svg';
+import webpack from '../../../assets/icons/webpack.svg';
+import aws from '../../../assets/icons/aws.svg';
+import jquery from '../../../assets/icons/jquery.svg';
+import sass from '../../../assets/icons/sass.svg';
+import tux from '../../../assets/icons/tux.svg';
+import java from '../../../assets/icons/java-14.svg';
+import android from '../../../assets/icons/android.svg';
+import pokemanGo from '../../../assets/gifs/pokeman-go.gif';
+import findPet from '../../../assets/gifs/find-pet.gif';
+import twitterScout from '../../../assets/gifs/twitter-scout.gif';
+import snippet from '../../../assets/gifs/snippet.gif';
+import awesome from '../../../assets/gifs/awesome.gif';
+import cview from '../../../assets/gifs/cview.gif';
+import drinkKorea from '../../../assets/gifs/drink-korea.gif';
+import decisionMaker from '../../../assets/images/alexa_decisionmaker.jpg';
+import serenadeMe from '../../../assets/images/alexa_serenademe.jpg';
 
-import "./Portfolio.scss";
+import './Portfolio.scss';
 
 export default () => (
   <div id="Portfolio" className="section">
@@ -110,7 +110,7 @@ export default () => (
             href="https://www.facebook.com/chdyvr"
           >
             Comedy Hack Day Vancouver
-          </a>{" "}
+          </a>{' '}
           hack-a-thon. This Pokemon parody web app allows users to take pictures
           of their friends and use real facial recognition software (
           <a
@@ -119,7 +119,7 @@ export default () => (
             href="https://www.faceplusplus.com"
           >
             Face++
-          </a>{" "}
+          </a>{' '}
           ) to determine which type of Pokeman they caught.
         </p>
       </div>
@@ -256,8 +256,8 @@ export default () => (
           highlighting editor (
           <a target="_blank" rel="noreferrer noopener" href="https://ace.c9.io">
             Ace
-          </a>{" "}
-          ).{" "}
+          </a>{' '}
+          ).{' '}
         </p>
       </div>
     </div>
@@ -379,7 +379,7 @@ export default () => (
           This is a skill to allow Amazon&apos;s Alexa voice recognition service
           to help users make tough choices. Can&apos;t decide whether to have
           Chinese or Italian food for dinner? Ask Alexa. Built using
-          Amazon&apos;s Lambda service and the Alexa Skill SDK.{" "}
+          Amazon&apos;s Lambda service and the Alexa Skill SDK.{' '}
         </p>
       </div>
     </div>

@@ -1,14 +1,14 @@
 export default function toggleEducationActive(section) {
-  let type = "";
+  let type = '';
   switch (section) {
-    case "bootcamp":
-      type = "TOGGLE_BOOTCAMP_ACTIVE";
+    case 'bootcamp':
+      type = 'TOGGLE_BOOTCAMP_ACTIVE';
       break;
-    case "ba":
-      type = "TOGGLE_BA_ACTIVE";
+    case 'ba':
+      type = 'TOGGLE_BA_ACTIVE';
       break;
-    case "aas":
-      type = "TOGGLE_AAS_ACTIVE";
+    case 'aas':
+      type = 'TOGGLE_AAS_ACTIVE';
       break;
     default:
       break;

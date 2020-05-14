@@ -9,11 +9,11 @@ export default function educationActive(
   action
 ) {
   switch (action.type) {
-    case "TOGGLE_BOOTCAMP_ACTIVE":
+    case 'TOGGLE_BOOTCAMP_ACTIVE':
       return { ...state, bootcamp: !state.bootcamp };
-    case "TOGGLE_BA_ACTIVE":
+    case 'TOGGLE_BA_ACTIVE':
       return { ...state, ba: !state.ba };
-    case "TOGGLE_AAS_ACTIVE":
+    case 'TOGGLE_AAS_ACTIVE':
       return { ...state, aas: !state.aas };
     default:
       return state;
