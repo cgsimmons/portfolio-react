@@ -16,14 +16,14 @@ class NavHam extends React.Component {
     const { isHovering } = this.props;
     return (
       <div className="NavHam">
-        <button
+        <a
           className={isHovering ? "hovering" : ""}
           onClick={this.handleClick}
           onKeyPress={this.handleClick}
           type="button"
         >
           <span />
-        </button>
+        </a>
         <ul className="top-contacts">
           <li>
             <a
