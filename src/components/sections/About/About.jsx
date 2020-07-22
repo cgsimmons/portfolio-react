@@ -9,13 +9,11 @@ export default () => (
       <img alt="Profile" src={profile} />
     </div>
     <div className="content">
-      Experienced in Full-Stack web development as well as Android and Debian
-      Linux packaging.
-      <br />
-      <br />
-      My Computer Science degree was focused around C, C++, Java and Python
-      while my more recent experience with web and mobile development comes from
-      personal projects as well as attending Codecore Development Bootcamp.
+      Experienced in Full-Stack web development, Kubernetes cluster management
+      and just being an all around solid dude. I enjoy living in rural Japan for
+      the last 9 years and I'll probably stay here a bit longer. My CS degree
+      was focused on C, C++, Java and Python but I have since moved to more web
+      development / microservices using Javascript/Typescript (NodeJS, React).
       <br />
       <br />
       I enjoy working with motivated individuals and solving problems, learning
@@ -23,7 +21,7 @@ export default () => (
       <br />
       <br />
       Feel free to contact me about opportunities in the San Francisco, Seattle
-      or Vancouver B.C. areas.
+      or Vancouver B.C. or Tokyo areas.
     </div>
   </div>
 );

@@ -26,36 +26,34 @@ class Education extends React.Component {
             onClick={this.handleClick}
             role="presentation"
           >
-            <h3 className="bootcamp subsection-title">
-              12-Week Developer Bootcamp
+            <h3 className="aas subsection-title">
+              Associate in Arts and Science
             </h3>
             <img
-              className={`bootcamp chevron${
-                bootcampIsActive ? ' expanded' : ''
-              }`}
+              className={`aas chevron${aasIsActive ? ' expanded' : ''}`}
               alt="expand"
               src={chevron}
             />
           </div>
-          <div className={`content${bootcampIsActive ? ' expanded' : ''}`}>
-            <div className={`left-side${bootcampIsActive ? ' expanded' : ''}`}>
-              <img className="school" alt="codecore" src={codecore} />
-              <p>Codecore Bootcamp</p>
-              <p>Vancouver, BC</p>
-              <p>2016</p>
+          <div className={`content${aasIsActive ? ' expanded' : ''}`}>
+            <div className={`left-side${aasIsActive ? ' expanded' : ''}`}>
+              <img className="school" alt="bbcc" src={bbcc} />
+              <p>Big Bend Community College</p>
+              <p>Moses Lake, WA</p>
+              <p>GPA: 3.33</p>
+              <p>2003</p>
             </div>
-            <div className={`right-side${bootcampIsActive ? ' expanded' : ''}`}>
+            <div className={`right-side${aasIsActive ? ' expanded' : ''}`}>
               <p>Relevant Coursework: </p>
               <ul>
-                <li>Ruby on Rails</li>
-                <li>Javascript</li>
-                <li>Nodejs</li>
-                <li>React / React Native</li>
-                <li>MongoDB</li>
-                <li>PostgreSQL</li>
-                <li>Heroku</li>
-                <li>Amazon Web Services</li>
-                <li>AGILE Development Methodology</li>
+                <li>Intro to Commputer Science</li>
+                <li>Intro to Web Design with HTML</li>
+                <li>Networking Essentials</li>
+                <li>Local Area Networks</li>
+                <li>A+ Certification Prep</li>
+                <li>Programming with Visual Basic</li>
+                <li>Programming with C++</li>
+                <li>Hardware Technology</li>
               </ul>
             </div>
           </div>
@@ -103,34 +101,36 @@ class Education extends React.Component {
             onClick={this.handleClick}
             role="presentation"
           >
-            <h3 className="aas subsection-title">
-              Associate in Arts and Science
+            <h3 className="bootcamp subsection-title">
+              12-Week Developer Bootcamp
             </h3>
             <img
-              className={`aas chevron${aasIsActive ? ' expanded' : ''}`}
+              className={`bootcamp chevron${
+                bootcampIsActive ? ' expanded' : ''
+              }`}
               alt="expand"
               src={chevron}
             />
           </div>
-          <div className={`content${aasIsActive ? ' expanded' : ''}`}>
-            <div className={`left-side${aasIsActive ? ' expanded' : ''}`}>
-              <img className="school" alt="bbcc" src={bbcc} />
-              <p>Big Bend Community College</p>
-              <p>Moses Lake, WA</p>
-              <p>GPA: 3.33</p>
-              <p>2003</p>
+          <div className={`content${bootcampIsActive ? ' expanded' : ''}`}>
+            <div className={`left-side${bootcampIsActive ? ' expanded' : ''}`}>
+              <img className="school" alt="codecore" src={codecore} />
+              <p>Codecore Bootcamp</p>
+              <p>Vancouver, BC</p>
+              <p>2016</p>
             </div>
-            <div className={`right-side${aasIsActive ? ' expanded' : ''}`}>
+            <div className={`right-side${bootcampIsActive ? ' expanded' : ''}`}>
               <p>Relevant Coursework: </p>
               <ul>
-                <li>Intro to Commputer Science</li>
-                <li>Intro to Web Design with HTML</li>
-                <li>Networking Essentials</li>
-                <li>Local Area Networks</li>
-                <li>A+ Certification Prep</li>
-                <li>Programming with Visual Basic</li>
-                <li>Programming with C++</li>
-                <li>Hardware Technology</li>
+                <li>Ruby on Rails</li>
+                <li>Javascript</li>
+                <li>Nodejs</li>
+                <li>React / React Native</li>
+                <li>MongoDB</li>
+                <li>PostgreSQL</li>
+                <li>Heroku</li>
+                <li>Amazon Web Services</li>
+                <li>AGILE Development Methodology</li>
               </ul>
             </div>
           </div>

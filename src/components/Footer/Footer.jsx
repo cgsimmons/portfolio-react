@@ -6,9 +6,8 @@ import './Footer.scss';
 export default () => (
   <div className="Footer">
     <div className="left-side">
-      <h1>Did you enjoy the site?</h1>
       <h1>
-        Check out the
+        Did you enjoy the site? Check out the
         <a
           target="_blank"
           rel="noreferrer noopener"
@@ -17,6 +16,9 @@ export default () => (
           {' '}
           source code!
         </a>
+      </h1>
+      <h1>
+        Also, try resizing your browser window. This site is fully responsive!
       </h1>
     </div>
     <div className="right-side">

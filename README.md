@@ -20,7 +20,7 @@ npm install
 npm run serve
 ```
 
-This will run the webpack development server locally. Simply visit http://localhost:8080 to check it out.
+This will run the webpack development server locally. Simply visit http://localhost:3000 to check it out.
 
 ## Deployment
 
