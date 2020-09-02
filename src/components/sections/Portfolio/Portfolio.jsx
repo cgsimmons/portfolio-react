@@ -150,9 +150,10 @@ export default () => (
       </div>
       <div className="bottom-container">
         <p>
-          A helm chart to install a high availability PyPI server on Kubernetes.
-          Supported features include autoscaling, ingress, shared ReadWriteMany
-          persistent volume along with a high amount of configurability.
+          A NodeJS api for retrieving COVID related data in a terminal friendly
+          way. Setup using standard NodeJS routes that are then served as a
+          stateless lambda service via a combination of netlify-lambda and
+          serverless-http libraries.
         </p>
       </div>
     </div>
