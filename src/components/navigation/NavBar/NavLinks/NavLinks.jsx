@@ -8,6 +8,7 @@ import {
   FaInfoCircle,
   FaLinkedin,
   FaGithub,
+  FaBookDead,
 } from 'react-icons/fa';
 import { Link, Events, scrollSpy } from 'react-scroll';
 import {
@@ -191,6 +192,16 @@ class NavLinks extends React.Component {
             >
               <FaGithub />
               <span>Github</span>
+            </a>
+          </li>
+          <li onMouseEnter={this.handleHoverTrue}>
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://gitlab.com/cgsimmons/my-wiki/-/wikis/home"
+            >
+              <FaBookDead />
+              <span>Wiki</span>
             </a>
           </li>
         </ul>
