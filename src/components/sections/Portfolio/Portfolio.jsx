@@ -4,12 +4,7 @@ import rails from '../../../assets/icons/rails.svg';
 import python from '../../../assets/icons/python-5.svg';
 import javascript from '../../../assets/icons/javascript.svg';
 import nodejs from '../../../assets/icons/nodejs-icon.svg';
-import react from '../../../assets/icons/react.svg';
-import mongoDB from '../../../assets/icons/mongoDB.svg';
 import postgresql from '../../../assets/icons/postgresql.svg';
-import babel from '../../../assets/icons/babel.svg';
-import redux from '../../../assets/icons/redux.svg';
-import webpack from '../../../assets/icons/webpack.svg';
 import s3 from '../../../assets/icons/s3.svg';
 import lambda from '../../../assets/icons/lambda.svg';
 import kubernetes from '../../../assets/icons/kubernetes.svg';
@@ -21,9 +16,6 @@ import java from '../../../assets/icons/java-14.svg';
 import android from '../../../assets/icons/android.svg';
 import pokemanGo from '../../../assets/gifs/pokeman-go.gif';
 import findPet from '../../../assets/gifs/find-pet.gif';
-import twitterScout from '../../../assets/gifs/twitter-scout.gif';
-import snippet from '../../../assets/gifs/snippet.gif';
-import awesome from '../../../assets/gifs/awesome.gif';
 import cview from '../../../assets/gifs/cview.gif';
 import drinkKorea from '../../../assets/gifs/drink-korea.gif';
 import decisionMaker from '../../../assets/images/alexa_decisionmaker.jpg';
@@ -372,53 +364,6 @@ export default () => (
     </div>
     <div className="inner-container">
       <div className="img-container">
-        <img src={twitterScout} alt="Twitter Scout" />
-      </div>
-      <div className="middle-container">
-        <div className="title-container">
-          <h3 className="subsection-title">Twitter Scout</h3>
-        </div>
-        <div className="subtitle-container">
-          <div className="icons-container">
-            <TechIcon title="NodeJS" source={nodejs} />
-            <TechIcon title="React" source={react} />
-            <TechIcon title="Redux" source={redux} />
-            <TechIcon title="MongoDB" source={mongoDB} />
-            <TechIcon title="Babel" source={babel} />
-            <TechIcon title="Webpack" source={webpack} />
-          </div>
-          <div className="links-container">
-            <a
-              className="link"
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://twitter-scout.herokuapp.com"
-            >
-              <span>LIVE</span>
-            </a>
-            <a
-              className="link"
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://github.com/cgsimmons/twitter-scout-node"
-            >
-              <span>SOURCE</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="bottom-container">
-        <p>
-          A Twitter manager using universal routing / Javascript. Pages are
-          generated and rendered dynamically on the server using the same code
-          as the client. The client loads server rendered markup while the
-          bundle is downloading. It also allows search engines to crawl the
-          server rendered pages.
-        </p>
-      </div>
-    </div>
-    <div className="inner-container">
-      <div className="img-container">
         <img src={findPet} alt="Find My Pet" />
       </div>
       <div className="middle-container">
@@ -458,96 +403,6 @@ export default () => (
           uses an AJAX front end with Ruby on Rails for the back end. The
           project was created over the course of a weekend with a team of 8
           members in conjuction with Envisioning Lab&apos;s Test Tube program.
-        </p>
-      </div>
-    </div>
-    <div className="inner-container">
-      <div className="img-container">
-        <img src={snippet} alt="Code Snippets" />
-      </div>
-      <div className="middle-container">
-        <div className="title-container">
-          <h3 className="subsection-title">Code Snippets</h3>
-        </div>
-        <div className="subtitle-container">
-          <div className="icons-container">
-            <TechIcon title="Ruby on Rails" source={rails} />
-            <TechIcon title="Sass" source={sass} />
-            <TechIcon title="PostgreSQL" source={postgresql} />
-          </div>
-          <div className="links-container">
-            <a
-              className="link"
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://code-snippets-rails.herokuapp.com/"
-            >
-              <span>LIVE</span>
-            </a>
-            <a
-              className="link"
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://github.com/cgsimmons/code_snippets"
-            >
-              <span>SOURCE</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="bottom-container">
-        <p>
-          A Rails app that allows users to save snippets of code from 23
-          different languages. The app uses an embedded javascript syntax
-          highlighting editor (
-          <a target="_blank" rel="noreferrer noopener" href="https://ace.c9.io">
-            Ace
-          </a>
-          ).{' '}
-        </p>
-      </div>
-    </div>
-    <div className="inner-container">
-      <div className="img-container">
-        <img src={awesome} alt="Awesome Answers" />
-      </div>
-      <div className="middle-container">
-        <div className="title-container">
-          <h3 className="subsection-title">Awesome Answers</h3>
-        </div>
-        <div className="subtitle-container">
-          <div className="icons-container">
-            <TechIcon title="Ruby on Rails" source={rails} />
-            <TechIcon title="S3" source={s3} />
-            <TechIcon title="Sass" source={sass} />
-            <TechIcon title="PostgreSQL" source={postgresql} />
-          </div>
-          <div className="links-container">
-            <a
-              className="link"
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://awesome-answers-rails.herokuapp.com"
-            >
-              <span>LIVE</span>
-            </a>
-            <a
-              className="link"
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://github.com/cgsimmons/awesome_answers"
-            >
-              <span>SOURCE</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="bottom-container">
-        <p>
-          This is a simple Question & Answer web app built on Rails. An API is
-          implemented as well. Some of the more interesting gems used include:
-          omniauth-twitter, fog, carrierwave, active_model_serializers,
-          cancancan and simple_form.
         </p>
       </div>
     </div>
