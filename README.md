@@ -30,4 +30,4 @@ You must first build the files with the following command.
 npm run build
 ```
 
-This will build the necessary files in the **build** directory.
+This will build the necessary files in the **dist** directory.
